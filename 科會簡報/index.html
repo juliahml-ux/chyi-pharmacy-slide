@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>衛生福利部嘉義醫院 藥劑科 ── 115年09月份 藥庫工作報告</title>
+  
+  <!-- Reveal.js CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reset.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/theme/night.css" />
+  
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+
+  <style>
+    :root {
+      --accent:  #00d4ff;   /* 嘉義醫院科技藍 */
+      --accent2: #ff007b;   /* 警訊粉紅 */
+      --success: #00ff88;   /* 達標翡翠綠 */
+      --warn:    #ffb800;   /* 琥珀提示金 */
+      --bg:      #080c1a;   /* 院區沉穩深藍黑 */
+      --card-bg: rgba(12, 20, 42, 0.78);
+      --border:  rgba(0, 212, 255, 0.25);
+    }
+
+    /* 全域背景：模擬藥品與藥庫高科技氛圍底圖 */
+    body {
+      background-color: var(--bg);
+    }
+    .reveal {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", "Noto Sans TC", sans-serif;
+      color: #eef3ff;
+      background: radial-gradient(circle at 50% 40%, rgba(8, 12, 26, 0.82) 0%, rgba(6, 9, 20, 0.95) 100%), 
+                  url('images/pharmacy_bg.jpg') no-repeat center center fixed;
+      background-size: cover;
+    }
+
+    /* 字體適當配置放大 */
+    .reveal h1, .reveal h2, .reveal h3 {
+      font-family: inherit;
+      font-weight: 800;
+      letter-spacing: -0.01em;
+      color: #ffffff;
+      text-shadow: 0 4px 18px rgba(0, 0, 0, 0.8);
+    }
+    .reveal h1 { font-size: 2.3em; line-height: 1.25; }
+    .reveal h2 { font-size: 1.6em; color: var(--accent); margin-bottom: 0.55em; text-shadow: 0 2px 10px rgba(0, 212, 255, 0.4); }
+    .reveal .progress { color: var(--accent); height: 5px; }
+    
+    /* 頂部科室徽章標籤 */
+    .hospital-header {
+      position: fixed;
+      top: 18px;
+      left: 28px;
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--accent);
+      letter-spacing: 0.12em;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background: rgba(8, 12, 26, 0.88);
+      padding: 7px 18px;
+      border-radius: 24px;
+      border: 1px solid rgba(0, 212, 255, 0.35);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+      backdrop-filter: blur(8px);
+    }
+
+    /* 下方每頁頁數標示：置中且不遮擋右下角方向控制鍵 */
+    .reveal .slide-number {
+      position: fixed !important;
+      left: 50% !important;
+      transform: translateX(-50%) !important;
+      bottom: 20px !important;
+      right: auto !important;
+      font-size: 17px !important;
+      font-weight: 800 !important;
+      color: var(--accent) !important;
+      background: rgba(8, 12, 26, 0.9) !important;
+      padding: 6px 18px !important;
+      border-radius: 20px !important;
+      border: 1px solid rgba(0, 212, 255, 0.45) !important;
+      letter-spacing: 0.12em !important;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", monospace !important;
+      z-index: 99 !important;
+      pointer-events: none !important;
+      box-shadow: 0 4px 18px rgba(0, 0, 0, 0.7) !important;
+    }
+
+    /* 封面樣式 */
+    .title-slide { text-align: center; }
+    .badge-tag {
+      display: inline-block;
+      background: linear-gradient(135deg, var(--accent), #0077ff);
+      color: #080c1a;
+      padding: 7px 22px;
+      border-radius: 30px;
+      font-size: 0.52em;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      margin-bottom: 1.2em;
+      text-transform: uppercase;
+      box-shadow: 0 0 20px rgba(0, 212, 255, 0.4);
+    }
+    .subtitle { font-size: 0.82em; color: #b8c7e0; margin-top: 0.6em; line-height: 1.6; }
+    .author-box {
+      margin-top: 2.2em;
+      font-size: 0.62em;
+      color: #9ab0d3;
+      display: flex;
+      justify-content: center;
+      gap: 36px;
+    }
+    .author-item {
+      background: var(--card-bg);
+      padding: 10px 24px;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+    }
+    .author-item strong { color: #ffffff; }
+
+    /* 網格與卡片樣式放大 */
+    .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 26px; text-align: left; margin-top: 0.6em; }
+    .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; text-align: left; margin-top: 0.8em; }
+    
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 24px;
+      backdrop-filter: blur(12px);
+      box-shadow: 0 12px 35px rgba(0, 0, 0, 0.5);
+    }
+    .card-title {
+      font-size: 0.68em;
+      font-weight: 800;
+      color: var(--accent);
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      padding-bottom: 8px;
+    }
+    .card-body { font-size: 0.52em; color: #dbe4f5; line-height: 1.85; }
+
+    /* 圖表容器 */
+    .chart-box {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 18px 20px;
+      backdrop-filter: blur(12px);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+      position: relative;
+    }
+    .chart-title {
+      font-size: 0.58em;
+      font-weight: 800;
+      color: var(--accent);
+      margin-bottom: 8px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .chart-canvas-wrap {
+      position: relative;
+      width: 100%;
+      height: 250px;
+    }
+
+    /* 數據統計小標籤 */
+    .badge-metric {
+      font-size: 0.78em;
+      font-weight: 700;
+      color: var(--success);
+      background: rgba(0, 255, 136, 0.15);
+      padding: 2px 10px;
+      border-radius: 12px;
+      border: 1px solid var(--success);
+    }
+  </style>
+</head>
+<body>
+  <!-- 院區常設標題 -->
+  <div class="hospital-header">
+    <span>🏥 衛生福利部嘉義醫院 藥劑科</span>
+    <span style="opacity:0.4;">|</span>
+    <span>藥庫科會工作報告</span>
+  </div>
+
+  <div class="reveal">
+    <div class="slides">
+
+      <!-- ==================== Slide 1: 封面 ==================== -->
+      <section class="title-slide">
+        <span class="badge-tag">科會工作報告 ✕ 藥事品質指標</span>
+        <h1>藥庫工作報告<br><span style="color:var(--accent);">115 年 09 月份</span></h1>
+        <div class="subtitle">
+          智慧藥櫃管理規範・Tosho包藥機規則・發藥窗口叫號優化・藥庫品質指標趨勢分析
+        </div>
+        <div class="author-box">
+          <div class="author-item">報告單位：<strong>藥劑科 藥庫</strong></div>
+          <div class="author-item">報告日期：<strong>115 年 10 月 20 日</strong></div>
+        </div>
+      </section>
+
+      <!-- ==================== Slide 2: 智慧藥櫃專題規範 ==================== -->
+      <section>
+        <h2>🤖 智慧藥櫃：盤點規範與斷電管理守則</h2>
+        <div class="grid-2">
+          <div class="card">
+            <div class="card-title">🔒 盤點頻率與查核責任</div>
+            <div class="card-body">
+              • <strong>1 ~ 3 級管制藥品</strong>：<br>
+              &nbsp;&nbsp; ➔ 採 <strong>雙人盤點</strong>（每日 2 班 / 於交班時確實完成核對）<br><br>
+              • <strong>第 4 級管制藥品 ＆ 公藥</strong>：<br>
+              &nbsp;&nbsp; ➔ 採 <strong>單人盤點</strong>（每日 1 班 / 於 00 點前完成登錄）<br><br>
+              • <strong>小計畫執行</strong>：<br>
+              &nbsp;&nbsp; ➔ 啟動智慧藥櫃滿意度問卷調查，蒐集臨床回饋持續優化。
+            </div>
+          </div>
+          <div class="card" style="border-top:3px solid var(--accent2);">
+            <div class="card-title" style="color:var(--accent2);">⚠️ 應變與斷電防護守則</div>
+            <div class="card-body">
+              • <strong>不可任意斷電</strong>：<br>
+              &nbsp;&nbsp; ➔ 系統具備連線查核機制，嚴禁擅自切斷總電源或拔除插座。<br><br>
+              • <strong>緊急鑰匙封存機制</strong>：<br>
+              &nbsp;&nbsp; ➔ 實體備用鑰匙 <strong>封存於「交班登記本」專用袋</strong>。<br>
+              &nbsp;&nbsp; ➔ <strong><span style="color:#00ff88; font-weight:800; font-size:1.06em; text-decoration:underline;">僅限系統異常或緊急災變時，拆封啟用。</span></strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== Slide 3: 調配設備與窗口叫號案 ==================== -->
+      <section>
+        <h2>⚙️ 調配設備規則 ＆ 發藥窗口叫號燈優化</h2>
+        <div class="grid-2">
+          <div class="card">
+            <div class="card-title">💊 Tosho 包藥機藥品入藥盒之設置規則</div>
+            <div class="card-body">
+              • <strong>提案與審查機制</strong>：<br>
+              &nbsp;&nbsp; ➔ 凡新增品項入 Tosho 包藥機，<strong>必須提至「藥劑科主管會議」充分討論通過後設置</strong>。<br><br>
+              • <strong>近期調配品項動態</strong>：<br>
+              &nbsp;&nbsp; ➔ <strong>管4藥品全面移出</strong> Tosho 藥盒，回歸專責庫位管理。<br>
+              &nbsp;&nbsp; ➔ 因應處方量需求，新增部分高頻口服常備藥品移入藥盒。
+            </div>
+          </div>
+          <div class="card" style="border-top:3px solid var(--accent);">
+            <div class="card-title" style="color:var(--accent);">📢 發藥窗口叫號燈新增設置</div>
+            <div class="card-body">
+              • <strong>分流領藥新措施</strong>：<br>
+              &nbsp;&nbsp; ➔ 發藥窗口電子叫號燈新增 <strong>「住／出院領藥」</strong> 專屬叫號號次。<br><br>
+              • <strong>實施效益</strong>：<br>
+              &nbsp;&nbsp; ➔ 有效區隔門診病患與出院領藥家屬，降低窗口尖峰排隊等待時間。
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== Slide 4: 行政宣導 ＆ 疫苗施打季事項 (恢復上一版完整內容) ==================== -->
+      <section>
+        <h2>📌 行政宣導 ＆ 疫苗施打季作業說明</h2>
+        <div class="grid-2">
+          <div class="card">
+            <div class="card-title">📅 年休假規則宣導事項</div>
+            <div class="card-body">
+              • <strong>年度休假進度目標</strong>：<br>
+              &nbsp;&nbsp; ➔ <strong>9 月份累計應達標：75%</strong><br>
+              &nbsp;&nbsp; ➔ <strong>11 月份累計應達標：90%</strong><br><br>
+              • <strong>請假作業規範</strong>：<br>
+              &nbsp;&nbsp; ➔ 同仁預辦休假 <strong>必須至請假系統線上完成請休流程</strong>。<br>
+              &nbsp;&nbsp; ➔ 請同仁儘早檢視自身休假餘額並妥善規劃排休。
+            </div>
+          </div>
+          <div class="card" style="border-top:3px solid var(--warn);">
+            <div class="card-title" style="color:var(--warn);">💉 疫苗施打季領發配合事項</div>
+            <div class="card-body">
+              • <strong>門診施打發放</strong>：<br>
+              &nbsp;&nbsp; ➔ 週六及國定假日，統一至藥庫領取疫苗至門診發藥窗口發放。<br><br>
+              • <strong>社區接種支援</strong>：<br>
+              &nbsp;&nbsp; ➔ 配合院外社區設站與出勤時間，專案開庫發放冷藏疫苗。<br><br>
+              • <strong>冷鏈溫控重點</strong>：<br>
+              &nbsp;&nbsp; ➔ 領退作業請務必落實溫度監控與冰寶防護查核。
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== Slide 5: 藥劑科同仁年休假達成率完整圖表 (純原生代碼繪製，非照片貼圖) ==================== -->
+      <section id="slide-leave-chart">
+        <h2>📊 藥劑科同仁年休假達成率統計圖表</h2>
+        <div style="display:grid; grid-template-columns: 36% 64%; gap: 20px; align-items: stretch; margin-top: 0.4em; text-align: left;">
+          <!-- 左欄：全科統計看板與宣導叮嚀 -->
+          <div style="display:flex; flex-direction:column; gap:14px; justify-content:space-between;">
+            <div class="card" style="border-top:3px solid var(--accent); padding:18px;">
+              <div class="card-title" style="margin-bottom:8px;">📈 全科休假總體現況</div>
+              <div class="card-body" style="font-size:0.48em; line-height:1.8;">
+                • <strong>全科平均達成率</strong>：<span style="color:var(--accent); font-weight:800; font-size:1.15em;">90.7%</span><br>
+                • <strong>達 9月標竿 (≧75%)</strong>：<span style="color:var(--success); font-weight:800;">10 位同仁</span> (55.6%)<br>
+                • <strong>待加強排休 (50~74%)</strong>：<span style="color:var(--warn); font-weight:800;">6 位同仁</span><br>
+                • <strong>進度落後 (&lt;50%)</strong>：<span style="color:var(--accent2); font-weight:800;">2 位同仁</span> (李怡臻 47%、黃欣宜 20%)
+              </div>
+            </div>
+
+            <div class="card" style="border-top:3px solid var(--warn); padding:18px;">
+              <div class="card-title" style="color:var(--warn); margin-bottom:8px;">💡 排休宣導執行叮嚀</div>
+              <div class="card-body" style="font-size:0.46em; line-height:1.8;">
+                1. 剩餘時數較多（逾 40 小時）之同仁，請把握 10、11 月預先排定休假。<br>
+                2. 為達 11 月 90% 目標，請避免集中於 12 月底請休，以兼顧調劑人力。<br>
+                3. 請各班同仁儘速至請假系統完成線上請休程序。
+              </div>
+            </div>
+          </div>
+
+          <!-- 右欄：Chart.js 繪製之同仁達成率長條圖 (原生圖表) -->
+          <div class="chart-box" style="padding:14px 18px; display:flex; flex-direction:column; justify-content:center;">
+            <div class="chart-title">
+              <span>全體 18 位同仁休假達成率 % 排行</span>
+              <span style="font-size:0.7em; color:#a5b4cb;">基準線：綠色≧75% ｜ 黃色50~74% ｜ 紅色&lt;50%</span>
+            </div>
+            <div style="position:relative; width:100%; height:450px;">
+              <canvas id="chartStaffLeave"></canvas>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== Slide 6: 曲線圖 1 (庫存週轉率 & 庫存消耗比) ==================== -->
+      <section id="slide-charts-1">
+        <h2>📈 115 年藥庫指標趨勢分析（一）：庫存與週轉實績</h2>
+        <div class="grid-2">
+          <!-- 曲線圖 A：庫存週轉率 -->
+          <div class="chart-box">
+            <div class="chart-title">
+              <span>庫存週轉率 (年消耗金額 / 月庫存金額)</span>
+              <span class="badge-metric">9月: 16.75 達標</span>
+            </div>
+            <div class="chart-canvas-wrap">
+              <canvas id="chartTurnover"></canvas>
+            </div>
+            <div style="font-size:0.42em; color:#a5b4cb; margin-top:8px; display:flex; justify-content:space-between;">
+              <span>• 醫院 BSC 閾值 ≧ 16 (紅虛線)</span>
+              <span>• 醫管會 閾值 ≧ 12 (黃虛線)</span>
+              <span>• 1~9月全院平均：<strong>14.94</strong></span>
+            </div>
+          </div>
+
+          <!-- 曲線圖 B：月庫存 / 月消耗比 -->
+          <div class="chart-box" style="border-top:3px solid var(--success);">
+            <div class="chart-title">
+              <span style="color:var(--success);">月藥品庫存金額 / 月藥品消耗金額</span>
+              <span class="badge-metric" style="color:var(--success); border-color:var(--success); background:rgba(0,255,136,0.15);">9月: 0.71 達標</span>
+            </div>
+            <div class="chart-canvas-wrap">
+              <canvas id="chartStockRatio"></canvas>
+            </div>
+            <div style="font-size:0.42em; color:#a5b4cb; margin-top:8px; display:flex; justify-content:space-between;">
+              <span>• 醫管會閾值 ≦ 1.0 (紅虛線)</span>
+              <span>• Q1/Q2 均值 0.85 ➔ Q3 降至 <strong>0.69</strong> ✨</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== Slide 7: 曲線圖 2 (住院退藥率 & 退藥不良率) ==================== -->
+      <section id="slide-charts-2">
+        <h2>📉 115 年藥庫指標趨勢分析（二）：退藥率與品質控管</h2>
+        <div class="grid-2">
+          <!-- 曲線圖 C：住院退藥率 % -->
+          <div class="chart-box" style="border-top:3px solid var(--accent2);">
+            <div class="chart-title">
+              <span style="color:var(--accent2);">住院退藥率 % (退藥筆數 / 開立領藥數)</span>
+              <span class="badge-metric" style="color:var(--accent2); border-color:var(--accent2); background:rgba(255,0,123,0.15);">9月: 3.43% 年度新低</span>
+            </div>
+            <div class="chart-canvas-wrap">
+              <canvas id="chartReturnRate"></canvas>
+            </div>
+            <div style="font-size:0.42em; color:#a5b4cb; margin-top:8px; display:flex; justify-content:space-between;">
+              <span>• 管理閾值 ≦ 8.37% (紅虛線)</span>
+              <span>• 9月份實績 <strong>3.43%</strong> 創下全年度最佳表現！</span>
+            </div>
+          </div>
+
+          <!-- 曲線圖 D：住院退藥品質不良率 % -->
+          <div class="chart-box" style="border-top:3px solid var(--warn);">
+            <div class="chart-title">
+              <span style="color:var(--warn);">住院退藥品質不良率 % (不良筆數 / 退藥總筆數)</span>
+              <span class="badge-metric" style="color:var(--warn); border-color:var(--warn); background:rgba(255,184,0,0.15);">9月: 0.84% 安全合格</span>
+            </div>
+            <div class="chart-canvas-wrap">
+              <canvas id="chartReturnQuality"></canvas>
+            </div>
+            <div style="font-size:0.42em; color:#a5b4cb; margin-top:8px; display:flex; justify-content:space-between;">
+              <span>• 管理閾值 ≦ 1.06% (紅虛線)</span>
+              <span>• 9月份實績 <strong>0.84%</strong>，全年度均在管制線內安全受控</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== Slide 8: 報告結束 (感謝詞) ==================== -->
+      <section class="title-slide">
+        <span class="badge-tag">感謝聆聽 ✕ 敬請指教</span>
+        <h1 style="font-size: 2.8em; margin-bottom: 24px;">報告結束</h1>
+        <div class="subtitle" style="font-size: 1.15em; color: var(--accent); font-weight: 700;">
+          謝謝各位長官與同仁的聆聽與指導！
+        </div>
+        <div style="margin-top: 45px; font-size: 0.65em; color: #9ab0d3;">
+          衛生福利部嘉義醫院 藥劑科 藥庫 敬啟
+        </div>
+      </section>
+
+    </div>
+  </div>
+
+  <!-- Reveal.js JS -->
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.js"></script>
+  <script>
+    Reveal.initialize({
+      controls: true,
+      progress: true,
+      center: true,
+      hash: true,
+      slideNumber: 'c/t',   /* 啟用下方頁數標示：目前頁 / 總頁數 */
+      transition: 'slide',
+      width: 1200,
+      height: 700
+    });
+
+    // Chart.js 全域樣式設定
+    Chart.defaults.color = '#b8c7e0';
+    Chart.defaults.font.family = '-apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", sans-serif';
+    Chart.defaults.font.size = 12;
+
+    const MONTHS = ['1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月', '9月'];
+    let chartsInitialized = false;
+
+    function initCharts() {
+      if (chartsInitialized) return;
+      chartsInitialized = true;
+
+      // 1. 藥劑科同仁年休假達成率長條圖 (Slide 5，原生 Chart.js 繪製)
+      const staffNames = ['劉人豪', '陳泰宇', '徐昀耀', '李婷芳', '李柏慶', '陳依琳', '陳政德', '翁祥芳', '葉麗娟', '蘇沛婕', '王克仁', '李仕源', '蘇沛誠', '張其純', '盧昌元', '沈宏典', '李怡臻', '黃欣宜'];
+      const staffRates = [193, 175, 135, 129, 120, 100, 91, 85, 79, 77, 70, 67, 67, 65, 63, 50, 47, 20];
+      const barColors = staffRates.map(r => r >= 75 ? 'rgba(0, 255, 136, 0.85)' : (r >= 50 ? 'rgba(255, 184, 0, 0.85)' : 'rgba(255, 0, 123, 0.85)'));
+      const borderColors = staffRates.map(r => r >= 75 ? '#00ff88' : (r >= 50 ? '#ffb800' : '#ff007b'));
+
+      new Chart(document.getElementById('chartStaffLeave'), {
+        type: 'bar',
+        data: {
+          labels: staffNames,
+          datasets: [{
+            label: '達成率 %',
+            data: staffRates,
+            backgroundColor: barColors,
+            borderColor: borderColors,
+            borderWidth: 1.5,
+            borderRadius: 4
+          }]
+        },
+        options: {
+          indexAxis: 'y',
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: { display: false },
+            tooltip: {
+              callbacks: {
+                label: (ctx) => `休假達成率: ${ctx.raw}%`
+              }
+            }
+          },
+          scales: {
+            x: {
+              min: 0,
+              max: 200,
+              grid: { color: 'rgba(255,255,255,0.08)' },
+              ticks: { callback: (val) => val + '%' }
+            },
+            y: {
+              grid: { display: false },
+              ticks: { font: { size: 11, weight: 'bold' } }
+            }
+          }
+        }
+      });
+
+      // 2. 庫存週轉率曲線圖 (Slide 6)
+      new Chart(document.getElementById('chartTurnover'), {
+        type: 'line',
+        data: {
+          labels: MONTHS,
+          datasets: [
+            {
+              label: '庫存週轉率實績',
+              data: [14.5, 12.6, 14.14, 13.72, 13.9, 14.3, 17.6, 17.07, 16.75],
+              borderColor: '#00d4ff',
+              backgroundColor: 'rgba(0, 212, 255, 0.15)',
+              borderWidth: 3,
+              fill: true,
+              tension: 0.35,
+              pointRadius: 5,
+              pointHoverRadius: 7,
+              pointBackgroundColor: '#00d4ff'
+            },
+            {
+              label: '醫院 BSC 閾值 (≧16)',
+              data: Array(9).fill(16),
+              borderColor: '#ff007b',
+              borderWidth: 2,
+              borderDash: [6, 4],
+              pointRadius: 0,
+              fill: false
+            },
+            {
+              label: '醫管會 閾值 (≧12)',
+              data: Array(9).fill(12),
+              borderColor: '#ffb800',
+              borderWidth: 2,
+              borderDash: [6, 4],
+              pointRadius: 0,
+              fill: false
+            }
+          ]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: { legend: { position: 'top', labels: { boxWidth: 14, padding: 10 } } },
+          scales: {
+            y: { min: 10, max: 20, grid: { color: 'rgba(255,255,255,0.06)' } },
+            x: { grid: { color: 'rgba(255,255,255,0.06)' } }
+          }
+        }
+      });
+
+      // 3. 月庫存 / 月消耗比曲線圖 (Slide 6)
+      new Chart(document.getElementById('chartStockRatio'), {
+        type: 'line',
+        data: {
+          labels: MONTHS,
+          datasets: [
+            {
+              label: '月庫存 / 月消耗比實績',
+              data: [0.79, 0.97, 0.79, 0.85, 0.89, 0.82, 0.63, 0.74, 0.71],
+              borderColor: '#00ff88',
+              backgroundColor: 'rgba(0, 255, 136, 0.15)',
+              borderWidth: 3,
+              fill: true,
+              tension: 0.35,
+              pointRadius: 5,
+              pointHoverRadius: 7,
+              pointBackgroundColor: '#00ff88'
+            },
+            {
+              label: '醫管會 閾值 (≦1.0)',
+              data: Array(9).fill(1.0),
+              borderColor: '#ff007b',
+              borderWidth: 2,
+              borderDash: [6, 4],
+              pointRadius: 0,
+              fill: false
+            }
+          ]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: { legend: { position: 'top', labels: { boxWidth: 14, padding: 10 } } },
+          scales: {
+            y: { min: 0.5, max: 1.1, grid: { color: 'rgba(255,255,255,0.06)' } },
+            x: { grid: { color: 'rgba(255,255,255,0.06)' } }
+          }
+        }
+      });
+
+      // 4. 住院退藥率 % 曲線圖 (Slide 7)
+      new Chart(document.getElementById('chartReturnRate'), {
+        type: 'line',
+        data: {
+          labels: MONTHS,
+          datasets: [
+            {
+              label: '住院退藥率 %',
+              data: [4.76, 3.52, 3.56, 4.21, 3.89, 4.27, 4.01, 3.54, 3.43],
+              borderColor: '#ff007b',
+              backgroundColor: 'rgba(255, 0, 123, 0.15)',
+              borderWidth: 3,
+              fill: true,
+              tension: 0.35,
+              pointRadius: 5,
+              pointHoverRadius: 7,
+              pointBackgroundColor: '#ff007b'
+            },
+            {
+              label: '管理閾值 (≦8.37%)',
+              data: Array(9).fill(8.37),
+              borderColor: '#ffb800',
+              borderWidth: 2,
+              borderDash: [6, 4],
+              pointRadius: 0,
+              fill: false
+            }
+          ]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: { legend: { position: 'top', labels: { boxWidth: 14, padding: 10 } } },
+          scales: {
+            y: { min: 2.5, max: 9.0, grid: { color: 'rgba(255,255,255,0.06)' } },
+            x: { grid: { color: 'rgba(255,255,255,0.06)' } }
+          }
+        }
+      });
+
+      // 5. 住院退藥品質不良率 % 曲線圖 (Slide 7)
+      new Chart(document.getElementById('chartReturnQuality'), {
+        type: 'line',
+        data: {
+          labels: MONTHS,
+          datasets: [
+            {
+              label: '退藥品質不良率 %',
+              data: [0.65, 0.80, 0.31, 0.36, 0.80, 0.35, 0.18, 0.03, 0.84],
+              borderColor: '#ffb800',
+              backgroundColor: 'rgba(255, 184, 0, 0.15)',
+              borderWidth: 3,
+              fill: true,
+              tension: 0.35,
+              pointRadius: 5,
+              pointHoverRadius: 7,
+              pointBackgroundColor: '#ffb800'
+            },
+            {
+              label: '管理閾值 (≦1.06%)',
+              data: Array(9).fill(1.06),
+              borderColor: '#ff007b',
+              borderWidth: 2,
+              borderDash: [6, 4],
+              pointRadius: 0,
+              fill: false
+            }
+          ]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: { legend: { position: 'top', labels: { boxWidth: 14, padding: 10 } } },
+          scales: {
+            y: { min: 0.0, max: 1.3, grid: { color: 'rgba(255,255,255,0.06)' } },
+            x: { grid: { color: 'rgba(255,255,255,0.06)' } }
+          }
+        }
+      });
+    }
+
+    // 啟動圖表渲染
+    Reveal.on('ready', () => { setTimeout(initCharts, 200); });
+    Reveal.on('slidechanged', e => {
+      if (e.currentSlide?.id === 'slide-leave-chart' || e.currentSlide?.id === 'slide-charts-1' || e.currentSlide?.id === 'slide-charts-2') {
+        setTimeout(initCharts, 100);
+      }
+    });
+  </script>
+</body>
+</html>
