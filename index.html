@@ -45,27 +45,33 @@
       text-shadow: 0 4px 18px rgba(0, 0, 0, 0.8);
     }
     .reveal h1 { font-size: 2.3em; line-height: 1.25; }
-    .reveal h2 { font-size: 1.6em; color: var(--accent); margin-bottom: 0.55em; text-shadow: 0 2px 10px rgba(0, 212, 255, 0.4); }
+    .reveal h2 {
+      font-size: 1.28em;
+      color: var(--accent);
+      margin-top: 36px;
+      margin-bottom: 0.45em;
+      text-shadow: 0 2px 10px rgba(0, 212, 255, 0.4);
+    }
     .reveal .progress { color: var(--accent); height: 5px; }
     
-    /* 頂部科室徽章標籤 */
+    /* 頂部科室徽章標籤：精巧化並緊貼頂端，徹底避免遮擋任何投影片標題 */
     .hospital-header {
       position: fixed;
-      top: 18px;
-      left: 28px;
-      font-size: 15px;
+      top: 10px;
+      left: 20px;
+      font-size: 12px;
       font-weight: 700;
       color: var(--accent);
-      letter-spacing: 0.12em;
+      letter-spacing: 0.08em;
       z-index: 100;
       display: flex;
       align-items: center;
-      gap: 10px;
-      background: rgba(8, 12, 26, 0.88);
-      padding: 7px 18px;
-      border-radius: 24px;
-      border: 1px solid rgba(0, 212, 255, 0.35);
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+      gap: 8px;
+      background: rgba(8, 12, 26, 0.82);
+      padding: 4px 14px;
+      border-radius: 18px;
+      border: 1px solid rgba(0, 212, 255, 0.3);
+      box-shadow: 0 3px 12px rgba(0, 0, 0, 0.5);
       backdrop-filter: blur(8px);
     }
 
@@ -212,7 +218,7 @@
 
       <!-- ==================== Slide 2: 智慧藥櫃專題規範 ==================== -->
       <section>
-        <h2>🤖 智慧藥櫃：盤點覆核、條碼讀取與斷電管理守則</h2>
+        <h2 style="font-size: 1.16em; margin-top: 45px;">🤖 智慧藥櫃：盤點覆核、條碼讀取與斷電管理守則</h2>
         <div class="grid-3">
           <!-- 卡片 1：盤點頻率與查核責任（原規範完整保留） -->
           <div class="card">
@@ -316,7 +322,7 @@
 
       <!-- ==================== Slide 5: 藥劑科同仁年休假達成率完整圖表 (純原生代碼繪製，非照片貼圖) ==================== -->
       <section id="slide-leave-chart">
-        <h2>📊 藥劑科同仁年休假達成率統計圖表</h2>
+        <h2 style="font-size: 1.18em; margin-top: 40px;">📊 藥劑科同仁年休假達成率統計圖表</h2>
         <div style="display:grid; grid-template-columns: 36% 64%; gap: 20px; align-items: stretch; margin-top: 0.4em; text-align: left;">
           <!-- 左欄：全科統計看板與宣導叮嚀 -->
           <div style="display:flex; flex-direction:column; gap:14px; justify-content:space-between;">
@@ -346,7 +352,7 @@
               <span>全體 18 位同仁休假達成率 % 排行</span>
               <span style="font-size:0.7em; color:#a5b4cb;">基準線：綠色≧75% ｜ 黃色50~74% ｜ 紅色&lt;50%</span>
             </div>
-            <div style="position:relative; width:100%; height:450px;">
+            <div style="position:relative; width:100%; height:410px;">
               <canvas id="chartStaffLeave"></canvas>
             </div>
           </div>
