@@ -81,6 +81,6 @@ c:\三師爸簡報製作\
 
 ### 2026-10-19
 - **更新第二頁智慧藥櫃 Barcode 覆核規範**：
-  - 將第二頁左側卡片更新為「盤點、ADC 應讀取 Barcode 藥品」。
+  - 將第二頁卡片標題精準修訂為「ADC 應讀取 Barcode 藥品」。
   - 明訂智慧藥櫃內品項與冷藏冰箱藥品（架位號已備註 ADC：Anxicam inj、Mounjaro inj 10mg、Xolair inj）之條碼讀取作業要求。
   - 同步更新 GitHub Pages 線上版本與本地離線版。
