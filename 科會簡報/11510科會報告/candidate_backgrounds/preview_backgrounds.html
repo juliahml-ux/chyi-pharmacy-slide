@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>醫院藥局簡報背景候選檢視器 ｜ 衛生福利部嘉義醫院藥劑科</title>
+  <style>
+    :root {
+      --accent: #00d4ff;
+      --accent2: #ff007b;
+      --success: #00ff88;
+      --warn: #ffb800;
+      --purple: #bfa5ff;
+      --bg: #080c1a;
+      --card-bg: rgba(12, 20, 42, 0.88);
+      --border: rgba(0, 212, 255, 0.28);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background-color: var(--bg);
+      color: #eef3ff;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", sans-serif;
+      padding: 24px 32px 60px;
+    }
+
+    header {
+      max-width: 1300px;
+      margin: 0 auto 28px;
+      padding-bottom: 18px;
+      border-bottom: 1px solid rgba(0, 212, 255, 0.3);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+    }
+
+    h1 {
+      font-size: 1.65rem;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    h1 span {
+      font-size: 0.9rem;
+      color: var(--accent);
+      font-weight: normal;
+      background: rgba(0, 212, 255, 0.12);
+      border: 1px solid var(--border);
+      padding: 3px 10px;
+      border-radius: 20px;
+    }
+
+    .notice {
+      background: rgba(0, 212, 255, 0.08);
+      border-left: 4px solid var(--accent);
+      padding: 10px 16px;
+      border-radius: 4px;
+      font-size: 0.92rem;
+      color: #b8c7e0;
+      max-width: 1300px;
+      margin: 0 auto 24px;
+      line-height: 1.5;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+      gap: 22px;
+      max-width: 1300px;
+      margin: 0 auto;
+    }
+
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+      transition: transform 0.2s ease, border-color 0.2s ease;
+    }
+    .card:hover {
+      transform: translateY(-4px);
+      border-color: var(--accent);
+    }
+
+    .img-wrap {
+      position: relative;
+      width: 100%;
+      height: 220px;
+      overflow: hidden;
+      background: #000;
+      cursor: pointer;
+    }
+    .img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+    .img-wrap:hover img {
+      transform: scale(1.04);
+    }
+    .badge {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background: rgba(8, 12, 26, 0.85);
+      backdrop-filter: blur(8px);
+      color: var(--accent);
+      font-size: 0.78rem;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 6px;
+      border: 1px solid var(--border);
+    }
+
+    .card-info {
+      padding: 14px 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      flex: 1;
+    }
+    .card-title {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #fff;
+    }
+    .card-desc {
+      font-size: 0.85rem;
+      color: #a5b4cb;
+      line-height: 1.45;
+    }
+    .card-meta {
+      font-size: 0.76rem;
+      color: #6d7f9c;
+      margin-top: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 8px;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .btn {
+      background: rgba(0, 212, 255, 0.15);
+      color: var(--accent);
+      border: 1px solid var(--border);
+      padding: 6px 14px;
+      border-radius: 6px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.2s ease;
+    }
+    .btn:hover {
+      background: var(--accent);
+      color: #080c1a;
+    }
+
+    /* Modal 模擬投影檢視 */
+    .modal {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.88);
+      backdrop-filter: blur(10px);
+      z-index: 999;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+    .modal.active { display: flex; }
+    .modal-content {
+      position: relative;
+      width: 100%;
+      max-width: 1100px;
+      aspect-ratio: 16/9;
+      background-size: cover;
+      background-position: center;
+      border-radius: 12px;
+      border: 2px solid var(--accent);
+      box-shadow: 0 20px 60px rgba(0,0,0,0.8);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 40px;
+    }
+    .modal-overlay-content {
+      background: rgba(12, 20, 42, 0.82);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(0, 212, 255, 0.4);
+      border-radius: 12px;
+      padding: 24px 32px;
+      max-width: 650px;
+      text-align: center;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+    }
+    .modal-close {
+      position: absolute;
+      top: 14px;
+      right: 18px;
+      background: rgba(0,0,0,0.6);
+      border: 1px solid #fff;
+      color: #fff;
+      font-size: 1.2rem;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>
+      🏥 醫院藥局簡報背景候選精選
+      <span>共 8 張精選方案</span>
+    </h1>
+    <div>
+      <a class="btn" href="../index.html" target="_blank">🔍 開啟現行科會簡報</a>
+    </div>
+  </header>
+
+  <div class="notice">
+    💡 <strong>葉藥師檢視提醒</strong>：目前科會報告的文字排版皆完全保留未動。以下提供 8 張高解析度 16:9 醫院藥局與智慧醫療背景圖（包含 AI 智慧藥櫃生成款、現代藥局實景款、臨床藥品儲架款等）。您可以點擊任一張圖片進行<strong>「模擬投影片毛玻璃卡片放映檢視」</strong>，確認滿意後再告訴我編號，我將立即為您套入簡報！
+  </div>
+
+  <div class="grid">
+
+    <!-- 00 AI 智慧藥櫃款 -->
+    <div class="card">
+      <div class="img-wrap" onclick="previewImage('00_ai_smart_pharmacy_adc.jpg', '方案 1：AI 專屬生成 智慧藥局與自動化藥櫃 (ADC)')">
+        <span class="badge">方案 1 (推薦 AI 款)</span>
+        <img src="00_ai_smart_pharmacy_adc.jpg" alt="智慧藥局與自動化藥櫃">
+      </div>
+      <div class="card-info">
+        <div class="card-title">方案 1：AI 智慧藥局 ＆ 自動化藥櫃 (ADC)</div>
+        <div class="card-desc">專為本期智慧藥櫃主題量身生成！現代智慧藥局全景，帶有藍光 LED 藥櫃、整潔寬廣前景，層次沉穩高級，完美襯托文字。</div>
+        <div class="card-meta">
+          <span>解析度：1376 × 768 (16:9)</span>
+          <button class="btn" onclick="previewImage('00_ai_smart_pharmacy_adc.jpg', '方案 1：AI 專屬生成 智慧藥局與自動化藥櫃 (ADC)')">模擬效果</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- 01 現代藥局實景 -->
+    <div class="card">
+      <div class="img-wrap" onclick="previewImage('01_modern_pharmacy_interior.jpg', '方案 2：現代化醫院藥局實景空間 (明亮寬廣)')">
+        <span class="badge">方案 2 (明亮實景)</span>
+        <img src="01_modern_pharmacy_interior.jpg" alt="現代化醫院藥局實景空間">
+      </div>
+      <div class="card-info">
+        <div class="card-title">方案 2：現代化醫院藥局實景空間</div>
+        <div class="card-desc">真實拍攝之國際現代化藥局，明亮乾淨的藥品專櫃與調劑動線，極具醫院藥劑科的專業感與開放大氣感。</div>
+        <div class="card-meta">
+          <span>解析度：1920 × 1080 (Full HD)</span>
+          <button class="btn" onclick="previewImage('01_modern_pharmacy_interior.jpg', '方案 2：現代化醫院藥局實景空間 (明亮寬廣)')">模擬效果</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- 02 臨床藥品儲架 -->
+    <div class="card">
+      <div class="img-wrap" onclick="previewImage('02_clinical_medicine_storage.jpg', '方案 3：整齊臨床藥品儲架與調劑陳列 (秩序美學)')">
+        <span class="badge">方案 3 (專業藥庫)</span>
+        <img src="02_clinical_medicine_storage.jpg" alt="整齊臨床藥品儲架與調劑陳列">
+      </div>
+      <div class="card-info">
+        <div class="card-title">方案 3：臨床藥品儲架與藥庫陳列</div>
+        <div class="card-desc">整齊排列的藥品盒與儲存格位，象徵嚴謹的藥品庫存管理與調劑品管，秩序感與專業度極高。</div>
+        <div class="card-meta">
+          <span>解析度：1920 × 1080 (Full HD)</span>
+          <button class="btn" onclick="previewImage('02_clinical_medicine_storage.jpg', '方案 3：整齊臨床藥品儲架與調劑陳列 (秩序美學)')">模擬效果</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- 04 臨床科研柔焦 -->
+    <div class="card">
+      <div class="img-wrap" onclick="previewImage('04_clinical_lab_blur.jpg', '方案 4：臨床科研與藥學柔焦景深 (低干擾首選)')">
+        <span class="badge">方案 4 (低干擾柔焦)</span>
+        <img src="04_clinical_lab_blur.jpg" alt="臨床科研與藥學柔焦景深">
+      </div>
+      <div class="card-info">
+        <div class="card-title">方案 4：臨床科研柔焦景深 (文字最易讀)</div>
+        <div class="card-desc">醫學實驗室與藥劑柔和藍白光影，景深虛化效果極佳，當作背景時完全不干擾簡報文字與數據圖表。</div>
+        <div class="card-meta">
+          <span>解析度：1920 × 1080 (Full HD)</span>
+          <button class="btn" onclick="previewImage('04_clinical_lab_blur.jpg', '方案 4：臨床科研與藥學柔焦景深 (低干擾首選)')">模擬效果</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- 06 智慧醫療高科技 -->
+    <div class="card">
+      <div class="img-wrap" onclick="previewImage('06_smart_hospital_clean.jpg', '方案 5：智慧醫療高科技冷色調空間 (未來科技)')">
+        <span class="badge">方案 5 (科技氛圍)</span>
+        <img src="06_smart_hospital_clean.jpg" alt="智慧醫療高科技冷色調空間">
+      </div>
+      <div class="card-info">
+        <div class="card-title">方案 5：智慧醫療高科技藍光空間</div>
+        <div class="card-desc">科技藍與純淨白交織的智慧醫院意象，充滿智慧醫療科技感，適合強調創新與資訊化變革。</div>
+        <div class="card-meta">
+          <span>解析度：1920 × 1080 (Full HD)</span>
+          <button class="btn" onclick="previewImage('06_smart_hospital_clean.jpg', '方案 5：智慧醫療高科技冷色調空間 (未來科技)')">模擬效果</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- 05 調劑工作檯微距 -->
+    <div class="card">
+      <div class="img-wrap" onclick="previewImage('05_pharmacy_counter_abstract.jpg', '方案 6：調劑工作檯柔光微距 (細膩溫潤)')">
+        <span class="badge">方案 6 (細膩微距)</span>
+        <img src="05_pharmacy_counter_abstract.jpg" alt="調劑工作檯柔光微距">
+      </div>
+      <div class="card-info">
+        <div class="card-title">方案 6：調劑工作檯柔光微距</div>
+        <div class="card-desc">藥品與工作檯面的細緻特寫與柔美散景，溫和沈穩，具備溫度感與細膩專業。</div>
+        <div class="card-meta">
+          <span>解析度：1920 × 1080 (Full HD)</span>
+          <button class="btn" onclick="previewImage('05_pharmacy_counter_abstract.jpg', '方案 6：調劑工作檯柔光微距 (細膩溫潤)')">模擬效果</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- 03 現代醫院長廊 -->
+    <div class="card">
+      <div class="img-wrap" onclick="previewImage('03_hospital_corridor_modern.jpg', '方案 7：現代醫療中心大樓長廊 (大氣通透)')">
+        <span class="badge">方案 7 (院區氣派)</span>
+        <img src="03_hospital_corridor_modern.jpg" alt="現代醫療中心大樓長廊">
+      </div>
+      <div class="card-info">
+        <div class="card-title">方案 7：現代醫療中心氣派長廊</div>
+        <div class="card-desc">明亮開闊的現代醫院穿堂與長廊景深，空間延展感極強，展現院區規模與現代化風貌。</div>
+        <div class="card-meta">
+          <span>解析度：1920 × 1080 (Full HD)</span>
+          <button class="btn" onclick="previewImage('03_hospital_corridor_modern.jpg', '方案 7：現代醫療中心大樓長廊 (大氣通透)')">模擬效果</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- 07 原版背景 -->
+    <div class="card">
+      <div class="img-wrap" onclick="previewImage('07_original_pharmacy_bg.jpg', '方案 8：現行簡報使用之藥局背景 (對照組)')">
+        <span class="badge">方案 8 (現有對照)</span>
+        <img src="07_original_pharmacy_bg.jpg" alt="現行簡報背景">
+      </div>
+      <div class="card-info">
+        <div class="card-title">方案 8：現有原版背景 (對照組)</div>
+        <div class="card-desc">簡報目前原本引用的背景底圖，作為對照比較之用。</div>
+        <div class="card-meta">
+          <span>解析度：1920 × 1080 (Full HD)</span>
+          <button class="btn" onclick="previewImage('07_original_pharmacy_bg.jpg', '方案 8：現行簡報使用之藥局背景 (對照組)')">模擬效果</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- 彈出模擬全螢幕視窗 -->
+  <div class="modal" id="previewModal" onclick="closeModal(event)">
+    <div class="modal-content" id="modalBox" onclick="event.stopPropagation()">
+      <button class="modal-close" onclick="closeModal()">&times;</button>
+      <div class="modal-overlay-content">
+        <h2 style="color:var(--accent); font-size:1.3rem; margin-bottom:8px;" id="modalTitle">模擬投影片覆蓋效果</h2>
+        <p style="color:#eef3ff; font-size:0.95rem; line-height:1.6; margin-bottom:12px;">
+          📊 <strong>衛生福利部嘉義醫院 藥劑科 科會報告</strong><br>
+          這是套上深色漸層遮罩與毛玻璃卡片後的實際文字顯示模擬。背景能襯托出數據與文字，同時隱約透出醫院藥局專業氛圍。
+        </p>
+        <div style="display:flex; justify-content:center; gap:12px; margin-top:14px;">
+          <span style="font-size:0.8rem; color:var(--success); background:rgba(0,255,136,0.15); padding:4px 10px; border-radius:4px; border:1px solid var(--success);">文字清晰度良好 ✓</span>
+          <span style="font-size:0.8rem; color:var(--accent); background:rgba(0,212,255,0.15); padding:4px 10px; border-radius:4px; border:1px solid var(--border);">低干擾景深 ✓</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function previewImage(filename, title) {
+      const modal = document.getElementById('previewModal');
+      const box = document.getElementById('modalBox');
+      const titleElem = document.getElementById('modalTitle');
+      
+      box.style.backgroundImage = `radial-gradient(circle at 50% 40%, rgba(8, 12, 26, 0.78) 0%, rgba(6, 9, 20, 0.92) 100%), url('${filename}')`;
+      titleElem.textContent = title;
+      modal.classList.add('active');
+    }
+
+    function closeModal(e) {
+      document.getElementById('previewModal').classList.remove('active');
+    }
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeModal();
+    });
+  </script>
+
+</body>
+</html>

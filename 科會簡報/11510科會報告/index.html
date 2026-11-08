@@ -1,0 +1,1206 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>衛生福利部嘉義醫院 藥劑科 ── 115年10月份 藥庫工作報告</title>
+  
+  <!-- Reveal.js CSS (純離線本地庫) -->
+  <link rel="stylesheet" href="libs/reveal/dist/reset.css" />
+  <link rel="stylesheet" href="libs/reveal/dist/reveal.css" />
+  <link rel="stylesheet" href="libs/reveal/dist/theme/night.css" />
+  
+  <!-- Chart.js (純離線本地庫) -->
+  <script src="libs/chartjs/chart.umd.min.js"></script>
+
+  <style>
+    :root {
+      --accent:   #00d4ff;   /* 嘉義醫院科技藍 */
+      --accent2:  #ff007b;   /* 警訊粉紅 */
+      --success:  #00ff88;   /* 達標翡翠綠 */
+      --warn:     #ffb800;   /* 琥珀提示金 */
+      --purple:   #bfa5ff;   /* 專科紫 */
+      --bg:       #080c1a;   /* 院區沉穩深藍黑 */
+      --card-bg:  rgba(12, 20, 42, 0.85);
+      --border:   rgba(0, 212, 255, 0.28);
+    }
+
+    body {
+      background-color: var(--bg);
+    }
+    .reveal {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", "Noto Sans TC", sans-serif;
+      color: #eef3ff;
+      background: radial-gradient(circle at 50% 40%, rgba(8, 12, 26, 0.85) 0%, rgba(6, 9, 20, 0.96) 100%), 
+                  url('images/pharmacy_bg_v6.jpg') no-repeat center center fixed;
+      background-size: cover;
+    }
+
+    /* 標題設計：強制不跨行 */
+    .reveal h1, .reveal h2, .reveal h3 {
+      font-family: inherit;
+      font-weight: 800;
+      letter-spacing: -0.01em;
+      color: #ffffff;
+      text-shadow: 0 4px 18px rgba(0, 0, 0, 0.85);
+    }
+    .reveal h1 { font-size: 2.35em; line-height: 1.25; }
+    .reveal h2 {
+      font-size: 1.15em;
+      color: var(--accent);
+      margin-top: 10px;
+      margin-bottom: 0.35em;
+      text-shadow: 0 2px 12px rgba(0, 212, 255, 0.45);
+      white-space: nowrap;          /* 標題文字絕不跨行 */
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .reveal .progress { color: var(--accent); height: 5px; }
+    
+    /* 頂部科室徽章標籤 */
+    .hospital-header {
+      position: fixed;
+      top: 10px;
+      left: 20px;
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--accent);
+      letter-spacing: 0.08em;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(8, 12, 26, 0.88);
+      padding: 4px 15px;
+      border-radius: 18px;
+      border: 1px solid rgba(0, 212, 255, 0.35);
+      box-shadow: 0 3px 12px rgba(0, 0, 0, 0.55);
+      backdrop-filter: blur(8px);
+    }
+
+    /* 下方頁數標示：置中避開右下角方向鍵 */
+    .reveal .slide-number {
+      position: fixed !important;
+      left: 50% !important;
+      transform: translateX(-50%) !important;
+      bottom: 16px !important;
+      right: auto !important;
+      font-size: 16px !important;
+      font-weight: 800 !important;
+      color: var(--accent) !important;
+      background: rgba(8, 12, 26, 0.92) !important;
+      padding: 5px 20px !important;
+      border-radius: 20px !important;
+      border: 1px solid rgba(0, 212, 255, 0.45) !important;
+      letter-spacing: 0.12em !important;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", monospace !important;
+      z-index: 99 !important;
+      pointer-events: none !important;
+      box-shadow: 0 4px 18px rgba(0, 0, 0, 0.7) !important;
+    }
+
+    /* 封面樣式 */
+    .title-slide { text-align: center; }
+    .badge-tag {
+      display: inline-block;
+      background: linear-gradient(135deg, var(--accent), #0077ff);
+      color: #080c1a;
+      padding: 7px 24px;
+      border-radius: 30px;
+      font-size: 0.55em;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      margin-bottom: 1.2em;
+      text-transform: uppercase;
+      box-shadow: 0 0 20px rgba(0, 212, 255, 0.45);
+    }
+    .subtitle {
+      font-size: 0.86em;
+      color: #b8c7e0;
+      margin-top: 0.6em;
+      line-height: 1.65;
+    }
+    .author-box {
+      margin-top: 2.2em;
+      font-size: 0.64em;
+      color: #9ab0d3;
+      display: flex;
+      justify-content: center;
+      gap: 28px;
+    }
+    .author-item {
+      background: var(--card-bg);
+      padding: 10px 24px;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.45);
+    }
+    .author-item strong { color: #ffffff; }
+
+    /* 網格與卡片樣式放大 */
+    .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; text-align: left; margin-top: 0.35em; }
+    .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; text-align: left; margin-top: 0.35em; }
+    
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 18px 22px;
+      backdrop-filter: blur(12px);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+      box-sizing: border-box;
+    }
+    .card-title {
+      font-size: 0.72em;
+      font-weight: 800;
+      color: var(--accent);
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      padding-bottom: 7px;
+    }
+    
+    /* 內容文字全面放大 */
+    .card-body {
+      font-size: 0.58em;
+      color: #dbe4f5;
+      line-height: 1.75;
+    }
+
+    /* 表格樣式放大並兼顧高度 */
+    .styled-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.50em;
+      line-height: 1.42;
+      text-align: left;
+    }
+    .styled-table th {
+      background: rgba(0, 212, 255, 0.18);
+      color: var(--accent);
+      font-weight: 800;
+      padding: 6px 10px;
+      border-bottom: 2px solid rgba(0, 212, 255, 0.4);
+      white-space: nowrap;
+    }
+    .styled-table td {
+      padding: 5px 10px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      color: #e0e8f8;
+    }
+    .styled-table tr:hover td {
+      background: rgba(0, 212, 255, 0.1);
+    }
+    .code-badge {
+      font-family: monospace;
+      font-weight: 700;
+      color: var(--warn);
+      background: rgba(255, 184, 0, 0.14);
+      padding: 2px 6px;
+      border-radius: 4px;
+      border: 1px solid rgba(255, 184, 0, 0.35);
+      font-size: 0.95em;
+      white-space: nowrap;
+    }
+
+    /* 圖表容器 */
+    .chart-box {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 16px 20px;
+      backdrop-filter: blur(12px);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+      position: relative;
+    }
+    .chart-title {
+      font-size: 0.60em;
+      font-weight: 800;
+      color: var(--accent);
+      margin-bottom: 8px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .chart-canvas-wrap {
+      position: relative;
+      width: 100%;
+      height: 255px;
+    }
+
+    /* 數據統計小標籤 */
+    .badge-metric {
+      font-size: 0.80em;
+      font-weight: 800;
+      color: var(--success);
+      background: rgba(0, 255, 136, 0.18);
+      padding: 3px 11px;
+      border-radius: 12px;
+      border: 1px solid var(--success);
+    }
+
+    .pill-note {
+      display: inline-block;
+      padding: 3px 10px;
+      border-radius: 6px;
+      font-size: 0.48em;
+      font-weight: 700;
+      margin-top: 8px;
+    }
+  </style>
+</head>
+<body>
+  <!-- 院區常設標題 -->
+  <div class="hospital-header">
+    <span>🏥 衛生福利部嘉義醫院 藥劑科</span>
+    <span style="opacity:0.4;">|</span>
+    <span>藥庫科會工作報告</span>
+  </div>
+
+  <div class="reveal">
+    <div class="slides">
+
+      <!-- ==================== Slide 1: 封面 ==================== -->
+      <section class="title-slide">
+        <span class="badge-tag">科會工作報告 ✕ 營運與品質監測</span>
+        <h1>藥庫工作報告<br><span style="color:var(--accent);">115 年 10 月份</span></h1>
+        <div class="subtitle" style="max-width: 960px; margin: 0.8em auto 0;">
+          智慧藥櫃持續優化・特休預假衝刺・加班補休管理・藥品異動與營運指標分析
+        </div>
+        <div class="author-box">
+          <div class="author-item">🏢 報告單位：<strong>藥劑科 藥庫</strong></div>
+          <div class="author-item">📅 報告日期：<strong>115 年 11 月 17 日</strong></div>
+          <div class="author-item">📊 資料結算：<strong>115 年 10 月 31 日</strong></div>
+        </div>
+      </section>
+
+      <!-- ==================== Slide 2: 業務推動與宣導 (內容精簡・重點呈現) ==================== -->
+      <section>
+        <h2>📌 業務推動：智慧藥櫃常態精進 ＆ 特休預假衝刺</h2>
+        <div class="grid-2">
+          
+          <!-- 左卡片：智慧藥櫃使用優化 -->
+          <div class="card" style="border-top: 4px solid var(--accent);">
+            <div class="card-title">
+              <span>🤖 智慧藥櫃常態運作優化</span>
+            </div>
+            <div class="card-body">
+              <p style="margin: 0 0 16px 0;">
+                <strong style="color:var(--accent);">1. 異常回報與個資保護：</strong><br>
+                有問題群組回報，注意<strong>個資保護</strong>，如有 <strong>QR code 應清楚拍照</strong>。
+              </p>
+              <p style="margin: 0;">
+                <strong style="color:var(--accent);">2. 盤點時段：</strong><br>
+                (1) <strong>1~3 級管制藥品</strong>：（雙人交班）<br>
+                (2) <strong>公費與 4 級管制藥品</strong>：<strong>00:00 ~ 00:30</strong>（單人盤點）
+              </p>
+            </div>
+          </div>
+
+          <!-- 右卡片：特休請修與系統預假 -->
+          <div class="card" style="border-top: 4px solid var(--warn);">
+            <div class="card-title" style="color:var(--warn);">
+              <span>📅 年度特休請修 ＆ 系統預假</span>
+              <span class="badge-metric" style="color:var(--warn); border-color:var(--warn); background:rgba(255,184,0,0.16); margin-left:auto;">11月底目標 90%</span>
+            </div>
+            <div class="card-body">
+              <p style="margin: 0 0 12px 0;">
+                <strong style="color:var(--warn);">1. 進度推進軌跡：</strong><br>
+                10 月底累計達 <strong>75.5%</strong>；系統已完成 11～12 月線上預假，預計達成率達 <strong>91.2%</strong>！
+              </p>
+              <p style="margin: 0 0 12px 0;">
+                <strong style="color:var(--warn);">2. 落實系統預假：</strong><br>
+                全數預休及調班<strong>務必登入「差勤排班系統」完成線上請修簽核</strong>，嚴禁口頭約定未入系統。
+              </p>
+              <p style="margin: 0;">
+                <strong style="color:var(--warn);">3. 提前排妥一至十二月的休假計劃</strong>
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ==================== Slide 3: 藥劑科同仁年休假達成率統計圖表 ==================== -->
+      <section id="slide-leave-chart">
+        <h2>📊 藥劑科同仁 115 全年度休假達成率（含11-12月預排）</h2>
+        <div style="display:grid; grid-template-columns: 39% 61%; gap: 16px; align-items: start; margin-top: 0.35em; text-align: left;">
+          <!-- 左欄：未達全年度已休假人員數據看板 (擴寬加高呼吸感，徹底解決左下角壓縮) -->
+          <div style="display:flex; flex-direction:column; gap:10px;">
+            <div class="card" style="border-top:3px solid var(--accent2); padding:10px 14px;">
+              <div class="card-title" style="color:var(--accent2); margin-bottom:6px; font-size:0.70em;">
+                <span>⚠️ 全年度未達標人員現況 (待加強 5 人)</span>
+                <span class="badge-metric" style="color:var(--accent2); border-color:var(--accent2); background:rgba(255,0,123,0.18); margin-left:auto; font-size:0.65em;">達成率 &lt; 75%</span>
+              </div>
+              <div class="card-body" style="font-size:0.50em; line-height:1.5;">
+                <table class="styled-table" style="font-size:1.0em; margin-bottom:6px;">
+                  <thead>
+                    <tr>
+                      <th style="padding:3px 5px;">同仁姓名</th>
+                      <th style="padding:3px 5px;">應休</th>
+                      <th style="padding:3px 5px;">已排休</th>
+                      <th style="padding:3px 5px;">達成率</th>
+                      <th style="padding:3px 5px; color:var(--warn);">待排時數</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr style="background:rgba(255,0,123,0.15); font-weight:700;">
+                      <td style="padding:3px 5px;"><strong>黃欣宜</strong></td>
+                      <td>80h</td><td>26h</td><td style="color:var(--accent2);">32.5%</td>
+                      <td style="color:var(--warn); font-weight:800;">54h</td>
+                    </tr>
+                    <tr style="background:rgba(255,0,123,0.12); font-weight:700;">
+                      <td style="padding:3px 5px;"><strong>李仕源</strong></td>
+                      <td>120h</td><td>68h</td><td style="color:var(--accent2);">56.7%</td>
+                      <td style="color:var(--warn); font-weight:800;">52h</td>
+                    </tr>
+                    <tr style="background:rgba(255,0,123,0.10); font-weight:700;">
+                      <td style="padding:3px 5px;"><strong>沈宏典</strong></td>
+                      <td>80h</td><td>48h</td><td style="color:var(--accent2);">60.0%</td>
+                      <td style="color:var(--warn); font-weight:800;">32h</td>
+                    </tr>
+                    <tr style="background:rgba(255,0,123,0.08);">
+                      <td style="padding:3px 5px;"><strong>盧昌元</strong></td>
+                      <td>32h</td><td>20h</td><td style="color:var(--accent2);">62.5%</td>
+                      <td style="color:var(--warn); font-weight:800;">12h</td>
+                    </tr>
+                    <tr style="background:rgba(255,0,123,0.06);">
+                      <td style="padding:3px 5px;"><strong>王克仁</strong></td>
+                      <td>80h</td><td>56h</td><td style="color:var(--accent2);">70.0%</td>
+                      <td style="color:var(--warn); font-weight:800;">24h</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div style="color:#dbe4f5; font-size:0.95em;">
+                  • <strong>5 位同仁待排時數合計</strong>：<strong style="color:var(--accent2); font-size:1.15em;">174 小時</strong>（其餘同仁已達標或衝刺階段）。
+                </div>
+              </div>
+            </div>
+
+            <div class="card" style="border-top:3px solid var(--warn); padding:10px 14px;">
+              <div class="card-title" style="color:var(--warn); margin-bottom:6px; font-size:0.70em;">
+                <span>💡 待加強人員排休提醒</span>
+              </div>
+              <div class="card-body" style="font-size:0.53em; line-height:1.55;">
+                • <strong>儘速完成線上請假</strong>：請上述 5 位同仁儘快至「差勤排班系統」完成 11～12 月排休簽核。<br>
+                • <strong>防範年底集中衝擊</strong>：剩餘時數請平均分攤，避免集中 12 月最後兩週請休，以維持門急診窗口調劑安全運作。
+              </div>
+            </div>
+          </div>
+
+          <!-- 右欄：Chart.js 繪製之同仁全年度達成率柱狀圖 (加框呈現待加強5人) -->
+          <div class="chart-box" style="padding:10px 14px; display:flex; flex-direction:column; justify-content:center;">
+            <div class="chart-title">
+              <span>全體 18 位同仁全年度特休已排定達成率（含預假）</span>
+              <span style="font-size:0.65em; color:#a5b4cb;">🟩 達標≧90% ｜ 🟨 衝刺75~89% ｜ <strong style="color:var(--accent2);">🟥 待加強&lt;75% (特加框標註)</strong></span>
+            </div>
+            <div style="position:relative; width:100%; height:395px;">
+              <canvas id="chartStaffLeave"></canvas>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== Slide 4: 加班時數與補休管理宣導 (OT專頁) ==================== -->
+      <section>
+        <h2>⏱️ 差勤管理：員工加班時數彙整 ＆ 補休管理</h2>
+        <div style="display:grid; grid-template-columns: 34% 66%; gap: 14px; text-align: left; margin-top: 0.25em;">
+          
+          <!-- 左欄：核心指針與管理規範 -->
+          <div style="display:flex; flex-direction:column; gap:10px;">
+            <div class="card" style="border-top:3px solid var(--warn); padding:12px 14px;">
+              <div class="card-title" style="color:var(--warn); margin-bottom:6px; font-size:0.66em;">
+                <span>⚠️ 補休期限管理規範</span>
+              </div>
+              <div class="card-body" style="font-size:0.51em; line-height:1.65;">
+                • <strong>【約用藥師／人員】6 人</strong>：<br>
+                &nbsp;&nbsp; ➔ 補休期限：<strong style="color:var(--warn); font-size:1.08em;">115/12/31 到期</strong><br>
+                &nbsp;&nbsp; ➔ 尚餘時數：<strong style="color:var(--warn);">73.0 小時</strong>（年底前須休畢）<br>
+                &nbsp;&nbsp; ➔ 包含：一般 27.0h ＋ 颱風專案 46.0h<br><br>
+                • <strong>【公職藥師／人員】9 人</strong>：<br>
+                &nbsp;&nbsp; ➔ 補休期限：<strong>2 年（至 117 年到期）</strong><br>
+                &nbsp;&nbsp; ➔ 尚餘時數：<strong>41.0 小時</strong><br>
+                &nbsp;&nbsp; ➔ 包含：一般 21.5h ＋ 颱風專案 19.5h
+              </div>
+            </div>
+
+            <div class="card" style="border-top:3px solid var(--success); padding:12px 14px;">
+              <div class="card-title" style="color:var(--success); margin-bottom:6px; font-size:0.66em;">
+                <span>🎯 全科加班統計指標</span>
+              </div>
+              <div class="card-body" style="font-size:0.51em; line-height:1.65;">
+                • <strong>核可總時數</strong>：244.5 小時 (68筆)<br>
+                • <strong>已補休時數</strong>：130.5 小時 (補休率 53.4%)<br>
+                • <strong>尚餘未休時數</strong>：<strong style="color:var(--accent);">114.0 小時</strong> (全數採補休)
+              </div>
+            </div>
+          </div>
+
+          <!-- 右欄：同仁加班未休時數清單看板 (刪除補休到期日欄，緊湊排齊三字姓名) -->
+          <div class="card" style="border-top:3px solid var(--accent); padding:10px 14px;">
+            <div class="card-title" style="margin-bottom:6px; font-size:0.68em;">
+              <span>📋 115 年全科同仁加班未休時數表 (11人)</span>
+              <span class="badge-metric" style="font-size:0.65em; margin-left:auto;">114h 待補休</span>
+            </div>
+            <table class="styled-table" style="font-size:0.47em; line-height:1.35;">
+              <thead>
+                <tr>
+                  <th style="padding:4px 6px; text-align:center;">序號</th>
+                  <th style="padding:4px 6px; white-space:nowrap; text-align:center;">姓名</th>
+                  <th style="padding:4px 6px; text-align:center;">身分</th>
+                  <th style="padding:4px 6px; text-align:center; color:var(--accent);">未休總計</th>
+                  <th style="padding:4px 6px; text-align:center;">一般加班</th>
+                  <th style="padding:4px 6px; text-align:center; color:var(--warn);">專案颱風</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr style="background:rgba(255,184,0,0.12);">
+                  <td style="text-align:center; padding:3px 6px;">1</td>
+                  <td style="white-space:nowrap; letter-spacing:1px; text-align:center; font-weight:800; padding:3px 6px;">盧昌元</td>
+                  <td style="text-align:center; color:var(--warn); padding:3px 6px;">約用藥師</td>
+                  <td style="text-align:center; color:var(--warn); font-weight:800; padding:3px 6px;">20.0 h</td>
+                  <td style="text-align:center; padding:3px 6px;">8.0 h</td>
+                  <td style="text-align:center; padding:3px 6px;">12.0 h</td>
+                </tr>
+                <tr style="background:rgba(255,184,0,0.12);">
+                  <td style="text-align:center; padding:3px 6px;">2</td>
+                  <td style="white-space:nowrap; letter-spacing:1px; text-align:center; font-weight:800; padding:3px 6px;">陳依琳</td>
+                  <td style="text-align:center; color:var(--warn); padding:3px 6px;">約用藥師</td>
+                  <td style="text-align:center; color:var(--warn); font-weight:800; padding:3px 6px;">17.0 h</td>
+                  <td style="text-align:center; padding:3px 6px;">9.0 h</td>
+                  <td style="text-align:center; padding:3px 6px;">8.0 h</td>
+                </tr>
+                <tr style="background:rgba(255,184,0,0.12);">
+                  <td style="text-align:center; padding:3px 6px;">3</td>
+                  <td style="white-space:nowrap; letter-spacing:1px; text-align:center; font-weight:800; padding:3px 6px;">蘇沛婕</td>
+                  <td style="text-align:center; color:var(--warn); padding:3px 6px;">約用藥師</td>
+                  <td style="text-align:center; color:var(--warn); font-weight:800; padding:3px 6px;">16.0 h</td>
+                  <td style="text-align:center; padding:3px 6px;">8.0 h</td>
+                  <td style="text-align:center; padding:3px 6px;">8.0 h</td>
+                </tr>
+                <tr>
+                  <td style="text-align:center; padding:3px 6px;">4</td>
+                  <td style="white-space:nowrap; letter-spacing:1px; text-align:center; font-weight:800; padding:3px 6px;">王克仁</td>
+                  <td style="text-align:center; padding:3px 6px;">公職藥師</td>
+                  <td style="text-align:center; font-weight:800; padding:3px 6px;">12.0 h</td>
+                  <td style="text-align:center; padding:3px 6px;">4.0 h</td>
+                  <td style="text-align:center; padding:3px 6px;">8.0 h</td>
+                </tr>
+                <tr>
+                  <td style="text-align:center; padding:3px 6px;">5</td>
+                  <td style="white-space:nowrap; letter-spacing:1px; text-align:center; font-weight:800; padding:3px 6px;">葉麗娟</td>
+                  <td style="text-align:center; padding:3px 6px;">公職藥師</td>
+                  <td style="text-align:center; font-weight:800; padding:3px 6px;">10.5 h</td>
+                  <td style="text-align:center; padding:3px 6px;">8.5 h</td>
+                  <td style="text-align:center; padding:3px 6px;">2.0 h</td>
+                </tr>
+                <tr style="background:rgba(255,184,0,0.12);">
+                  <td style="text-align:center; padding:3px 6px;">6</td>
+                  <td style="white-space:nowrap; letter-spacing:1px; text-align:center; font-weight:800; padding:3px 6px;">翁祥芳</td>
+                  <td style="text-align:center; color:var(--warn); padding:3px 6px;">約用藥師</td>
+                  <td style="text-align:center; color:var(--warn); font-weight:800; padding:3px 6px;">9.5 h</td>
+                  <td style="text-align:center; padding:3px 6px;">2.0 h</td>
+                  <td style="text-align:center; padding:3px 6px;">7.5 h</td>
+                </tr>
+                <tr>
+                  <td style="text-align:center; padding:3px 6px;">7</td>
+                  <td style="white-space:nowrap; letter-spacing:1px; text-align:center; font-weight:800; padding:3px 6px;">李柏慶</td>
+                  <td style="text-align:center; padding:3px 6px;">公職藥師</td>
+                  <td style="text-align:center; font-weight:800; padding:3px 6px;">9.5 h</td>
+                  <td style="text-align:center; padding:3px 6px;">0.0 h</td>
+                  <td style="text-align:center; padding:3px 6px;">9.5 h</td>
+                </tr>
+                <tr>
+                  <td style="text-align:center; padding:3px 6px;">8</td>
+                  <td style="white-space:nowrap; letter-spacing:1px; text-align:center; font-weight:800; padding:3px 6px;">沈宏典</td>
+                  <td style="text-align:center; padding:3px 6px;">公職藥師</td>
+                  <td style="text-align:center; font-weight:800; padding:3px 6px;">8.0 h</td>
+                  <td style="text-align:center; padding:3px 6px;">8.0 h</td>
+                  <td style="text-align:center; padding:3px 6px;">0.0 h</td>
+                </tr>
+                <tr style="background:rgba(255,184,0,0.12);">
+                  <td style="text-align:center; padding:3px 6px;">9</td>
+                  <td style="white-space:nowrap; letter-spacing:1px; text-align:center; font-weight:800; padding:3px 6px;">蘇沛誠</td>
+                  <td style="text-align:center; color:var(--warn); padding:3px 6px;">約用藥師</td>
+                  <td style="text-align:center; color:var(--warn); font-weight:800; padding:3px 6px;">6.5 h</td>
+                  <td style="text-align:center; padding:3px 6px;">0.0 h</td>
+                  <td style="text-align:center; padding:3px 6px;">6.5 h</td>
+                </tr>
+                <tr style="background:rgba(255,184,0,0.12);">
+                  <td style="text-align:center; padding:3px 6px;">10</td>
+                  <td style="white-space:nowrap; letter-spacing:1px; text-align:center; font-weight:800; padding:3px 6px;">李仕源</td>
+                  <td style="text-align:center; color:var(--warn); padding:3px 6px;">約用藥師</td>
+                  <td style="text-align:center; color:var(--warn); font-weight:800; padding:3px 6px;">4.0 h</td>
+                  <td style="text-align:center; padding:3px 6px;">0.0 h</td>
+                  <td style="text-align:center; padding:3px 6px;">4.0 h</td>
+                </tr>
+                <tr>
+                  <td style="text-align:center; padding:3px 6px;">11</td>
+                  <td style="white-space:nowrap; letter-spacing:1px; text-align:center; font-weight:800; padding:3px 6px;">黃欣宜</td>
+                  <td style="text-align:center; padding:3px 6px;">公職藥師</td>
+                  <td style="text-align:center; font-weight:800; padding:3px 6px;">1.0 h</td>
+                  <td style="text-align:center; padding:3px 6px;">1.0 h</td>
+                  <td style="text-align:center; padding:3px 6px;">0.0 h</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ==================== Slide 5: 藥品異動 (一) CRRT ＆ 疫苗/短缺 (底部安全不遮蔽) ==================== -->
+      <section>
+        <h2>💊 藥品異動（一）：重症 CRRT 透析 ＆ 自費疫苗／短缺專案</h2>
+        <div style="display:grid; grid-template-columns: 58% 42%; gap: 14px; text-align: left; margin-top: 0.20em;">
+          
+          <!-- 左欄：CRRT 7項精緻清單 (含學名成分) -->
+          <div class="card" style="border-top:3px solid var(--accent); padding:10px 14px;">
+            <div class="card-title" style="margin-bottom:6px; font-size:0.68em;">
+              <span>🩺 腎臟科 CRRT 連續血液透析補充液 (7項)</span>
+              <span class="badge-metric" style="font-size:0.65em; margin-left:auto;">ICU重症全套</span>
+            </div>
+            <table class="styled-table" style="font-size:0.46em; line-height:1.35;">
+              <thead>
+                <tr>
+                  <th style="padding:3px 6px;">代碼</th>
+                  <th style="padding:3px 6px;">藥品名稱規格 ＆ 成分名稱 (Generic Name)</th>
+                  <th style="padding:3px 6px;">適應症與功能重點</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="padding:3px 6px;"><span class="code-badge">B-</span></td>
+                  <td style="padding:3px 6px;">
+                    <strong>舒凱連續無鈣透析液 (A)</strong> 4750ml<br>
+                    <span style="color:var(--purple); font-size:0.92em;">• Calcium-free Hemofiltration Sol'n A (Electrolytes)</span>
+                  </td>
+                  <td style="padding:3px 6px;">重症 CRRT 連續血液透析專用補充液</td>
+                </tr>
+                <tr>
+                  <td style="padding:3px 6px;"><span class="code-badge">B-</span></td>
+                  <td style="padding:3px 6px;">
+                    <strong>舒凱連續無鈣透析液 (B)</strong> 250ml<br>
+                    <span style="color:var(--purple); font-size:0.92em;">• Sodium Bicarbonate Hemofiltration Sol'n B</span>
+                  </td>
+                  <td style="padding:3px 6px;">搭配 A 液之碳酸氫鈉緩衝補充液</td>
+                </tr>
+                <tr>
+                  <td style="padding:3px 6px;"><span class="code-badge">B-</span></td>
+                  <td style="padding:3px 6px;">
+                    <strong>Support Cal</strong> 1.47% CaCl2 1.5L<br>
+                    <span style="color:var(--purple); font-size:0.92em;">• Calcium Chloride 1.47% inj</span>
+                  </td>
+                  <td style="padding:3px 6px;">局部檸檬酸抗凝法 (RCA) 專用鈣補充</td>
+                </tr>
+                <tr>
+                  <td style="padding:3px 6px;"><span class="code-badge">B-</span></td>
+                  <td style="padding:3px 6px;">
+                    <strong>ACD-4 solution 'S.T.'</strong> 1.5L<br>
+                    <span style="color:var(--purple); font-size:0.92em;">• Anticoagulant Citrate Dextrose (Formula A)</span>
+                  </td>
+                  <td style="padding:3px 6px;">血液體外循環專用抗凝血劑</td>
+                </tr>
+                <tr>
+                  <td style="padding:3px 6px;"><span class="code-badge">CVVI00</span></td>
+                  <td style="padding:3px 6px;">
+                    <strong>CVVH sol'n</strong> 3L<br>
+                    <span style="color:var(--purple); font-size:0.92em;">• Continuous Veno-Venous Hemofiltration Sol'n</span>
+                  </td>
+                  <td style="padding:3px 6px;">連續性血液過濾術電解質補充液</td>
+                </tr>
+                <tr>
+                  <td style="padding:3px 6px;"><span class="code-badge">SODI05</span></td>
+                  <td style="padding:3px 6px;">
+                    <strong>0.45% Sod. Chloride</strong> 2760ml<br>
+                    <span style="color:var(--purple); font-size:0.92em;">• Half-Normal Saline (0.45% NaCl)</span>
+                  </td>
+                  <td style="padding:3px 6px;">低張氯化鈉 (大容量軟袋洗腎補充)</td>
+                </tr>
+                <tr>
+                  <td style="padding:3px 6px;"><span class="code-badge">SODI09</span></td>
+                  <td style="padding:3px 6px;">
+                    <strong>Rolikan (NaHCO3)</strong> 250ml<br>
+                    <span style="color:var(--purple); font-size:0.92em;">• Sodium Bicarbonate 8.4% inj</span>
+                  </td>
+                  <td style="padding:3px 6px;">矯正急性代謝性酸中毒高濃度輸液</td>
+                </tr>
+              </tbody>
+            </table>
+            <div style="margin-top:5px; font-size:0.46em; color:var(--accent); font-weight:700;">
+              💡 效益：引進全套透析、抗凝及鈣輸液，完備加護病房連續血液淨化照護量能。
+            </div>
+          </div>
+
+          <!-- 右欄：自費疫苗與專案短缺 (含成分名稱) -->
+          <div style="display:flex; flex-direction:column; gap:10px;">
+            <div class="card" style="border-top:3px solid var(--success); padding:12px 14px;">
+              <div class="card-title" style="color:var(--success); margin-bottom:6px; font-size:0.68em;">
+                <span>💉 8. Fluarix Trivalent 自費流感疫苗</span>
+                <span class="code-badge" style="color:var(--success); border-color:var(--success); background:rgba(0,255,136,0.12); margin-left:auto;">B-FI16</span>
+              </div>
+              <div class="card-body" style="font-size:0.51em; line-height:1.60;">
+                • <strong>學名</strong>：<strong style="color:var(--purple);">Inactivated Influenza Vaccine (Surface Antigen)</strong><br>
+                • <strong>規格來源</strong>：Fluarix 0.5ml / 支 (GSK 原廠)。<br>
+                • <strong>臨床用途</strong>：替代原賽諾菲品項，供全院自費施打。<br>
+                • <strong>管理重點</strong>：配合疫苗施打季，滿足需求，<strong>全程嚴格冷鏈 2~8°C 溫控</strong>。
+              </div>
+            </div>
+
+            <div class="card" style="border-top:3px solid var(--warn); padding:12px 14px;">
+              <div class="card-title" style="color:var(--warn); margin-bottom:6px; font-size:0.68em;">
+                <span>🚨 9. Gensulin R 短效型人體胰島素</span>
+                <span class="code-badge" style="margin-left:auto;">B-GI07</span>
+              </div>
+              <div class="card-body" style="font-size:0.51em; line-height:1.60;">
+                • <strong>學名</strong>：<strong style="color:var(--purple);">Regular Human Insulin (Recombinant DNA origin)</strong><br>
+                • <strong>規格來源</strong>：100 iu/ml, 10ml (專案緊急輸入)。<br>
+                • <strong>應變原由</strong>：因應國內常規短效胰島素嚴重缺貨。<br>
+                • <strong>使用規範</strong>：<strong>病患須填寫同意書</strong>。
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ==================== Slide 6: 藥品異動 (二) 慢性病與眼科專科 (含學名成分) ==================== -->
+      <section>
+        <h2>💊 藥品異動（二）：慢病代謝用藥 ＆ 眼科專科門診用藥</h2>
+        <div class="grid-2" style="gap: 14px; margin-top: 0.20em;">
+          
+          <!-- 左欄：心血管、代謝與慢性病用藥 (共 6 項) -->
+          <div class="card" style="border-top:3px solid var(--purple); padding:10px 14px;">
+            <div class="card-title" style="color:var(--purple); margin-bottom:6px; font-size:0.68em;">
+              <span>🫀 心血管、代謝與慢性病用藥 (6項)</span>
+            </div>
+            <table class="styled-table" style="font-size:0.46em; line-height:1.32;">
+              <thead>
+                <tr>
+                  <th style="padding:3px 6px;">代碼</th>
+                  <th style="padding:3px 6px;">商品名 ＆ 成分名稱 (Generic Name)</th>
+                  <th style="padding:3px 6px;">臨床適應症與功能</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="padding:3px 6px;"><span class="code-badge">ATOO47</span></td>
+                  <td style="padding:3px 6px;">
+                    <strong>Atotin 20</strong> (20mg tab)<br>
+                    <span style="color:var(--purple); font-size:0.92em;">• Atorvastatin Calcium</span>
+                  </td>
+                  <td style="padding:3px 6px;">降血脂 / 心血管保護 (替代 Tulip)</td>
+                </tr>
+                <tr>
+                  <td style="padding:3px 6px;"><span class="code-badge">CALO07</span></td>
+                  <td style="padding:3px 6px;">
+                    <strong>Procal</strong> (667mg tab)<br>
+                    <span style="color:var(--purple); font-size:0.92em;">• Calcium Acetate</span>
+                  </td>
+                  <td style="padding:3px 6px;">腎衰竭末期高磷酸鹽血症降磷劑</td>
+                </tr>
+                <tr>
+                  <td style="padding:3px 6px;"><span class="code-badge">LOSO38</span></td>
+                  <td style="padding:3px 6px;">
+                    <strong>Zosatan</strong> (50mg tab)<br>
+                    <span style="color:var(--purple); font-size:0.92em;">• Losartan Potassium</span>
+                  </td>
+                  <td style="padding:3px 6px;">ARB 降血壓，保護第II型糖尿腎病變</td>
+                </tr>
+                <tr>
+                  <td style="padding:3px 6px;"><span class="code-badge">DOXO17</span></td>
+                  <td style="padding:3px 6px;">
+                    <strong>Xadosin SR</strong> (4mg tab)<br>
+                    <span style="color:var(--purple); font-size:0.92em;">• Doxazosin Mesylate (SR)</span>
+                  </td>
+                  <td style="padding:3px 6px;">長效降血壓及攝護腺排尿障礙</td>
+                </tr>
+                <tr>
+                  <td style="padding:3px 6px;"><span class="code-badge">DENI00</span></td>
+                  <td style="padding:3px 6px;">
+                    <strong>Prolia</strong> (60mg/ml 1ml)<br>
+                    <span style="color:var(--purple); font-size:0.92em;">• Denosumab (Monoclonal Ab)</span>
+                  </td>
+                  <td style="padding:3px 6px;">骨質疏鬆治療 (單株抗體皮下注射)</td>
+                </tr>
+                <tr>
+                  <td style="padding:3px 6px;"><span class="code-badge">EZEO04</span></td>
+                  <td style="padding:3px 6px;">
+                    <strong>Ezetity</strong> (10mg tab)<br>
+                    <span style="color:var(--purple); font-size:0.92em;">• Ezetimibe</span>
+                  </td>
+                  <td style="padding:3px 6px;">小腸膽固醇吸收抑制調節劑</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- 右欄：眼科專科門診治療用藥 (共 5 項) -->
+          <div class="card" style="border-top:3px solid var(--accent); padding:10px 14px;">
+            <div class="card-title" style="color:var(--accent); margin-bottom:6px; font-size:0.68em;">
+              <span>👁️ 眼科專科門診治療用藥 (5項)</span>
+            </div>
+            <table class="styled-table" style="font-size:0.46em; line-height:1.32;">
+              <thead>
+                <tr>
+                  <th style="padding:3px 6px;">代碼</th>
+                  <th style="padding:3px 6px;">商品名 ＆ 成分名稱 (Generic Name)</th>
+                  <th style="padding:3px 6px;">臨床適應症與功能</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="padding:3px 6px;"><span class="code-badge">CARE02</span></td>
+                  <td style="padding:3px 6px;">
+                    <strong>Ginpol Gel</strong> (0.2% 10g)<br>
+                    <span style="color:var(--purple); font-size:0.92em;">• Carbomer (0.2%)</span>
+                  </td>
+                  <td style="padding:3px 6px;">乾眼症長效角膜保護凝膠</td>
+                </tr>
+                <tr>
+                  <td style="padding:3px 6px;"><span class="code-badge">LATE01</span></td>
+                  <td style="padding:3px 6px;">
+                    <strong>Xalatan Sol'n</strong> (2.5ml)<br>
+                    <span style="color:var(--purple); font-size:0.92em;">• Latanoprost (0.005%)</span>
+                  </td>
+                  <td style="padding:3px 6px;">前列腺素青光眼及高眼壓降壓劑</td>
+                </tr>
+                <tr>
+                  <td style="padding:3px 6px;"><span class="code-badge">BRIE05</span></td>
+                  <td style="padding:3px 6px;">
+                    <strong>Alphagan P Drops</strong> (5ml)<br>
+                    <span style="color:var(--purple); font-size:0.92em;">• Brimonidine Tartrate (0.15%)</span>
+                  </td>
+                  <td style="padding:3px 6px;">青光眼降眼壓眼藥水 (α2 促效)</td>
+                </tr>
+                <tr>
+                  <td style="padding:3px 6px;"><span class="code-badge">PREE01</span></td>
+                  <td style="padding:3px 6px;">
+                    <strong>Pred Forte</strong> (1% 5ml)<br>
+                    <span style="color:var(--purple); font-size:0.92em;">• Prednisolone Acetate (1%)</span>
+                  </td>
+                  <td style="padding:3px 6px;">眼部發炎及術後抗發炎懸浮液</td>
+                </tr>
+                <tr>
+                  <td style="padding:3px 6px;"><span class="code-badge">DURE00</span></td>
+                  <td style="padding:3px 6px;">
+                    <strong>Duratears Oint.</strong> 3.5g<br>
+                    <span style="color:var(--purple); font-size:0.92em;">• White Petrolatum + Mineral Oil + Lanolin</span>
+                  </td>
+                  <td style="padding:3px 6px;">夜間乾眼症長效潤滑眼藥膏</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ==================== Slide 7: 曲線圖 1 (庫存週轉率 & 庫存消耗比) ==================== -->
+      <section id="slide-charts-1">
+        <h2>📈 指標趨勢（一）：庫存週轉率 ＆ 月庫存消耗比 (1-10月)</h2>
+        <div class="grid-2">
+          <!-- 曲線圖 A：庫存週轉率 -->
+          <div class="chart-box">
+            <div class="chart-title">
+              <span>庫存週轉率 (年消耗金額 / 月庫存金額)</span>
+              <span class="badge-metric">10月: 16.22</span>
+            </div>
+            <div class="chart-canvas-wrap">
+              <canvas id="chartTurnover"></canvas>
+            </div>
+            <div style="font-size:0.46em; color:#a5b4cb; margin-top:8px; display:flex; justify-content:space-between;">
+              <span>• 醫院 BSC 閾值 ≧ 16.0 (紅虛線)</span>
+              <span>• 醫管會 閾值 ≧ 12.0 (黃虛線)</span>
+              <span>• 1~10月均值：<strong style="color:var(--success);">15.07</strong></span>
+            </div>
+          </div>
+
+          <!-- 曲線圖 B：月庫存 / 月消耗比 -->
+          <div class="chart-box" style="border-top:3px solid var(--success);">
+            <div class="chart-title">
+              <span style="color:var(--success);">月藥品庫存金額 / 月藥品消耗金額</span>
+              <span class="badge-metric" style="color:var(--success); border-color:var(--success); background:rgba(0,255,136,0.18);">10月: 0.73</span>
+            </div>
+            <div class="chart-canvas-wrap">
+              <canvas id="chartStockRatio"></canvas>
+            </div>
+            <div style="font-size:0.46em; color:#a5b4cb; margin-top:8px; display:flex; justify-content:space-between;">
+              <span>• 醫管會閾值 ≦ 1.0 (紅虛線)</span>
+              <span>• 10月實績 <strong>0.73</strong> (資金佔用少、周轉極佳) ✨</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== Slide 8: 曲線圖 2 (住院退藥率 & 退藥不良率) ==================== -->
+      <section id="slide-charts-2">
+        <h2>📉 指標趨勢（二）：住院退藥率 ＆ 退藥品質不良率 (1-10月)</h2>
+        <div class="grid-2">
+          <!-- 曲線圖 C：住院退藥率 % -->
+          <div class="chart-box" style="border-top:3px solid var(--accent2);">
+            <div class="chart-title">
+              <span style="color:var(--accent2);">住院退藥率 % (退藥筆數 / 開立領藥數)</span>
+              <span class="badge-metric" style="color:var(--accent2); border-color:var(--accent2); background:rgba(255,0,123,0.18);">10月: 4.10% 合格</span>
+            </div>
+            <div class="chart-canvas-wrap">
+              <canvas id="chartReturnRate"></canvas>
+            </div>
+            <div style="font-size:0.46em; color:#a5b4cb; margin-top:8px; display:flex; justify-content:space-between;">
+              <span>• 管理閾值 ≦ 8.37% (黃虛線)</span>
+              <span>• 1~10月平均 <strong>3.93%</strong> 遠優於管考標準！</span>
+            </div>
+          </div>
+
+          <!-- 曲線圖 D：住院退藥品質不良率 % -->
+          <div class="chart-box" style="border-top:3px solid var(--warn);">
+            <div class="chart-title">
+              <span style="color:var(--warn);">住院退藥品質不良率 % (不良筆數 / 退藥總筆數)</span>
+              <span class="badge-metric" style="color:var(--warn); border-color:var(--warn); background:rgba(255,184,0,0.18);">10月: 0.48% 大幅回降</span>
+            </div>
+            <div class="chart-canvas-wrap">
+              <canvas id="chartReturnQuality"></canvas>
+            </div>
+            <div style="font-size:0.46em; color:#a5b4cb; margin-top:8px; display:flex; justify-content:space-between;">
+              <span>• 管理閾值 ≦ 1.06% (紅虛線)</span>
+              <span>• 由 9月 0.84% 降至 <strong>0.48%</strong>，改善成效顯著 ✓</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== Slide 9: 報告結束 ==================== -->
+      <section class="title-slide">
+        <span class="badge-tag">感謝聆聽 ✕ 敬請指教</span>
+        <h1 style="font-size: 2.8em; margin-bottom: 24px;">報告結束</h1>
+        <div style="margin-top: 45px; font-size: 0.68em; color: #9ab0d3;">
+          衛生福利部嘉義醫院 藥劑科 藥庫 敬啟
+        </div>
+      </section>
+
+    </div>
+  </div>
+
+  <!-- Reveal.js JS (純離線本地庫) -->
+  <script src="libs/reveal/dist/reveal.js"></script>
+  <script>
+    Reveal.initialize({
+      controls: true,
+      progress: true,
+      center: true,
+      hash: true,
+      slideNumber: 'c/t',   /* 下方頁數標示：目前頁 / 總頁數 */
+      transition: 'slide',
+      width: 1280,
+      height: 720,
+      margin: 0.04,
+      minScale: 0.2,
+      maxScale: 2.0
+    });
+
+    // Chart.js 全域樣式設定
+    Chart.defaults.color = '#b8c7e0';
+    Chart.defaults.font.family = '-apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", sans-serif';
+    Chart.defaults.font.size = 13;
+
+    const MONTHS = ['1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月', '9月', '10月'];
+    let chartsInitialized = false;
+
+    function initCharts() {
+      if (chartsInitialized) return;
+      chartsInitialized = true;
+
+      // 0. 藥劑科同仁特休達成率長條圖 (Slide 3: 單一全年度已排休達成率柱狀圖，待加強5人特別加框)
+      const staffLeaveData = [
+        { name: '陳泰宇', rate: 205.0, status: 'pass' },
+        { name: '劉人豪', rate: 192.5, status: 'pass' },
+        { name: '徐昀耀', rate: 135.0, status: 'pass' },
+        { name: '李柏慶', rate: 130.0, status: 'pass' },
+        { name: '李婷芳', rate: 128.8, status: 'pass' },
+        { name: '李怡臻', rate: 100.0, status: 'pass' },
+        { name: '陳依琳', rate: 100.0, status: 'pass' },
+        { name: '陳政德', rate: 98.2, status: 'pass' },
+        { name: '張其純', rate: 96.2, status: 'pass' },
+        { name: '蘇沛婕', rate: 92.3, status: 'pass' },
+        { name: '葉麗娟', rate: 88.8, status: 'sprint' },
+        { name: '翁祥芳', rate: 84.8, status: 'sprint' },
+        { name: '蘇沛誠', rate: 80.0, status: 'sprint' },
+        { name: '王克仁', rate: 70.0, status: 'alert' },
+        { name: '盧昌元', rate: 62.5, status: 'alert' },
+        { name: '沈宏典', rate: 60.0, status: 'alert' },
+        { name: '李仕源', rate: 56.7, status: 'alert' },
+        { name: '黃欣宜', rate: 32.5, status: 'alert' }
+      ];
+
+      const staffNames = staffLeaveData.map(d => d.name);
+      const staffRates = staffLeaveData.map(d => d.rate);
+
+      // 背景顏色：綠色≧90%、琥珀金75~89%、警訊紅<75%
+      const bgColors = staffLeaveData.map(d => {
+        if (d.status === 'alert') return 'rgba(255, 0, 123, 0.45)';
+        if (d.status === 'sprint') return 'rgba(255, 184, 0, 0.65)';
+        return 'rgba(0, 255, 136, 0.65)';
+      });
+
+      // 邊框顏色：待加強5人特別以亮粉紅/霓虹警訊框突顯加框
+      const borderColors = staffLeaveData.map(d => {
+        if (d.status === 'alert') return '#ff007b';
+        if (d.status === 'sprint') return 'rgba(255, 184, 0, 0.9)';
+        return 'rgba(0, 255, 136, 0.9)';
+      });
+
+      // 邊框寬度：待加強5人給予 3.5px 粗邊框加框！
+      const borderWidths = staffLeaveData.map(d => d.status === 'alert' ? 3.5 : 1);
+
+      new Chart(document.getElementById('chartStaffLeave'), {
+        type: 'bar',
+        data: {
+          labels: staffNames,
+          datasets: [
+            {
+              label: '全年度特休已排定達成率 %',
+              data: staffRates,
+              backgroundColor: bgColors,
+              borderColor: borderColors,
+              borderWidth: borderWidths,
+              borderRadius: 4
+            }
+          ]
+        },
+        options: {
+          indexAxis: 'y',
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: {
+              display: true,
+              position: 'top',
+              labels: { 
+                boxWidth: 14, 
+                padding: 8, 
+                font: { size: 11, weight: 'bold' },
+                generateLabels: function(chart) {
+                  return [
+                    { text: '達標 ≧90% (10人)', fillStyle: 'rgba(0, 255, 136, 0.75)', strokeStyle: 'rgba(0,255,136,1)', lineWidth: 1 },
+                    { text: '衝刺 75~89% (3人)', fillStyle: 'rgba(255, 184, 0, 0.75)', strokeStyle: 'rgba(255,184,0,1)', lineWidth: 1 },
+                    { text: '待加強 <75% 特加框 (5人)', fillStyle: 'rgba(255, 0, 123, 0.55)', strokeStyle: '#ff007b', lineWidth: 3 }
+                  ];
+                }
+              }
+            },
+            tooltip: {
+              callbacks: {
+                label: (ctx) => {
+                  const item = staffLeaveData[ctx.dataIndex];
+                  const note = item.status === 'alert' ? ' ⚠️ 待加強排休' : (item.status === 'sprint' ? ' ⚡ 衝刺中' : ' ✓ 已達標');
+                  return ` 達成率: ${ctx.raw}% (${note})`;
+                }
+              }
+            }
+          },
+          scales: {
+            x: {
+              min: 0,
+              max: 220,
+              grid: { color: 'rgba(255,255,255,0.08)' },
+              ticks: { callback: (val) => val + '%' }
+            },
+            y: {
+              grid: { display: false },
+              ticks: { 
+                font: (ctx) => {
+                  const isAlert = staffLeaveData[ctx.index]?.status === 'alert';
+                  return { size: 12, weight: isAlert ? '900' : 'bold' };
+                },
+                color: (ctx) => {
+                  return staffLeaveData[ctx.index]?.status === 'alert' ? '#ff007b' : '#b8c7e0';
+                }
+              }
+            }
+          }
+        }
+      });
+
+      // 1. 庫存週轉率曲線圖 (Slide 5)
+      new Chart(document.getElementById('chartTurnover'), {
+        type: 'line',
+        data: {
+          labels: MONTHS,
+          datasets: [
+            {
+              label: '庫存週轉率實績',
+              data: [14.50, 12.60, 14.14, 13.72, 13.90, 14.30, 17.60, 17.07, 16.75, 16.22],
+              borderColor: '#00d4ff',
+              backgroundColor: 'rgba(0, 212, 255, 0.15)',
+              borderWidth: 3,
+              fill: true,
+              tension: 0.35,
+              pointRadius: 5,
+              pointHoverRadius: 7,
+              pointBackgroundColor: '#00d4ff'
+            },
+            {
+              label: '醫院 BSC 閾值 (≧16.0)',
+              data: Array(10).fill(16.0),
+              borderColor: '#ff007b',
+              borderWidth: 2,
+              borderDash: [6, 4],
+              pointRadius: 0,
+              fill: false
+            },
+            {
+              label: '醫管會 閾值 (≧12.0)',
+              data: Array(10).fill(12.0),
+              borderColor: '#ffb800',
+              borderWidth: 2,
+              borderDash: [6, 4],
+              pointRadius: 0,
+              fill: false
+            }
+          ]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: { legend: { position: 'top', labels: { boxWidth: 14, padding: 10, font: { size: 12 } } } },
+          scales: {
+            y: { min: 10, max: 20, grid: { color: 'rgba(255,255,255,0.06)' } },
+            x: { grid: { color: 'rgba(255,255,255,0.06)' } }
+          }
+        }
+      });
+
+      // 2. 月庫存 / 月消耗比曲線圖 (Slide 5)
+      new Chart(document.getElementById('chartStockRatio'), {
+        type: 'line',
+        data: {
+          labels: MONTHS,
+          datasets: [
+            {
+              label: '月庫存 / 月消耗比實績',
+              data: [0.79, 0.97, 0.79, 0.85, 0.89, 0.82, 0.63, 0.74, 0.71, 0.73],
+              borderColor: '#00ff88',
+              backgroundColor: 'rgba(0, 255, 136, 0.15)',
+              borderWidth: 3,
+              fill: true,
+              tension: 0.35,
+              pointRadius: 5,
+              pointHoverRadius: 7,
+              pointBackgroundColor: '#00ff88'
+            },
+            {
+              label: '醫管會 閾值 (≦1.0)',
+              data: Array(10).fill(1.0),
+              borderColor: '#ff007b',
+              borderWidth: 2,
+              borderDash: [6, 4],
+              pointRadius: 0,
+              fill: false
+            }
+          ]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: { legend: { position: 'top', labels: { boxWidth: 14, padding: 10, font: { size: 12 } } } },
+          scales: {
+            y: { min: 0.5, max: 1.1, grid: { color: 'rgba(255,255,255,0.06)' } },
+            x: { grid: { color: 'rgba(255,255,255,0.06)' } }
+          }
+        }
+      });
+
+      // 3. 住院退藥率 % 曲線圖 (Slide 6)
+      new Chart(document.getElementById('chartReturnRate'), {
+        type: 'line',
+        data: {
+          labels: MONTHS,
+          datasets: [
+            {
+              label: '住院退藥率 %',
+              data: [4.76, 3.52, 3.56, 4.21, 3.89, 4.27, 4.01, 3.54, 3.43, 4.10],
+              borderColor: '#ff007b',
+              backgroundColor: 'rgba(255, 0, 123, 0.15)',
+              borderWidth: 3,
+              fill: true,
+              tension: 0.35,
+              pointRadius: 5,
+              pointHoverRadius: 7,
+              pointBackgroundColor: '#ff007b'
+            },
+            {
+              label: '管理閾值 (≦8.37%)',
+              data: Array(10).fill(8.37),
+              borderColor: '#ffb800',
+              borderWidth: 2,
+              borderDash: [6, 4],
+              pointRadius: 0,
+              fill: false
+            }
+          ]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: { legend: { position: 'top', labels: { boxWidth: 14, padding: 10, font: { size: 12 } } } },
+          scales: {
+            y: { min: 2.5, max: 9.0, grid: { color: 'rgba(255,255,255,0.06)' } },
+            x: { grid: { color: 'rgba(255,255,255,0.06)' } }
+          }
+        }
+      });
+
+      // 4. 住院退藥品質不良率 % 曲線圖 (Slide 6)
+      new Chart(document.getElementById('chartReturnQuality'), {
+        type: 'line',
+        data: {
+          labels: MONTHS,
+          datasets: [
+            {
+              label: '退藥品質不良率 %',
+              data: [0.65, 0.80, 0.31, 0.36, 0.80, 0.35, 0.18, 0.03, 0.84, 0.48],
+              borderColor: '#ffb800',
+              backgroundColor: 'rgba(255, 184, 0, 0.15)',
+              borderWidth: 3,
+              fill: true,
+              tension: 0.35,
+              pointRadius: 5,
+              pointHoverRadius: 7,
+              pointBackgroundColor: '#ffb800'
+            },
+            {
+              label: '管理閾值 (≦1.06%)',
+              data: Array(10).fill(1.06),
+              borderColor: '#ff007b',
+              borderWidth: 2,
+              borderDash: [6, 4],
+              pointRadius: 0,
+              fill: false
+            }
+          ]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: { legend: { position: 'top', labels: { boxWidth: 14, padding: 10, font: { size: 12 } } } },
+          scales: {
+            y: { min: 0.0, max: 1.3, grid: { color: 'rgba(255,255,255,0.06)' } },
+            x: { grid: { color: 'rgba(255,255,255,0.06)' } }
+          }
+        }
+      });
+    }
+
+    // 啟動圖表渲染
+    Reveal.on('ready', () => { setTimeout(initCharts, 200); });
+    Reveal.on('slidechanged', e => {
+      if (e.currentSlide?.id === 'slide-leave-chart' || e.currentSlide?.id === 'slide-charts-1' || e.currentSlide?.id === 'slide-charts-2') {
+        setTimeout(initCharts, 100);
+      }
+    });
+  </script>
+</body>
+</html>

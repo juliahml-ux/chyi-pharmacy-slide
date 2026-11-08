@@ -6,6 +6,13 @@
 *.token
 api_key*
 secret*
+*cookie*
+*.cookies
+
+# Personnel & Sensitive HR Data
+*特休*
+*OT*
+休假.*
 
 # Environments and config
 .env

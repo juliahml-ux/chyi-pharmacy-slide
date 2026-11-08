@@ -1,0 +1,5383 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:x="urn:schemas-microsoft-com:office:excel"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+    <meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<meta name=ProgId content=Excel.Sheet>
+<meta name=Generator content="Microsoft Excel 11">
+<link rel=File-List href="WD2R02.2.files/filelist.xml">
+<link rel=Edit-Time-Data href="WD2R02.2.files/editdata.mso">
+<link rel=OLE-Object-Data href="WD2R02.2.files/oledata.mso">
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>A0060</o:Author>
+  <o:LastAuthor>A0060</o:LastAuthor>
+  <o:LastPrinted>2026-11-06T17:11:48Z</o:LastPrinted>
+  <o:Created>2026-11-06T17:11:48Z</o:Created>
+  <o:LastSaved>2026-11-06T17:11:48Z</o:LastSaved>
+  <o:Company>衛生福利部嘉義醫院</o:Company>
+  <o:Version>11.9999</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]-->
+<style>
+<!--table
+    {mso-displayed-decimal-separator:"\.";
+    mso-displayed-thousand-separator:"\,";}
+@page
+    {margin:.39in .18in .39in .25in;
+    mso-header-margin:0in;
+    mso-footer-margin:0in;
+    mso-page-orientation:landscape;}
+tr
+    {mso-height-source:auto;
+    mso-ruby-visibility:none;}
+col
+    {mso-width-source:auto;
+    mso-ruby-visibility:none;}
+br
+    {mso-data-placement:same-cell;}
+.style0
+    {mso-number-format:General;
+    text-align:general;
+    vertical-align:middle;
+    white-space:nowrap;
+    mso-rotate:0;
+    mso-background-source:auto;
+    mso-pattern:auto;
+    color:windowtext;
+    font-size:12.0pt;
+    font-weight:400;
+    font-style:normal;
+    text-decoration:none;
+    font-family:新細明體, serif;
+    mso-font-charset:136;
+    border:none;
+    mso-protection:locked visible;
+    mso-style-name:一般;
+    mso-style-id:0;}
+td
+    {mso-style-parent:style0;
+    padding-top:1px;
+    padding-right:1px;
+    padding-left:1px;
+    mso-ignore:padding;
+    color:windowtext;
+    font-size:12.0pt;
+    font-weight:400;
+    font-style:normal;
+    text-decoration:none;
+    font-family:新細明體, serif;
+    mso-font-charset:136;
+    mso-number-format:General;
+    text-align:general;
+    vertical-align:middle;
+    border:none;
+    mso-background-source:auto;
+    mso-pattern:auto;
+    mso-protection:locked visible;
+    white-space:nowrap;
+    mso-rotate:0;}
+.xl24
+    {mso-style-parent:style0;
+    mso-number-format:"\@";
+        }
+.xl25
+    {mso-style-parent:style0;
+    mso-number-format:"\@";
+    text-align:center;}
+.xl26
+    {mso-style-parent:style0;
+    font-weight:700;
+    mso-number-format:"\@";
+    text-align:center;}
+.xl27
+    {mso-style-parent:style0;
+    mso-number-format:"\@";
+    text-align:left;
+    white-space:normal;}
+.xl28
+    {mso-style-parent:style0;
+    mso-number-format:"\@";
+    border-top:.5pt solid windowtext;
+    border-right:.5pt solid windowtext;
+    border-bottom:.5pt solid windowtext;
+    border-left:.5pt solid windowtext;}
+.xl29
+    {mso-style-parent:style0;
+    mso-number-format:"\@";
+    border-top:.5pt solid windowtext;
+    border-right:.5pt solid windowtext;
+    border-bottom:.5pt solid windowtext;
+    border-left:none;
+    white-space:normal;}
+.xl30
+    {mso-style-parent:style0;
+    mso-number-format:"\@";
+    border-top:.5pt solid windowtext;
+    border-right:.5pt solid windowtext;
+    border-bottom:.5pt solid windowtext;
+    border-left:none;
+    white-space:normal;}
+.xl31
+    {mso-style-parent:style0;
+    mso-number-format:"\@";
+    text-align:center;
+    border-top:.5pt solid windowtext;
+    border-right:.5pt solid windowtext;
+    border-bottom:.5pt solid windowtext;
+    border-left:none;
+    white-space:normal;}
+.xl32
+    {mso-style-parent:style0;
+    mso-number-format:"\@";
+    text-align:right;
+    border-top:none;
+    border-right:none;
+    border-bottom:.5pt solid windowtext;
+    border-left:none;}
+.xl33
+    {mso-style-parent:style0;
+    mso-number-format:"\@";
+    text-align:center;
+    border-top:.5pt solid windowtext;
+    border-right:.5pt solid windowtext;
+    border-bottom:none;
+    border-left:.5pt solid windowtext;}
+.xl34
+    {mso-style-parent:style0;
+    mso-number-format:"\@";
+    text-align:center;
+    border-top:none;
+    border-right:.5pt solid windowtext;
+    border-bottom:.5pt solid black;
+    border-left:.5pt solid windowtext;}
+.xl35
+    {mso-style-parent:style0;
+    mso-number-format:"\@";
+    text-align:center;
+    border-top:.5pt solid windowtext;
+    border-right:.5pt solid windowtext;
+    border-bottom:none;
+    border-left:.5pt solid windowtext;
+    white-space:normal;}
+.xl36
+    {mso-style-parent:style0;
+    mso-number-format:"\@";
+    text-align:center;
+    border-top:none;
+    border-right:.5pt solid windowtext;
+    border-bottom:.5pt solid black;
+    border-left:.5pt solid windowtext;
+    white-space:normal;}
+.xl37
+    {mso-style-parent:style0;
+    mso-number-format:"\@";
+    text-align:right;
+    border-top:none;
+    border-right:none;
+    border-bottom:none;
+    border-left:none;}
+.xl38
+    {mso-style-parent:style0;
+    mso-number-format:"\@";
+    border:.5pt solid windowtext;}
+.xl39
+    {mso-style-parent:style0;
+    mso-number-format:"\@";
+    text-align:left;
+    border-top:none;
+    border-right:none;
+    border-bottom:.5pt solid windowtext;
+    border-left:none;}
+ruby
+    {ruby-align:left;}
+rt
+    {color:windowtext;
+    font-size:9.0pt;
+    font-weight:400;
+    font-style:normal;
+    text-decoration:none;
+    font-family:新細明體, serif;
+    mso-font-charset:136;
+    mso-char-type:none;
+    display:none;}
+-->
+</style>
+<!--[if gte mso 9]><xml>
+ <x:ExcelWorkbook>
+  <x:ExcelWorksheets>
+   <x:ExcelWorksheet>
+    <x:Name>Sheet1</x:Name>
+    <x:WorksheetOptions>
+     <x:DefaultRowHeight>330</x:DefaultRowHeight>
+     <x:StandardWidth>4992</x:StandardWidth>
+     <x:Print>
+      <x:ValidPrinterInfo/>
+      <x:PaperSizeIndex>9</x:PaperSizeIndex>
+      <x:HorizontalResolution>600</x:HorizontalResolution>
+      <x:VerticalResolution>600</x:VerticalResolution>
+     </x:Print>
+     <x:Selected/>
+     <x:Panes>
+      <x:Pane>
+       <x:Number>3</x:Number>
+       <x:RangeSelection>$A$1:$K$1</x:RangeSelection>
+      </x:Pane>
+     </x:Panes>
+     <x:ProtectContents>False</x:ProtectContents>
+     <x:ProtectObjects>False</x:ProtectObjects>
+     <x:ProtectScenarios>False</x:ProtectScenarios>
+    </x:WorksheetOptions>
+   </x:ExcelWorksheet>
+  </x:ExcelWorksheets>
+  <x:WindowHeight>8220</x:WindowHeight>
+  <x:WindowWidth>15480</x:WindowWidth>
+  <x:WindowTopX>-2085</x:WindowTopX>
+  <x:WindowTopY>3645</x:WindowTopY>
+  <x:ProtectStructure>False</x:ProtectStructure>
+  <x:ProtectWindows>False</x:ProtectWindows>
+ </x:ExcelWorkbook>
+</xml><![endif]-->
+</head>
+
+<body link=blue vlink=purple class=xl24>
+
+<table x:str border=0 cellpadding=0 cellspacing=0 width=1002 style='border-collapse:
+ collapse;table-layout:fixed;width:752pt'>
+ <col class=xl24 width=138 style='mso-width-source:userset;mso-width-alt:4416;width:104pt'><col class=xl24 width=95 style='mso-width-source:userset;mso-width-alt:3040;width:71pt'><col class=xl24 width=95 style='mso-width-source:userset;mso-width-alt:3040;width:71pt'><col class=xl24 width=95 style='mso-width-source:userset;mso-width-alt:3040;width:71pt'><col class=xl25 width=76 style='mso-width-source:userset;mso-width-alt:2432;width:57pt'><col class=xl25 width=131 style='mso-width-source:userset;mso-width-alt:4192;width:98pt'><col class=xl24 width=71 style='mso-width-source:userset;mso-width-alt:2272;width:53pt'><col class=xl24 width=74 style='mso-width-source:userset;mso-width-alt:2368;width:56pt'><col class=xl24 width=262 style='mso-width-source:userset;mso-width-alt:8396;width:196'><col class=xl24 width=83 style='mso-width-source:userset;mso-width-alt:2656;width:62pt'> <tr height=22 style='height:16.5pt'>
+  <td colspan=10 height=22 class=xl26 width=846 style='height:16.5pt;
+  width:635pt'>衛生福利部嘉義醫院差假紀錄明細表</td>
+ </tr>
+ <tr height=22 style='height:16.5pt'>
+  <td height=22 colspan=10 class=xl26 style='height:16.5pt;mso-ignore:colspan'></td>
+ </tr>
+ <tr height=22 style='height:16.5pt'>
+  <td colspan=10 height=22 class=xl25 style='height:16.5pt'>起迄日期：115/01/01至115/12/31</td>
+ </tr>
+ <tr height=22 style='height:16.5pt'>
+  <td colspan=10 height=22 class=xl25 style='height:16.5pt'>&#x4f9d;&#x5047;&#x5225;&#x6392;&#x5e8f;</td>
+ </tr>
+ <tr height=22 style='height:16.5pt'>
+  <td colspan=5 height=22 class=xl39 style='height:16.5pt'>報表編號：WD2R02A</td>
+  <td colspan=5 height=22 class=xl32 style='height:16.5pt'>&#x5217;&#x5370;&#x65e5;&#x671f;&#x6642;&#x9593;&#xff1a;115/11/0617:11:48</td>
+ </tr>
+<tr height=22 style='height:16.5pt'><td rowspan=2 height=44 class=xl33 style='border-bottom:.5pt solid black;height:33.0pt;border-top:none'>單位名稱</td><td rowspan=2 class=xl33 style='border-bottom:.5pt solid black;border-top:none'>職　　稱</td><td rowspan=2 class=xl33 style='border-bottom:.5pt solid black;border-top:none'>員工編號</td><td rowspan=2 class=xl33 style='border-bottom:.5pt solid black;border-top:none'>員工姓名</td><td rowspan=2 class=xl33 style='border-bottom:.5pt solid black;border-top:none'>申請假別</td><td rowspan=2 class=xl33 style='border-bottom:.5pt solid black;border-top:none'>起迄日期</td><td rowspan=2 class=xl35 width=71 style='border-bottom:.5pt solid black;border-top:none;width:53pt'>日數</td><td rowspan=2 class=xl33 style='border-bottom:.5pt solid black;border-top:none'>代理人</td><td rowspan=2 class=xl33 style='border-bottom:.5pt solid black;border-top:none'>事由</td><td rowspan=2 class=xl33 style='border-bottom:.5pt solid black;border-top:none'>備註</td></tr><tr class=xl27 height=22 style='height:16.5pt'></tr><tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>書記</td>
+<td class=xl29>A3174</td>
+<td class=xl29>劉人豪</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/01/0608:30~<br>115/01/0612:30</td>
+<td class=xl31>0日4時</td>
+<td class=xl31>陳政德</td>
+<td class=xl30>請假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>書記</td>
+<td class=xl29>A3174</td>
+<td class=xl29>劉人豪</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/01/1208:30~<br>115/01/1209:30</td>
+<td class=xl31>0日1時</td>
+<td class=xl31>陳政德</td>
+<td class=xl30>請假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>書記</td>
+<td class=xl29>A3174</td>
+<td class=xl29>劉人豪</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/01/2108:30~<br>115/01/2117:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>陳政德</td>
+<td class=xl30>請假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>書記</td>
+<td class=xl29>A3174</td>
+<td class=xl29>劉人豪</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/01/2213:00~<br>115/01/2217:00</td>
+<td class=xl31>0日4時</td>
+<td class=xl31>陳政德</td>
+<td class=xl30>請假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>書記</td>
+<td class=xl29>A3174</td>
+<td class=xl29>劉人豪</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/01/2608:30~<br>115/01/2609:30</td>
+<td class=xl31>0日1時</td>
+<td class=xl31>陳政德</td>
+<td class=xl30>請假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>書記</td>
+<td class=xl29>A3174</td>
+<td class=xl29>劉人豪</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/01/2708:30~<br>115/01/2712:30</td>
+<td class=xl31>0日4時</td>
+<td class=xl31>陳政德</td>
+<td class=xl30>請假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>書記</td>
+<td class=xl29>A3174</td>
+<td class=xl29>劉人豪</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/02/0208:30~<br>115/02/0217:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>陳政德</td>
+<td class=xl30>請假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>書記</td>
+<td class=xl29>A3174</td>
+<td class=xl29>劉人豪</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/02/0608:30~<br>115/02/0609:30</td>
+<td class=xl31>0日1時</td>
+<td class=xl31>陳政德</td>
+<td class=xl30>請假</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;3日7時</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>書記</td>
+<td class=xl29>A3174</td>
+<td class=xl29>劉人豪</td>
+<td class=xl29>加班假</td>
+<td class=xl30 width=131 style='width:98pt'>115/03/0608:30~<br>115/03/0610:30</td>
+<td class=xl31>0日2時</td>
+<td class=xl31>陳政德</td>
+<td class=xl30>請假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>書記</td>
+<td class=xl29>A3174</td>
+<td class=xl29>劉人豪</td>
+<td class=xl29>加班假</td>
+<td class=xl30 width=131 style='width:98pt'>115/03/1008:30~<br>115/03/1009:30</td>
+<td class=xl31>0日1時</td>
+<td class=xl31>陳政德</td>
+<td class=xl30>請假</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;0日3時</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>書記</td>
+<td class=xl29>A3174</td>
+<td class=xl29>劉人豪</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/03/1308:30~<br>115/03/1312:30</td>
+<td class=xl31>0日4時</td>
+<td class=xl31>陳政德</td>
+<td class=xl30>請假</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;0日4時</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>書記</td>
+<td class=xl29>A3174</td>
+<td class=xl29>劉人豪</td>
+<td class=xl29>加班假</td>
+<td class=xl30 width=131 style='width:98pt'>115/03/1313:00~<br>115/03/1317:00</td>
+<td class=xl31>0日4時</td>
+<td class=xl31>陳政德</td>
+<td class=xl30>請假</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;0日4時</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>書記</td>
+<td class=xl29>A3174</td>
+<td class=xl29>劉人豪</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/03/2308:30~<br>115/03/2309:30</td>
+<td class=xl31>0日1時</td>
+<td class=xl31>陳政德</td>
+<td class=xl30>請假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>書記</td>
+<td class=xl29>A3174</td>
+<td class=xl29>劉人豪</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/04/0108:30~<br>115/04/0112:30</td>
+<td class=xl31>0日4時</td>
+<td class=xl31>陳政德</td>
+<td class=xl30>請假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>書記</td>
+<td class=xl29>A3174</td>
+<td class=xl29>劉人豪</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/04/0908:30~<br>115/04/0910:30</td>
+<td class=xl31>0日2時</td>
+<td class=xl31>陳政德</td>
+<td class=xl30>請假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>書記</td>
+<td class=xl29>A3174</td>
+<td class=xl29>劉人豪</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/04/2008:30~<br>115/04/2009:30</td>
+<td class=xl31>0日1時</td>
+<td class=xl31>陳政德</td>
+<td class=xl30>請假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>書記</td>
+<td class=xl29>A3174</td>
+<td class=xl29>劉人豪</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/04/2208:30~<br>115/04/2217:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>陳政德</td>
+<td class=xl30>請假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>書記</td>
+<td class=xl29>A3174</td>
+<td class=xl29>劉人豪</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/04/3008:30~<br>115/04/3009:30</td>
+<td class=xl31>0日1時</td>
+<td class=xl31>葉麗娟</td>
+<td class=xl30>請假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>書記</td>
+<td class=xl29>A3174</td>
+<td class=xl29>劉人豪</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/05/1108:30~<br>115/05/1109:30</td>
+<td class=xl31>0日1時</td>
+<td class=xl31>陳政德</td>
+<td class=xl30>請假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>書記</td>
+<td class=xl29>A3174</td>
+<td class=xl29>劉人豪</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/05/1408:30~<br>115/05/1417:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>陳政德</td>
+<td class=xl30>請假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>書記</td>
+<td class=xl29>A3174</td>
+<td class=xl29>劉人豪</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/05/1508:30~<br>115/05/1509:30</td>
+<td class=xl31>0日1時</td>
+<td class=xl31>陳政德</td>
+<td class=xl30>請假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>書記</td>
+<td class=xl29>A3174</td>
+<td class=xl29>劉人豪</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/05/2908:30~<br>115/05/2917:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>葉麗娟</td>
+<td class=xl30>請假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>書記</td>
+<td class=xl29>A3174</td>
+<td class=xl29>劉人豪</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/06/0508:30~<br>115/06/0517:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>陳政德</td>
+<td class=xl30>請假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>書記</td>
+<td class=xl29>A3174</td>
+<td class=xl29>劉人豪</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/06/2608:30~<br>115/06/2609:30</td>
+<td class=xl31>0日1時</td>
+<td class=xl31>陳政德</td>
+<td class=xl30>請假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>書記</td>
+<td class=xl29>A3174</td>
+<td class=xl29>劉人豪</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/06/3008:30~<br>115/06/3012:30</td>
+<td class=xl31>0日4時</td>
+<td class=xl31>陳政德</td>
+<td class=xl30>請假</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;6日</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>書記</td>
+<td class=xl29>A3174</td>
+<td class=xl29>劉人豪</td>
+<td class=xl29>公出</td>
+<td class=xl30 width=131 style='width:98pt'>115/07/0310:00~<br>115/07/0311:00</td>
+<td class=xl31>0日1時</td>
+<td class=xl31>陳政德</td>
+<td class=xl30>領疫苗</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;0日1時</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>書記</td>
+<td class=xl29>A3174</td>
+<td class=xl29>劉人豪</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/07/2008:30~<br>115/07/2017:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>陳政德</td>
+<td class=xl30>請假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>書記</td>
+<td class=xl29>A3174</td>
+<td class=xl29>劉人豪</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/07/2108:30~<br>115/07/2109:30</td>
+<td class=xl31>0日1時</td>
+<td class=xl31>陳政德</td>
+<td class=xl30>請假</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;1日1時</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>書記</td>
+<td class=xl29>A3174</td>
+<td class=xl29>劉人豪</td>
+<td class=xl29>公出</td>
+<td class=xl30 width=131 style='width:98pt'>115/07/3109:40~<br>115/07/3110:40</td>
+<td class=xl31>0日1時</td>
+<td class=xl31>陳政德</td>
+<td class=xl30>領疫苗</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;0日1時</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>書記</td>
+<td class=xl29>A3174</td>
+<td class=xl29>劉人豪</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/08/1008:30~<br>115/08/1010:30</td>
+<td class=xl31>0日2時</td>
+<td class=xl31>陳政德</td>
+<td class=xl30>請假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>書記</td>
+<td class=xl29>A3174</td>
+<td class=xl29>劉人豪</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/08/1208:30~<br>115/08/1217:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>陳政德</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;1日2時</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>書記</td>
+<td class=xl29>A3174</td>
+<td class=xl29>劉人豪</td>
+<td class=xl29>公出</td>
+<td class=xl30 width=131 style='width:98pt'>115/08/2015:10~<br>115/08/2016:10</td>
+<td class=xl31>0日1時</td>
+<td class=xl31>陳政德</td>
+<td class=xl30>領疫苗</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;0日1時</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>書記</td>
+<td class=xl29>A3174</td>
+<td class=xl29>劉人豪</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/08/2108:30~<br>115/08/2117:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>陳政德</td>
+<td class=xl30>請假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>書記</td>
+<td class=xl29>A3174</td>
+<td class=xl29>劉人豪</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/08/2808:30~<br>115/08/2817:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>陳政德</td>
+<td class=xl30>請假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>書記</td>
+<td class=xl29>A3174</td>
+<td class=xl29>劉人豪</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/09/0108:30~<br>115/09/0109:30</td>
+<td class=xl31>0日1時</td>
+<td class=xl31>陳政德</td>
+<td class=xl30>請假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>書記</td>
+<td class=xl29>A3174</td>
+<td class=xl29>劉人豪</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/09/0208:30~<br>115/09/0217:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>陳政德</td>
+<td class=xl30>請假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>書記</td>
+<td class=xl29>A3174</td>
+<td class=xl29>劉人豪</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/09/0408:30~<br>115/09/0417:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>陳政德</td>
+<td class=xl30>請假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>書記</td>
+<td class=xl29>A3174</td>
+<td class=xl29>劉人豪</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/09/1408:30~<br>115/09/1610:30</td>
+<td class=xl31>2日3時</td>
+<td class=xl31>陳政德</td>
+<td class=xl30>請假</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;6日4時</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>A0523</td>
+<td class=xl29>徐昀耀</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/01/1613:00~<br>115/01/1617:00</td>
+<td class=xl31>0日4時</td>
+<td class=xl31>葉麗娟</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>A0523</td>
+<td class=xl29>徐昀耀</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/01/2308:00~<br>115/01/2317:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>葉麗娟</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>A0523</td>
+<td class=xl29>徐昀耀</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/02/1108:00~<br>115/02/1217:00</td>
+<td class=xl31>2日</td>
+<td class=xl31>葉麗娟</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;3日4時</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>A0523</td>
+<td class=xl29>徐昀耀</td>
+<td class=xl29>加班假</td>
+<td class=xl30 width=131 style='width:98pt'>115/03/1308:00~<br>115/03/1317:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>葉麗娟</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>A0523</td>
+<td class=xl29>徐昀耀</td>
+<td class=xl29>加班假</td>
+<td class=xl30 width=131 style='width:98pt'>115/03/2008:00~<br>115/03/2012:00</td>
+<td class=xl31>0日4時</td>
+<td class=xl31>葉麗娟</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;1日4時</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>A0523</td>
+<td class=xl29>徐昀耀</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/03/2013:00~<br>115/03/2017:00</td>
+<td class=xl31>0日4時</td>
+<td class=xl31>葉麗娟</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>A0523</td>
+<td class=xl29>徐昀耀</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/04/1608:00~<br>115/04/1617:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>葉麗娟</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>A0523</td>
+<td class=xl29>徐昀耀</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/04/2816:00~<br>115/04/2817:00</td>
+<td class=xl31>0日1時</td>
+<td class=xl31>葉麗娟</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>A0523</td>
+<td class=xl29>徐昀耀</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/05/2208:00~<br>115/05/2217:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>葉麗娟</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>A0523</td>
+<td class=xl29>徐昀耀</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/06/0810:00~<br>115/06/0812:00</td>
+<td class=xl31>0日2時</td>
+<td class=xl31>葉麗娟</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>A0523</td>
+<td class=xl29>徐昀耀</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/06/0816:00~<br>115/06/0817:00</td>
+<td class=xl31>0日1時</td>
+<td class=xl31>葉麗娟</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>A0523</td>
+<td class=xl29>徐昀耀</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/06/1713:00~<br>115/06/1717:00</td>
+<td class=xl31>0日4時</td>
+<td class=xl31>葉麗娟</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>A0523</td>
+<td class=xl29>徐昀耀</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/06/1808:30~<br>115/06/1809:30</td>
+<td class=xl31>0日1時</td>
+<td class=xl31>葉麗娟</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>A0523</td>
+<td class=xl29>徐昀耀</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/06/2608:00~<br>115/06/2617:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>葉麗娟</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>A0523</td>
+<td class=xl29>徐昀耀</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/07/1608:40~<br>115/07/1609:40</td>
+<td class=xl31>0日1時</td>
+<td class=xl31>葉麗娟</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>A0523</td>
+<td class=xl29>徐昀耀</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/07/1708:00~<br>115/07/1710:00</td>
+<td class=xl31>0日2時</td>
+<td class=xl31>葉麗娟</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>A0523</td>
+<td class=xl29>徐昀耀</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/07/1710:00~<br>115/07/1711:00</td>
+<td class=xl31>0日1時</td>
+<td class=xl31>葉麗娟</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>A0523</td>
+<td class=xl29>徐昀耀</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/07/2413:00~<br>115/07/2417:00</td>
+<td class=xl31>0日4時</td>
+<td class=xl31>葉麗娟</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>A0523</td>
+<td class=xl29>徐昀耀</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/07/2808:40~<br>115/07/2809:40</td>
+<td class=xl31>0日1時</td>
+<td class=xl31>葉麗娟</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>A0523</td>
+<td class=xl29>徐昀耀</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/07/3108:00~<br>115/07/3117:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>葉麗娟</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>A0523</td>
+<td class=xl29>徐昀耀</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/08/0313:00~<br>115/08/0317:00</td>
+<td class=xl31>0日4時</td>
+<td class=xl31>葉麗娟</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>A0523</td>
+<td class=xl29>徐昀耀</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/08/2408:00~<br>115/08/2417:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>葉麗娟</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>A0523</td>
+<td class=xl29>徐昀耀</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/09/0308:00~<br>115/09/0312:00</td>
+<td class=xl31>0日4時</td>
+<td class=xl31>葉麗娟</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;8日6時</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>A0523</td>
+<td class=xl29>徐昀耀</td>
+<td class=xl29>公假</td>
+<td class=xl30 width=131 style='width:98pt'>115/10/0208:00~<br>115/10/0217:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>葉麗娟</td>
+<td class=xl30>參加115年第十四屆衛福部所屬醫院及桃竹苗地區實證醫學競賽</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;1日</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>A0523</td>
+<td class=xl29>徐昀耀</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/10/0814:00~<br>115/10/0816:00</td>
+<td class=xl31>0日2時</td>
+<td class=xl31>葉麗娟</td>
+<td class=xl30>新富里巷弄長照站衛教</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;0日2時</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>A0523</td>
+<td class=xl29>徐昀耀</td>
+<td class=xl29>加班假</td>
+<td class=xl30 width=131 style='width:98pt'>115/10/0816:00~<br>115/10/0817:00</td>
+<td class=xl31>0日1時</td>
+<td class=xl31>葉麗娟</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;0日1時</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>A0523</td>
+<td class=xl29>徐昀耀</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/10/1308:00~<br>115/10/1317:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>葉麗娟</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;1日</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用藥師</td>
+<td class=xl29>M5099</td>
+<td class=xl29>李仕源</td>
+<td class=xl29>加班假</td>
+<td class=xl30 width=131 style='width:98pt'>115/01/2308:00~<br>115/01/2317:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>李怡臻</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;1日</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用藥師</td>
+<td class=xl29>M5099</td>
+<td class=xl29>李仕源</td>
+<td class=xl29>陪產及陪產檢假</td>
+<td class=xl30 width=131 style='width:98pt'>115/02/0308:00~<br>115/02/0317:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>李怡臻</td>
+<td class=xl30>陪產檢</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用藥師</td>
+<td class=xl29>M5099</td>
+<td class=xl29>李仕源</td>
+<td class=xl29>陪產及陪產檢假</td>
+<td class=xl30 width=131 style='width:98pt'>115/02/0508:00~<br>115/02/0517:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>李怡臻</td>
+<td class=xl30>陪產檢</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用藥師</td>
+<td class=xl29>M5099</td>
+<td class=xl29>李仕源</td>
+<td class=xl29>陪產及陪產檢假</td>
+<td class=xl30 width=131 style='width:98pt'>115/02/0908:00~<br>115/02/0917:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>李怡臻</td>
+<td class=xl30>陪產檢</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用藥師</td>
+<td class=xl29>M5099</td>
+<td class=xl29>李仕源</td>
+<td class=xl29>陪產及陪產檢假</td>
+<td class=xl30 width=131 style='width:98pt'>115/02/1208:00~<br>115/02/1217:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>李怡臻</td>
+<td class=xl30>陪產檢</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用藥師</td>
+<td class=xl29>M5099</td>
+<td class=xl29>李仕源</td>
+<td class=xl29>陪產及陪產檢假</td>
+<td class=xl30 width=131 style='width:98pt'>115/02/1308:00~<br>115/02/1317:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>陳依琳</td>
+<td class=xl30>陪產</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用藥師</td>
+<td class=xl29>M5099</td>
+<td class=xl29>李仕源</td>
+<td class=xl29>陪產及陪產檢假</td>
+<td class=xl30 width=131 style='width:98pt'>115/02/2308:00~<br>115/02/2317:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>陳依琳</td>
+<td class=xl30>陪產</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用藥師</td>
+<td class=xl29>M5099</td>
+<td class=xl29>李仕源</td>
+<td class=xl29>陪產及陪產檢假</td>
+<td class=xl30 width=131 style='width:98pt'>115/02/2408:00~<br>115/02/2417:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>陳依琳</td>
+<td class=xl30>陪產</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;7日</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用藥師</td>
+<td class=xl29>M5099</td>
+<td class=xl29>李仕源</td>
+<td class=xl29>加班假</td>
+<td class=xl30 width=131 style='width:98pt'>115/02/2508:00~<br>115/02/2517:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>陳依琳</td>
+<td class=xl30>補休</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用藥師</td>
+<td class=xl29>M5099</td>
+<td class=xl29>李仕源</td>
+<td class=xl29>加班假</td>
+<td class=xl30 width=131 style='width:98pt'>115/02/2608:00~<br>115/02/2617:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>陳依琳</td>
+<td class=xl30>補休</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;2日</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用藥師</td>
+<td class=xl29>M5099</td>
+<td class=xl29>李仕源</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/04/0913:00~<br>115/04/0917:00</td>
+<td class=xl31>0日4時</td>
+<td class=xl31>陳泰宇</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用藥師</td>
+<td class=xl29>M5099</td>
+<td class=xl29>李仕源</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/05/1913:00~<br>115/05/1917:00</td>
+<td class=xl31>0日4時</td>
+<td class=xl31>葉麗娟</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用藥師</td>
+<td class=xl29>M5099</td>
+<td class=xl29>李仕源</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/06/1208:00~<br>115/06/1217:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>李婷芳</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用藥師</td>
+<td class=xl29>M5099</td>
+<td class=xl29>李仕源</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/08/1008:00~<br>115/08/1017:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>陳泰宇</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用藥師</td>
+<td class=xl29>M5099</td>
+<td class=xl29>李仕源</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/08/2608:00~<br>115/08/2617:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>王克仁</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用藥師</td>
+<td class=xl29>M5099</td>
+<td class=xl29>李仕源</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/10/2208:00~<br>115/10/2217:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>葉麗娟</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用藥師</td>
+<td class=xl29>M5099</td>
+<td class=xl29>李仕源</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/11/0408:00~<br>115/11/0417:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>葉麗娟</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用藥師</td>
+<td class=xl29>M5099</td>
+<td class=xl29>李仕源</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/11/1308:00~<br>115/11/1317:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>葉麗娟</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用藥師</td>
+<td class=xl29>M5099</td>
+<td class=xl29>李仕源</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/11/1808:00~<br>115/11/1817:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>葉麗娟</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用藥師</td>
+<td class=xl29>M5099</td>
+<td class=xl29>李仕源</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/11/2513:00~<br>115/11/2517:00</td>
+<td class=xl31>0日4時</td>
+<td class=xl31>葉麗娟</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;8日4時</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>M5085</td>
+<td class=xl29>李婷芳</td>
+<td class=xl29>加班假</td>
+<td class=xl30 width=131 style='width:98pt'>115/01/1208:00~<br>115/01/1217:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>黃欣宜</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>M5085</td>
+<td class=xl29>李婷芳</td>
+<td class=xl29>加班假</td>
+<td class=xl30 width=131 style='width:98pt'>115/01/2108:00~<br>115/01/2217:00</td>
+<td class=xl31>2日</td>
+<td class=xl31>黃欣宜</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;3日</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>M5085</td>
+<td class=xl29>李婷芳</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/03/0615:00~<br>115/03/0617:00</td>
+<td class=xl31>0日2時</td>
+<td class=xl31>黃欣宜</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>M5085</td>
+<td class=xl29>李婷芳</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/03/1208:00~<br>115/03/1212:00</td>
+<td class=xl31>0日4時</td>
+<td class=xl31>黃欣宜</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>M5085</td>
+<td class=xl29>李婷芳</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/04/2108:00~<br>115/04/2117:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>黃欣宜</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>M5085</td>
+<td class=xl29>李婷芳</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/05/0713:00~<br>115/05/0717:00</td>
+<td class=xl31>0日4時</td>
+<td class=xl31>黃欣宜</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>M5085</td>
+<td class=xl29>李婷芳</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/05/2008:00~<br>115/05/2017:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>黃欣宜</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>M5085</td>
+<td class=xl29>李婷芳</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/06/0413:00~<br>115/06/0417:00</td>
+<td class=xl31>0日4時</td>
+<td class=xl31>黃欣宜</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>M5085</td>
+<td class=xl29>李婷芳</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/06/2213:00~<br>115/06/2217:00</td>
+<td class=xl31>0日4時</td>
+<td class=xl31>黃欣宜</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>M5085</td>
+<td class=xl29>李婷芳</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/07/1608:00~<br>115/07/1617:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>黃欣宜</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>M5085</td>
+<td class=xl29>李婷芳</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/07/1708:00~<br>115/07/1717:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>黃欣宜</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;6日2時</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>M5085</td>
+<td class=xl29>李婷芳</td>
+<td class=xl29>加班假</td>
+<td class=xl30 width=131 style='width:98pt'>115/07/2908:00~<br>115/07/2917:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>黃欣宜</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>M5085</td>
+<td class=xl29>李婷芳</td>
+<td class=xl29>加班假</td>
+<td class=xl30 width=131 style='width:98pt'>115/08/0308:00~<br>115/08/0312:00</td>
+<td class=xl31>0日4時</td>
+<td class=xl31>黃欣宜</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;1日4時</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>M5085</td>
+<td class=xl29>李婷芳</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/08/0313:00~<br>115/08/0317:00</td>
+<td class=xl31>0日4時</td>
+<td class=xl31>黃欣宜</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>M5085</td>
+<td class=xl29>李婷芳</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/08/0513:00~<br>115/08/0514:00</td>
+<td class=xl31>0日1時</td>
+<td class=xl31>黃欣宜</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>M5085</td>
+<td class=xl29>李婷芳</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/08/2613:00~<br>115/08/2717:00</td>
+<td class=xl31>1日4時</td>
+<td class=xl31>黃欣宜</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>M5085</td>
+<td class=xl29>李婷芳</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/09/1908:00~<br>115/09/2817:00</td>
+<td class=xl31>4日</td>
+<td class=xl31>黃欣宜</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>M5085</td>
+<td class=xl29>李婷芳</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/10/1208:00~<br>115/10/1212:00</td>
+<td class=xl31>0日4時</td>
+<td class=xl31>黃欣宜</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;6日5時</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>M5085</td>
+<td class=xl29>李婷芳</td>
+<td class=xl29>加班假</td>
+<td class=xl30 width=131 style='width:98pt'>115/10/1908:00~<br>115/10/1909:00</td>
+<td class=xl31>0日1時</td>
+<td class=xl31>黃欣宜</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;0日1時</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用藥師</td>
+<td class=xl29>M5098</td>
+<td class=xl29>李怡臻</td>
+<td class=xl29>加班假</td>
+<td class=xl30 width=131 style='width:98pt'>115/01/0808:00~<br>115/01/0817:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>李仕源</td>
+<td class=xl30>颱風假補休</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用藥師</td>
+<td class=xl29>M5098</td>
+<td class=xl29>李怡臻</td>
+<td class=xl29>加班假</td>
+<td class=xl30 width=131 style='width:98pt'>115/01/1308:00~<br>115/01/1317:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>李仕源</td>
+<td class=xl30>颱風假補休</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用藥師</td>
+<td class=xl29>M5098</td>
+<td class=xl29>李怡臻</td>
+<td class=xl29>加班假</td>
+<td class=xl30 width=131 style='width:98pt'>115/01/2208:00~<br>115/01/2217:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>李仕源</td>
+<td class=xl30>颱風假補休</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;3日</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用藥師</td>
+<td class=xl29>M5098</td>
+<td class=xl29>李怡臻</td>
+<td class=xl29>產檢假</td>
+<td class=xl30 width=131 style='width:98pt'>115/01/2808:30~<br>115/01/2817:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>李仕源</td>
+<td class=xl30>產檢</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用藥師</td>
+<td class=xl29>M5098</td>
+<td class=xl29>李怡臻</td>
+<td class=xl29>產檢假</td>
+<td class=xl30 width=131 style='width:98pt'>115/01/3008:30~<br>115/01/3017:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>李仕源</td>
+<td class=xl30>產檢</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用藥師</td>
+<td class=xl29>M5098</td>
+<td class=xl29>李怡臻</td>
+<td class=xl29>產檢假</td>
+<td class=xl30 width=131 style='width:98pt'>115/02/0508:30~<br>115/02/0517:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>李仕源</td>
+<td class=xl30>產檢</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用藥師</td>
+<td class=xl29>M5098</td>
+<td class=xl29>李怡臻</td>
+<td class=xl29>產檢假</td>
+<td class=xl30 width=131 style='width:98pt'>115/02/0608:30~<br>115/02/0617:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>李仕源</td>
+<td class=xl30>產檢</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用藥師</td>
+<td class=xl29>M5098</td>
+<td class=xl29>李怡臻</td>
+<td class=xl29>產檢假</td>
+<td class=xl30 width=131 style='width:98pt'>115/02/1208:30~<br>115/02/1217:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>李仕源</td>
+<td class=xl30>產檢</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;5日</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用藥師</td>
+<td class=xl29>M5098</td>
+<td class=xl29>李怡臻</td>
+<td class=xl29>娩假</td>
+<td class=xl30 width=131 style='width:98pt'>115/02/1300:00~<br>115/04/0917:00</td>
+<td class=xl31>56日</td>
+<td class=xl31>陳依琳</td>
+<td class=xl30>產假</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;56日</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用藥師</td>
+<td class=xl29>M5098</td>
+<td class=xl29>李怡臻</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/04/1008:30~<br>115/04/1017:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>李仕源</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用藥師</td>
+<td class=xl29>M5098</td>
+<td class=xl29>李怡臻</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/04/1408:30~<br>115/04/1417:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>李仕源</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用藥師</td>
+<td class=xl29>M5098</td>
+<td class=xl29>李怡臻</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/04/1508:30~<br>115/04/1517:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>李仕源</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用藥師</td>
+<td class=xl29>M5098</td>
+<td class=xl29>李怡臻</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/04/2008:30~<br>115/04/2017:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>李仕源</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用藥師</td>
+<td class=xl29>M5098</td>
+<td class=xl29>李怡臻</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/04/2308:30~<br>115/04/2317:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>李仕源</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用藥師</td>
+<td class=xl29>M5098</td>
+<td class=xl29>李怡臻</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/04/2408:30~<br>115/04/2417:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>李仕源</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用藥師</td>
+<td class=xl29>M5098</td>
+<td class=xl29>李怡臻</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/04/2808:30~<br>115/04/2817:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>李仕源</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;7日</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>05211</td>
+<td class=xl29>李柏慶</td>
+<td class=xl29>加班假</td>
+<td class=xl30 width=131 style='width:98pt'>115/03/1313:00~<br>115/03/1317:00</td>
+<td class=xl31>0日4時</td>
+<td class=xl31>陳依琳</td>
+<td class=xl30>OT補休</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;0日4時</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>05211</td>
+<td class=xl29>李柏慶</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/05/1808:00~<br>115/05/1817:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>陳泰宇</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>05211</td>
+<td class=xl29>李柏慶</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/05/2508:00~<br>115/05/2517:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>陳泰宇</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>05211</td>
+<td class=xl29>李柏慶</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/06/0108:00~<br>115/06/0417:00</td>
+<td class=xl31>4日</td>
+<td class=xl31>陳泰宇</td>
+<td class=xl30>去日本大阪玩</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>05211</td>
+<td class=xl29>李柏慶</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/06/0513:00~<br>115/06/0517:00</td>
+<td class=xl31>0日4時</td>
+<td class=xl31>陳泰宇</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>05211</td>
+<td class=xl29>李柏慶</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/07/1713:00~<br>115/07/1717:00</td>
+<td class=xl31>0日4時</td>
+<td class=xl31>陳泰宇</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>05211</td>
+<td class=xl29>李柏慶</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/07/2008:00~<br>115/07/2017:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>陳泰宇</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>05211</td>
+<td class=xl29>李柏慶</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/07/2908:00~<br>115/07/2917:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>陳泰宇</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>05211</td>
+<td class=xl29>李柏慶</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/07/3108:00~<br>115/07/3117:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>陳泰宇</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>05211</td>
+<td class=xl29>李柏慶</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/08/1208:30~<br>115/08/1217:30</td>
+<td class=xl31>1日</td>
+<td class=xl31>陳泰宇</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>05211</td>
+<td class=xl29>李柏慶</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/08/1908:30~<br>115/08/1917:30</td>
+<td class=xl31>1日</td>
+<td class=xl31>陳泰宇</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;12日</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>05211</td>
+<td class=xl29>李柏慶</td>
+<td class=xl29>加班假</td>
+<td class=xl30 width=131 style='width:98pt'>115/10/0108:30~<br>115/10/0117:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>陳泰宇</td>
+<td class=xl30>OT補休</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>05211</td>
+<td class=xl29>李柏慶</td>
+<td class=xl29>加班假</td>
+<td class=xl30 width=131 style='width:98pt'>115/10/2716:00~<br>115/10/2717:00</td>
+<td class=xl31>0日1時</td>
+<td class=xl31>陳泰宇</td>
+<td class=xl30>OT補休</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;1日1時</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>05211</td>
+<td class=xl29>李柏慶</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/11/0208:30~<br>115/11/0217:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>陳泰宇</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;1日</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>05210</td>
+<td class=xl29>沈宏典</td>
+<td class=xl29>加班假</td>
+<td class=xl30 width=131 style='width:98pt'>115/04/2408:30~<br>115/04/2417:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>陳泰宇</td>
+<td class=xl30>排休</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>05210</td>
+<td class=xl29>沈宏典</td>
+<td class=xl29>加班假</td>
+<td class=xl30 width=131 style='width:98pt'>115/05/1208:30~<br>115/05/1217:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>陳泰宇</td>
+<td class=xl30>排休</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>05210</td>
+<td class=xl29>沈宏典</td>
+<td class=xl29>加班假</td>
+<td class=xl30 width=131 style='width:98pt'>115/05/2208:30~<br>115/05/2217:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>陳泰宇</td>
+<td class=xl30>差假補休</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;3日</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>05210</td>
+<td class=xl29>沈宏典</td>
+<td class=xl29>公假</td>
+<td class=xl30 width=131 style='width:98pt'>115/05/2408:00~<br>115/05/2417:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>陳泰宇</td>
+<td class=xl30>115年度中藥實習指導教師培訓認證(請領交通費用)</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;1日</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>05210</td>
+<td class=xl29>沈宏典</td>
+<td class=xl29>加班假</td>
+<td class=xl30 width=131 style='width:98pt'>115/05/2708:30~<br>115/05/2717:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>陳泰宇</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;1日</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>05210</td>
+<td class=xl29>沈宏典</td>
+<td class=xl29>喪假</td>
+<td class=xl30 width=131 style='width:98pt'>115/05/2808:00~<br>115/05/2817:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>陳泰宇</td>
+<td class=xl30>治辦喪事</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>05210</td>
+<td class=xl29>沈宏典</td>
+<td class=xl29>喪假</td>
+<td class=xl30 width=131 style='width:98pt'>115/06/0508:00~<br>115/06/0517:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>陳泰宇</td>
+<td class=xl30>辦理追思會及火化</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;2日</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>05210</td>
+<td class=xl29>沈宏典</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/06/1508:30~<br>115/06/1817:00</td>
+<td class=xl31>4日</td>
+<td class=xl31>陳泰宇</td>
+<td class=xl30>出國</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;4日</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>05210</td>
+<td class=xl29>沈宏典</td>
+<td class=xl29>喪假</td>
+<td class=xl30 width=131 style='width:98pt'>115/07/0108:00~<br>115/07/0217:00</td>
+<td class=xl31>2日</td>
+<td class=xl31>陳泰宇</td>
+<td class=xl30>喪假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>05210</td>
+<td class=xl29>沈宏典</td>
+<td class=xl29>喪假</td>
+<td class=xl30 width=131 style='width:98pt'>115/07/1008:00~<br>115/07/1317:00</td>
+<td class=xl31>2日</td>
+<td class=xl31>陳泰宇</td>
+<td class=xl30>喪假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>05210</td>
+<td class=xl29>沈宏典</td>
+<td class=xl29>喪假</td>
+<td class=xl30 width=131 style='width:98pt'>115/07/1608:00~<br>115/07/1617:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>陳泰宇</td>
+<td class=xl30>喪假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>05210</td>
+<td class=xl29>沈宏典</td>
+<td class=xl29>喪假</td>
+<td class=xl30 width=131 style='width:98pt'>115/07/2308:00~<br>115/07/2317:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>陳泰宇</td>
+<td class=xl30>喪假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>05210</td>
+<td class=xl29>沈宏典</td>
+<td class=xl29>喪假</td>
+<td class=xl30 width=131 style='width:98pt'>115/08/0508:00~<br>115/08/0517:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>陳泰宇</td>
+<td class=xl30>喪假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>05210</td>
+<td class=xl29>沈宏典</td>
+<td class=xl29>喪假</td>
+<td class=xl30 width=131 style='width:98pt'>115/08/1313:00~<br>115/08/1317:00</td>
+<td class=xl31>0日4時</td>
+<td class=xl31>陳泰宇</td>
+<td class=xl30>喪假(半日)</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>05210</td>
+<td class=xl29>沈宏典</td>
+<td class=xl29>喪假</td>
+<td class=xl30 width=131 style='width:98pt'>115/08/1908:00~<br>115/08/2017:00</td>
+<td class=xl31>2日</td>
+<td class=xl31>陳泰宇</td>
+<td class=xl30>喪假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>05210</td>
+<td class=xl29>沈宏典</td>
+<td class=xl29>喪假</td>
+<td class=xl30 width=131 style='width:98pt'>115/08/2113:00~<br>115/08/2117:00</td>
+<td class=xl31>0日4時</td>
+<td class=xl31>陳泰宇</td>
+<td class=xl30>喪假(半日)</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>05210</td>
+<td class=xl29>沈宏典</td>
+<td class=xl29>喪假</td>
+<td class=xl30 width=131 style='width:98pt'>115/08/2608:00~<br>115/08/2817:00</td>
+<td class=xl31>3日</td>
+<td class=xl31>陳泰宇</td>
+<td class=xl30>喪假</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;13日</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>05210</td>
+<td class=xl29>沈宏典</td>
+<td class=xl29>加班假</td>
+<td class=xl30 width=131 style='width:98pt'>115/09/0413:00~<br>115/09/0417:00</td>
+<td class=xl31>0日4時</td>
+<td class=xl31>陳泰宇</td>
+<td class=xl30>排休(4HR)</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;0日4時</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>05210</td>
+<td class=xl29>沈宏典</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/09/2108:00~<br>115/09/2117:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>陳泰宇</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>05210</td>
+<td class=xl29>沈宏典</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/11/0208:30~<br>115/11/0217:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>陳泰宇</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;2日</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>M5077</td>
+<td class=xl29>王克仁</td>
+<td class=xl29>加班假</td>
+<td class=xl30 width=131 style='width:98pt'>115/01/2313:00~<br>115/01/2317:00</td>
+<td class=xl31>0日4時</td>
+<td class=xl31>陳依琳</td>
+<td class=xl30>OT補休</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>M5077</td>
+<td class=xl29>王克仁</td>
+<td class=xl29>加班假</td>
+<td class=xl30 width=131 style='width:98pt'>115/01/2615:00~<br>115/01/2617:00</td>
+<td class=xl31>0日2時</td>
+<td class=xl31>陳依琳</td>
+<td class=xl30>OT補休</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>M5077</td>
+<td class=xl29>王克仁</td>
+<td class=xl29>加班假</td>
+<td class=xl30 width=131 style='width:98pt'>115/01/2708:30~<br>115/01/2717:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>陳依琳</td>
+<td class=xl30>OT補休</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>M5077</td>
+<td class=xl29>王克仁</td>
+<td class=xl29>加班假</td>
+<td class=xl30 width=131 style='width:98pt'>115/02/0208:30~<br>115/02/0217:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>陳泰宇</td>
+<td class=xl30>OT補休</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>M5077</td>
+<td class=xl29>王克仁</td>
+<td class=xl29>加班假</td>
+<td class=xl30 width=131 style='width:98pt'>115/02/0908:30~<br>115/02/1017:00</td>
+<td class=xl31>2日</td>
+<td class=xl31>陳泰宇</td>
+<td class=xl30>OT補休</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>M5077</td>
+<td class=xl29>王克仁</td>
+<td class=xl29>加班假</td>
+<td class=xl30 width=131 style='width:98pt'>115/04/1608:30~<br>115/04/1614:00</td>
+<td class=xl31>0日5時</td>
+<td class=xl31>陳泰宇</td>
+<td class=xl30>oT補休</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;5日3時</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>M5077</td>
+<td class=xl29>王克仁</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/04/1614:00~<br>115/04/1617:00</td>
+<td class=xl31>0日3時</td>
+<td class=xl31>陳泰宇</td>
+<td class=xl30>特休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;0日3時</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>M5077</td>
+<td class=xl29>王克仁</td>
+<td class=xl29>公假</td>
+<td class=xl30 width=131 style='width:98pt'>115/04/1708:00~<br>115/04/1717:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>陳泰宇</td>
+<td class=xl30>115年度維持治療專業人員繼續教育訓練</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;1日</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>M5077</td>
+<td class=xl29>王克仁</td>
+<td class=xl29>加班假</td>
+<td class=xl30 width=131 style='width:98pt'>115/04/2008:30~<br>115/04/2017:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>陳泰宇</td>
+<td class=xl30>oT補休</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;1日</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>M5077</td>
+<td class=xl29>王克仁</td>
+<td class=xl29>公假</td>
+<td class=xl30 width=131 style='width:98pt'>115/05/1308:30~<br>115/05/1317:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>陳泰宇</td>
+<td class=xl30>115年度酒癮治療專業人員繼續教育訓練</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;1日</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>M5077</td>
+<td class=xl29>王克仁</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/05/2713:00~<br>115/05/2717:00</td>
+<td class=xl31>0日4時</td>
+<td class=xl31>陳泰宇</td>
+<td class=xl30>特休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>M5077</td>
+<td class=xl29>王克仁</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/06/2208:30~<br>115/06/2217:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>陳泰宇</td>
+<td class=xl30>特休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>M5077</td>
+<td class=xl29>王克仁</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/06/2908:30~<br>115/06/2917:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>陳泰宇</td>
+<td class=xl30>特休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>M5077</td>
+<td class=xl29>王克仁</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/07/0208:30~<br>115/07/0717:00</td>
+<td class=xl31>4日</td>
+<td class=xl31>陳泰宇</td>
+<td class=xl30>特休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;6日4時</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>M5077</td>
+<td class=xl29>王克仁</td>
+<td class=xl29>加班假</td>
+<td class=xl30 width=131 style='width:98pt'>115/09/1008:30~<br>115/09/1012:30</td>
+<td class=xl31>0日4時</td>
+<td class=xl31>陳泰宇</td>
+<td class=xl30>OT補修</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;0日4時</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>M5077</td>
+<td class=xl29>王克仁</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/10/0508:30~<br>115/10/0509:30</td>
+<td class=xl31>0日1時</td>
+<td class=xl31>陳泰宇</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;0日1時</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>M5077</td>
+<td class=xl29>王克仁</td>
+<td class=xl29>加班假</td>
+<td class=xl30 width=131 style='width:98pt'>115/10/0509:30~<br>115/10/0512:30</td>
+<td class=xl31>0日3時</td>
+<td class=xl31>陳泰宇</td>
+<td class=xl30>OT補修</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;0日3時</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用藥師</td>
+<td class=xl29>05212</td>
+<td class=xl29>盧昌元</td>
+<td class=xl29>喪假</td>
+<td class=xl30 width=131 style='width:98pt'>115/01/2808:00~<br>115/01/2817:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>王克仁</td>
+<td class=xl30>喪假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用藥師</td>
+<td class=xl29>05212</td>
+<td class=xl29>盧昌元</td>
+<td class=xl29>喪假</td>
+<td class=xl30 width=131 style='width:98pt'>115/03/2608:30~<br>115/03/2617:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>王克仁</td>
+<td class=xl30>喪假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用藥師</td>
+<td class=xl29>05212</td>
+<td class=xl29>盧昌元</td>
+<td class=xl29>喪假</td>
+<td class=xl30 width=131 style='width:98pt'>115/04/2208:00~<br>115/04/2217:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>王克仁</td>
+<td class=xl30>喪假</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;3日</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用藥師</td>
+<td class=xl29>05212</td>
+<td class=xl29>盧昌元</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/07/2308:30~<br>115/07/2317:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>王克仁</td>
+<td class=xl30>特別休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用藥師</td>
+<td class=xl29>05212</td>
+<td class=xl29>盧昌元</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/08/1708:30~<br>115/08/1712:30</td>
+<td class=xl31>0日4時</td>
+<td class=xl31>王克仁</td>
+<td class=xl30>特別休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用藥師</td>
+<td class=xl29>05212</td>
+<td class=xl29>盧昌元</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/09/0708:30~<br>115/09/0717:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>王克仁</td>
+<td class=xl30>特別休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;2日4時</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用藥師</td>
+<td class=xl29>05169</td>
+<td class=xl29>翁祥芳</td>
+<td class=xl29>加班假</td>
+<td class=xl30 width=131 style='width:98pt'>115/01/1608:00~<br>115/01/1617:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>李怡臻</td>
+<td class=xl30>加班補休</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用藥師</td>
+<td class=xl29>05169</td>
+<td class=xl29>翁祥芳</td>
+<td class=xl29>加班假</td>
+<td class=xl30 width=131 style='width:98pt'>115/01/1908:00~<br>115/01/1917:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>李怡臻</td>
+<td class=xl30>加班補休</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用藥師</td>
+<td class=xl29>05169</td>
+<td class=xl29>翁祥芳</td>
+<td class=xl29>加班假</td>
+<td class=xl30 width=131 style='width:98pt'>115/01/2108:00~<br>115/01/2117:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>李怡臻</td>
+<td class=xl30>加班補休</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用藥師</td>
+<td class=xl29>05169</td>
+<td class=xl29>翁祥芳</td>
+<td class=xl29>加班假</td>
+<td class=xl30 width=131 style='width:98pt'>115/02/1014:30~<br>115/02/1017:30</td>
+<td class=xl31>0日3時</td>
+<td class=xl31>陳瑩珍</td>
+<td class=xl30>加班補休</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用藥師</td>
+<td class=xl29>05169</td>
+<td class=xl29>翁祥芳</td>
+<td class=xl29>加班假</td>
+<td class=xl30 width=131 style='width:98pt'>115/02/1208:30~<br>115/02/1212:30</td>
+<td class=xl31>0日4時</td>
+<td class=xl31>陳瑩珍</td>
+<td class=xl30>加班補休</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用藥師</td>
+<td class=xl29>05169</td>
+<td class=xl29>翁祥芳</td>
+<td class=xl29>加班假</td>
+<td class=xl30 width=131 style='width:98pt'>115/02/1220:30~<br>115/02/1221:30</td>
+<td class=xl31>0日1時</td>
+<td class=xl31>陳瑩珍</td>
+<td class=xl30>加班補休</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用藥師</td>
+<td class=xl29>05169</td>
+<td class=xl29>翁祥芳</td>
+<td class=xl29>加班假</td>
+<td class=xl30 width=131 style='width:98pt'>115/02/1313:30~<br>115/02/1317:30</td>
+<td class=xl31>0日4時</td>
+<td class=xl31>陳瑩珍</td>
+<td class=xl30>加班補休</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用藥師</td>
+<td class=xl29>05169</td>
+<td class=xl29>翁祥芳</td>
+<td class=xl29>加班假</td>
+<td class=xl30 width=131 style='width:98pt'>115/02/2414:30~<br>115/02/2417:30</td>
+<td class=xl31>0日3時</td>
+<td class=xl31>陳瑩珍</td>
+<td class=xl30>加班補休</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用藥師</td>
+<td class=xl29>05169</td>
+<td class=xl29>翁祥芳</td>
+<td class=xl29>加班假</td>
+<td class=xl30 width=131 style='width:98pt'>115/02/2620:30~<br>115/02/2621:30</td>
+<td class=xl31>0日1時</td>
+<td class=xl31>陳瑩珍</td>
+<td class=xl30>加班補休</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用藥師</td>
+<td class=xl29>05169</td>
+<td class=xl29>翁祥芳</td>
+<td class=xl29>加班假</td>
+<td class=xl30 width=131 style='width:98pt'>115/03/0417:00~<br>115/03/0417:30</td>
+<td class=xl31>0日0時30分</td>
+<td class=xl31>陳瑩珍</td>
+<td class=xl30>加班補休</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用藥師</td>
+<td class=xl29>05169</td>
+<td class=xl29>翁祥芳</td>
+<td class=xl29>加班假</td>
+<td class=xl30 width=131 style='width:98pt'>115/03/0513:30~<br>115/03/0517:30</td>
+<td class=xl31>0日4時</td>
+<td class=xl31>陳瑩珍</td>
+<td class=xl30>加班補休</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;5日4時30分</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用藥師</td>
+<td class=xl29>05169</td>
+<td class=xl29>翁祥芳</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/04/0108:00~<br>115/04/0117:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>陳瑩珍</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;1日</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用藥師</td>
+<td class=xl29>05169</td>
+<td class=xl29>翁祥芳</td>
+<td class=xl29>加班假</td>
+<td class=xl30 width=131 style='width:98pt'>115/04/0221:00~<br>115/04/0221:30</td>
+<td class=xl31>0日0時30分</td>
+<td class=xl31>陳瑩珍</td>
+<td class=xl30>加班補休</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;0日0時30分</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用藥師</td>
+<td class=xl29>05169</td>
+<td class=xl29>翁祥芳</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/04/0808:00~<br>115/04/0812:00</td>
+<td class=xl31>0日4時</td>
+<td class=xl31>陳瑩珍</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用藥師</td>
+<td class=xl29>05169</td>
+<td class=xl29>翁祥芳</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/04/2914:00~<br>115/04/2917:00</td>
+<td class=xl31>0日3時</td>
+<td class=xl31>陳依琳</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;0日7時</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用藥師</td>
+<td class=xl29>05169</td>
+<td class=xl29>翁祥芳</td>
+<td class=xl29>加班假</td>
+<td class=xl30 width=131 style='width:98pt'>115/07/0921:00~<br>115/07/0921:30</td>
+<td class=xl31>0日0時30分</td>
+<td class=xl31>蘇沛婕</td>
+<td class=xl30>補休</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用藥師</td>
+<td class=xl29>05169</td>
+<td class=xl29>翁祥芳</td>
+<td class=xl29>加班假</td>
+<td class=xl30 width=131 style='width:98pt'>115/07/2914:00~<br>115/07/2917:30</td>
+<td class=xl31>0日3時30分</td>
+<td class=xl31>陳依琳</td>
+<td class=xl30>加班補休</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用藥師</td>
+<td class=xl29>05169</td>
+<td class=xl29>翁祥芳</td>
+<td class=xl29>加班假</td>
+<td class=xl30 width=131 style='width:98pt'>115/08/2408:30~<br>115/08/2417:30</td>
+<td class=xl31>1日</td>
+<td class=xl31>陳依琳</td>
+<td class=xl30>加班補休</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用藥師</td>
+<td class=xl29>05169</td>
+<td class=xl29>翁祥芳</td>
+<td class=xl29>加班假</td>
+<td class=xl30 width=131 style='width:98pt'>115/09/1409:00~<br>115/09/1413:00</td>
+<td class=xl31>0日4時</td>
+<td class=xl31>陳瑩珍</td>
+<td class=xl30>加班補休</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用藥師</td>
+<td class=xl29>05169</td>
+<td class=xl29>翁祥芳</td>
+<td class=xl29>加班假</td>
+<td class=xl30 width=131 style='width:98pt'>115/10/3016:30~<br>115/10/3017:30</td>
+<td class=xl31>0日1時</td>
+<td class=xl31>陳瑩珍</td>
+<td class=xl30>加班補休</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;2日1時</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用藥師</td>
+<td class=xl29>05169</td>
+<td class=xl29>翁祥芳</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/11/0800:00~<br>115/11/2223:00</td>
+<td class=xl31>10日</td>
+<td class=xl31>陳依琳</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;10日</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>A0060</td>
+<td class=xl29>葉麗娟</td>
+<td class=xl29>公出</td>
+<td class=xl30 width=131 style='width:98pt'>115/03/1009:30~<br>115/03/1011:30</td>
+<td class=xl31>0日2時</td>
+<td class=xl31>徐昀耀</td>
+<td class=xl30>衛生局辦理</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;0日2時</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>A0060</td>
+<td class=xl29>葉麗娟</td>
+<td class=xl29>加班假</td>
+<td class=xl30 width=131 style='width:98pt'>115/03/1108:00~<br>115/03/1117:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>徐昀耀</td>
+<td class=xl30>補休</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;1日</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>A0060</td>
+<td class=xl29>葉麗娟</td>
+<td class=xl29>公出</td>
+<td class=xl30 width=131 style='width:98pt'>115/03/1913:30~<br>115/03/1914:00</td>
+<td class=xl31>0日1時</td>
+<td class=xl31>徐昀耀</td>
+<td class=xl30>衛生局出席疫苗徵選會議</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;0日1時</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>A0060</td>
+<td class=xl29>葉麗娟</td>
+<td class=xl29>加班假</td>
+<td class=xl30 width=131 style='width:98pt'>115/04/1308:00~<br>115/04/1315:00</td>
+<td class=xl31>0日6時</td>
+<td class=xl31>徐昀耀</td>
+<td class=xl30>補休</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>A0060</td>
+<td class=xl29>葉麗娟</td>
+<td class=xl29>加班假</td>
+<td class=xl30 width=131 style='width:98pt'>115/04/1315:00~<br>115/04/1317:00</td>
+<td class=xl31>0日2時</td>
+<td class=xl31>徐昀耀</td>
+<td class=xl30>補休</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;1日</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>A0060</td>
+<td class=xl29>葉麗娟</td>
+<td class=xl29>公假</td>
+<td class=xl30 width=131 style='width:98pt'>115/04/1708:00~<br>115/04/1717:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>徐昀耀</td>
+<td class=xl30>115年嘉義市毒品危害防制中心維持治療專業人員教育訓練</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;1日</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>A0060</td>
+<td class=xl29>葉麗娟</td>
+<td class=xl29>公出</td>
+<td class=xl30 width=131 style='width:98pt'>115/04/3015:00~<br>115/04/3016:00</td>
+<td class=xl31>0日1時</td>
+<td class=xl31>徐昀耀</td>
+<td class=xl30>衛生局領疫苗</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;0日1時</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>A0060</td>
+<td class=xl29>葉麗娟</td>
+<td class=xl29>公假</td>
+<td class=xl30 width=131 style='width:98pt'>115/05/1307:50~<br>115/05/1317:20</td>
+<td class=xl31>1日</td>
+<td class=xl31>徐昀耀</td>
+<td class=xl30>酒癮治療專業人員繼續教育訓練</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;1日</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>A0060</td>
+<td class=xl29>葉麗娟</td>
+<td class=xl29>加班假</td>
+<td class=xl30 width=131 style='width:98pt'>115/05/1808:00~<br>115/05/1817:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>徐昀耀</td>
+<td class=xl30>補休</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;1日</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>A0060</td>
+<td class=xl29>葉麗娟</td>
+<td class=xl29>公出</td>
+<td class=xl30 width=131 style='width:98pt'>115/05/1910:40~<br>115/05/1911:40</td>
+<td class=xl31>0日1時</td>
+<td class=xl31>徐昀耀</td>
+<td class=xl30>衛生局領疫苗</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;0日1時</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>A0060</td>
+<td class=xl29>葉麗娟</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/05/2508:00~<br>115/05/2517:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>徐昀耀</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>A0060</td>
+<td class=xl29>葉麗娟</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/05/2708:00~<br>115/05/2717:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>徐昀耀</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>A0060</td>
+<td class=xl29>葉麗娟</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/06/1613:00~<br>115/06/1617:00</td>
+<td class=xl31>0日4時</td>
+<td class=xl31>徐昀耀</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;2日4時</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>A0060</td>
+<td class=xl29>葉麗娟</td>
+<td class=xl29>加班假</td>
+<td class=xl30 width=131 style='width:98pt'>115/07/2213:00~<br>115/07/2217:00</td>
+<td class=xl31>0日4時</td>
+<td class=xl31>徐昀耀</td>
+<td class=xl30>補休</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;0日4時</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>A0060</td>
+<td class=xl29>葉麗娟</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/08/0613:30~<br>115/08/0615:30</td>
+<td class=xl31>0日2時</td>
+<td class=xl31>徐昀耀</td>
+<td class=xl30>新富里巷弄醫事C據點衛教</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;0日2時</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>A0060</td>
+<td class=xl29>葉麗娟</td>
+<td class=xl29>公出</td>
+<td class=xl30 width=131 style='width:98pt'>115/08/1913:00~<br>115/08/1917:00</td>
+<td class=xl31>0日4時</td>
+<td class=xl31>徐昀耀</td>
+<td class=xl30>冷藏冷運教育訓練課程</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;0日4時</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>A0060</td>
+<td class=xl29>葉麗娟</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/08/2708:00~<br>115/08/2717:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>徐昀耀</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>A0060</td>
+<td class=xl29>葉麗娟</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/09/1608:00~<br>115/09/2017:00</td>
+<td class=xl31>3日</td>
+<td class=xl31>徐昀耀</td>
+<td class=xl30>出國</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;4日</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>A0060</td>
+<td class=xl29>葉麗娟</td>
+<td class=xl29>公出</td>
+<td class=xl30 width=131 style='width:98pt'>115/09/2408:30~<br>115/09/2410:00</td>
+<td class=xl31>0日2時</td>
+<td class=xl31>徐昀耀</td>
+<td class=xl30>衛生局領疫苗</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>A0060</td>
+<td class=xl29>葉麗娟</td>
+<td class=xl29>公出</td>
+<td class=xl30 width=131 style='width:98pt'>115/10/0108:00~<br>115/10/0112:00</td>
+<td class=xl31>0日4時</td>
+<td class=xl31>徐昀耀</td>
+<td class=xl30>偏遠中醫門診</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>A0060</td>
+<td class=xl29>葉麗娟</td>
+<td class=xl29>公出</td>
+<td class=xl30 width=131 style='width:98pt'>115/10/0115:00~<br>115/10/0116:00</td>
+<td class=xl31>0日1時</td>
+<td class=xl31>徐昀耀</td>
+<td class=xl30>衛生局領疫苗</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;0日7時</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>A0060</td>
+<td class=xl29>葉麗娟</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/11/1208:00~<br>115/11/1217:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>徐昀耀</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;1日</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>A0060</td>
+<td class=xl29>葉麗娟</td>
+<td class=xl29>加班假</td>
+<td class=xl30 width=131 style='width:98pt'>115/11/1908:00~<br>115/11/1916:00</td>
+<td class=xl31>0日7時</td>
+<td class=xl31>徐昀耀</td>
+<td class=xl30>補休</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;0日7時</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>A0060</td>
+<td class=xl29>葉麗娟</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/11/1916:00~<br>115/11/2017:00</td>
+<td class=xl31>1日1時</td>
+<td class=xl31>徐昀耀</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;1日1時</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用藥師</td>
+<td class=xl29>D2101</td>
+<td class=xl29>蘇沛婕</td>
+<td class=xl29>加班假</td>
+<td class=xl30 width=131 style='width:98pt'>115/01/1513:00~<br>115/01/1517:00</td>
+<td class=xl31>0日4時</td>
+<td class=xl31>葉麗娟</td>
+<td class=xl30>OT補休</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用藥師</td>
+<td class=xl29>D2101</td>
+<td class=xl29>蘇沛婕</td>
+<td class=xl29>加班假</td>
+<td class=xl30 width=131 style='width:98pt'>115/01/1908:00~<br>115/01/1917:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>葉麗娟</td>
+<td class=xl30>OT補休</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用藥師</td>
+<td class=xl29>D2101</td>
+<td class=xl29>蘇沛婕</td>
+<td class=xl29>加班假</td>
+<td class=xl30 width=131 style='width:98pt'>115/02/0208:00~<br>115/02/0217:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>葉麗娟</td>
+<td class=xl30>OT補休</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;2日4時</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用藥師</td>
+<td class=xl29>D2101</td>
+<td class=xl29>蘇沛婕</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/04/2413:00~<br>115/04/2417:00</td>
+<td class=xl31>0日4時</td>
+<td class=xl31>葉麗娟</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用藥師</td>
+<td class=xl29>D2101</td>
+<td class=xl29>蘇沛婕</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/05/0513:00~<br>115/05/0517:00</td>
+<td class=xl31>0日4時</td>
+<td class=xl31>陳依琳</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用藥師</td>
+<td class=xl29>D2101</td>
+<td class=xl29>蘇沛婕</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/05/2008:00~<br>115/05/2017:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>葉麗娟</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用藥師</td>
+<td class=xl29>D2101</td>
+<td class=xl29>蘇沛婕</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/05/2908:00~<br>115/05/2917:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>葉麗娟</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用藥師</td>
+<td class=xl29>D2101</td>
+<td class=xl29>蘇沛婕</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/07/1508:00~<br>115/07/1517:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>葉麗娟</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用藥師</td>
+<td class=xl29>D2101</td>
+<td class=xl29>蘇沛婕</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/07/2408:00~<br>115/07/2417:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>葉麗娟</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用藥師</td>
+<td class=xl29>D2101</td>
+<td class=xl29>蘇沛婕</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/08/1308:00~<br>115/08/1417:00</td>
+<td class=xl31>2日</td>
+<td class=xl31>葉麗娟</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用藥師</td>
+<td class=xl29>D2101</td>
+<td class=xl29>蘇沛婕</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/10/0708:00~<br>115/10/1917:00</td>
+<td class=xl31>8日</td>
+<td class=xl31>葉麗娟</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用藥師</td>
+<td class=xl29>D2101</td>
+<td class=xl29>蘇沛婕</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/11/0508:00~<br>115/11/0517:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>葉麗娟</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用藥師</td>
+<td class=xl29>D2101</td>
+<td class=xl29>蘇沛婕</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/11/0608:00~<br>115/11/0617:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>葉麗娟</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用藥師</td>
+<td class=xl29>D2101</td>
+<td class=xl29>蘇沛婕</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/11/1608:00~<br>115/11/1617:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>葉麗娟</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;18日</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用藥師</td>
+<td class=xl29>05141</td>
+<td class=xl29>蘇沛誠</td>
+<td class=xl29>出差補休</td>
+<td class=xl30 width=131 style='width:98pt'>115/01/0508:00~<br>115/01/0517:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>陳泰宇</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用藥師</td>
+<td class=xl29>05141</td>
+<td class=xl29>蘇沛誠</td>
+<td class=xl29>出差補休</td>
+<td class=xl30 width=131 style='width:98pt'>115/01/1508:00~<br>115/01/1517:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>陳泰宇</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用藥師</td>
+<td class=xl29>05141</td>
+<td class=xl29>蘇沛誠</td>
+<td class=xl29>出差補休</td>
+<td class=xl30 width=131 style='width:98pt'>115/01/2613:00~<br>115/01/2617:00</td>
+<td class=xl31>0日4時</td>
+<td class=xl31>陳泰宇</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;2日4時</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用藥師</td>
+<td class=xl29>05141</td>
+<td class=xl29>蘇沛誠</td>
+<td class=xl29>加班假</td>
+<td class=xl30 width=131 style='width:98pt'>115/02/1108:00~<br>115/02/1112:30</td>
+<td class=xl31>0日4時</td>
+<td class=xl31>陳泰宇</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;0日4時</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用藥師</td>
+<td class=xl29>05141</td>
+<td class=xl29>蘇沛誠</td>
+<td class=xl29>出差補休</td>
+<td class=xl30 width=131 style='width:98pt'>115/02/1113:00~<br>115/02/1117:00</td>
+<td class=xl31>0日4時</td>
+<td class=xl31>陳泰宇</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;0日4時</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用藥師</td>
+<td class=xl29>05141</td>
+<td class=xl29>蘇沛誠</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/04/0813:00~<br>115/04/0817:00</td>
+<td class=xl31>0日4時</td>
+<td class=xl31>陳泰宇</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用藥師</td>
+<td class=xl29>05141</td>
+<td class=xl29>蘇沛誠</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/05/2113:00~<br>115/05/2117:00</td>
+<td class=xl31>0日4時</td>
+<td class=xl31>陳泰宇</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用藥師</td>
+<td class=xl29>05141</td>
+<td class=xl29>蘇沛誠</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/06/1008:00~<br>115/06/1017:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>陳泰宇</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用藥師</td>
+<td class=xl29>05141</td>
+<td class=xl29>蘇沛誠</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/06/2408:00~<br>115/06/2417:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>陳泰宇</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用藥師</td>
+<td class=xl29>05141</td>
+<td class=xl29>蘇沛誠</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/06/2908:00~<br>115/06/2917:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>陳依琳</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用藥師</td>
+<td class=xl29>05141</td>
+<td class=xl29>蘇沛誠</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/07/0913:00~<br>115/07/0917:00</td>
+<td class=xl31>0日4時</td>
+<td class=xl31>葉麗娟</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用藥師</td>
+<td class=xl29>05141</td>
+<td class=xl29>蘇沛誠</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/07/1008:00~<br>115/07/1017:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>葉麗娟</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用藥師</td>
+<td class=xl29>05141</td>
+<td class=xl29>蘇沛誠</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/07/1408:00~<br>115/07/1517:00</td>
+<td class=xl31>2日</td>
+<td class=xl31>陳泰宇</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用藥師</td>
+<td class=xl29>05141</td>
+<td class=xl29>蘇沛誠</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/08/0613:00~<br>115/08/0617:00</td>
+<td class=xl31>0日4時</td>
+<td class=xl31>李仕源</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;8日</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用藥師</td>
+<td class=xl29>05141</td>
+<td class=xl29>蘇沛誠</td>
+<td class=xl29>加班假</td>
+<td class=xl30 width=131 style='width:98pt'>115/08/2816:30~<br>115/08/2817:00</td>
+<td class=xl31>0日0時30分</td>
+<td class=xl31>陳泰宇</td>
+<td class=xl30>OT補休</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;0日0時30分</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用藥師</td>
+<td class=xl29>05141</td>
+<td class=xl29>蘇沛誠</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/09/0908:00~<br>115/09/0917:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>陳泰宇</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用藥師</td>
+<td class=xl29>05141</td>
+<td class=xl29>蘇沛誠</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/09/1108:00~<br>115/09/1117:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>陳泰宇</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用藥師</td>
+<td class=xl29>05141</td>
+<td class=xl29>蘇沛誠</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/12/3008:00~<br>115/12/3117:00</td>
+<td class=xl31>2日</td>
+<td class=xl31>陳泰宇</td>
+<td class=xl30>長假</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;4日</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用藥師</td>
+<td class=xl29>05101</td>
+<td class=xl29>陳依琳</td>
+<td class=xl29>加班假</td>
+<td class=xl30 width=131 style='width:98pt'>115/01/0216:30~<br>115/01/0217:00</td>
+<td class=xl31>0日0時30分</td>
+<td class=xl31>李怡臻</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用藥師</td>
+<td class=xl29>05101</td>
+<td class=xl29>陳依琳</td>
+<td class=xl29>加班假</td>
+<td class=xl30 width=131 style='width:98pt'>115/01/2008:00~<br>115/01/2017:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>李怡臻</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用藥師</td>
+<td class=xl29>05101</td>
+<td class=xl29>陳依琳</td>
+<td class=xl29>加班假</td>
+<td class=xl30 width=131 style='width:98pt'>115/01/2916:30~<br>115/01/2917:00</td>
+<td class=xl31>0日0時30分</td>
+<td class=xl31>李怡臻</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用藥師</td>
+<td class=xl29>05101</td>
+<td class=xl29>陳依琳</td>
+<td class=xl29>加班假</td>
+<td class=xl30 width=131 style='width:98pt'>115/01/3016:30~<br>115/01/3017:00</td>
+<td class=xl31>0日0時30分</td>
+<td class=xl31>蘇沛婕</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用藥師</td>
+<td class=xl29>05101</td>
+<td class=xl29>陳依琳</td>
+<td class=xl29>加班假</td>
+<td class=xl30 width=131 style='width:98pt'>115/04/3008:00~<br>115/04/3012:00</td>
+<td class=xl31>0日4時</td>
+<td class=xl31>葉麗娟</td>
+<td class=xl30>排休</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;1日5時30分</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用藥師</td>
+<td class=xl29>05101</td>
+<td class=xl29>陳依琳</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/04/3013:00~<br>115/04/3017:00</td>
+<td class=xl31>0日4時</td>
+<td class=xl31>葉麗娟</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用藥師</td>
+<td class=xl29>05101</td>
+<td class=xl29>陳依琳</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/05/0613:00~<br>115/05/0617:00</td>
+<td class=xl31>0日4時</td>
+<td class=xl31>蘇沛婕</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用藥師</td>
+<td class=xl29>05101</td>
+<td class=xl29>陳依琳</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/05/1308:00~<br>115/05/1317:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>蘇沛婕</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用藥師</td>
+<td class=xl29>05101</td>
+<td class=xl29>陳依琳</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/05/1508:00~<br>115/05/1517:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>蘇沛婕</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用藥師</td>
+<td class=xl29>05101</td>
+<td class=xl29>陳依琳</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/06/2508:00~<br>115/06/2517:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>葉麗娟</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用藥師</td>
+<td class=xl29>05101</td>
+<td class=xl29>陳依琳</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/07/0908:00~<br>115/07/0912:00</td>
+<td class=xl31>0日4時</td>
+<td class=xl31>葉麗娟</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用藥師</td>
+<td class=xl29>05101</td>
+<td class=xl29>陳依琳</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/07/2208:00~<br>115/07/2217:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>葉麗娟</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用藥師</td>
+<td class=xl29>05101</td>
+<td class=xl29>陳依琳</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/07/2408:00~<br>115/07/2417:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>葉麗娟</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用藥師</td>
+<td class=xl29>05101</td>
+<td class=xl29>陳依琳</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/07/2708:30~<br>115/07/2717:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>葉麗娟</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用藥師</td>
+<td class=xl29>05101</td>
+<td class=xl29>陳依琳</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/08/2508:00~<br>115/08/2517:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>葉麗娟</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;8日4時</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用藥師</td>
+<td class=xl29>05101</td>
+<td class=xl29>陳依琳</td>
+<td class=xl29>加班假</td>
+<td class=xl30 width=131 style='width:98pt'>115/10/1916:30~<br>115/10/1917:00</td>
+<td class=xl31>0日0時30分</td>
+<td class=xl31>葉麗娟</td>
+<td class=xl30>OT補休</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;0日0時30分</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用藥師</td>
+<td class=xl29>05101</td>
+<td class=xl29>陳依琳</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/11/2608:30~<br>115/12/0317:00</td>
+<td class=xl31>6日</td>
+<td class=xl31>葉麗娟</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用藥師</td>
+<td class=xl29>05101</td>
+<td class=xl29>陳依琳</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/12/0408:00~<br>115/12/0412:00</td>
+<td class=xl31>0日4時</td>
+<td class=xl31>葉麗娟</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;6日4時</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用書記</td>
+<td class=xl29>03616</td>
+<td class=xl29>陳政德</td>
+<td class=xl29>公出</td>
+<td class=xl30 width=131 style='width:98pt'>115/01/0208:30~<br>115/01/0209:30</td>
+<td class=xl31>0日1時</td>
+<td class=xl31>劉人豪</td>
+<td class=xl30>領疫苗</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;0日1時</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用書記</td>
+<td class=xl29>03616</td>
+<td class=xl29>陳政德</td>
+<td class=xl29>事假</td>
+<td class=xl30 width=131 style='width:98pt'>115/01/0708:00~<br>115/01/0717:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>劉人豪</td>
+<td class=xl30>事假</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;1日</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用書記</td>
+<td class=xl29>03616</td>
+<td class=xl29>陳政德</td>
+<td class=xl29>公出</td>
+<td class=xl30 width=131 style='width:98pt'>115/01/1309:30~<br>115/01/1310:30</td>
+<td class=xl31>0日1時</td>
+<td class=xl31>劉人豪</td>
+<td class=xl30>領疫苗</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;0日1時</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用書記</td>
+<td class=xl29>03616</td>
+<td class=xl29>陳政德</td>
+<td class=xl29>事假</td>
+<td class=xl30 width=131 style='width:98pt'>115/01/1413:00~<br>115/01/1417:00</td>
+<td class=xl31>0日4時</td>
+<td class=xl31>劉人豪</td>
+<td class=xl30>事假</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;0日4時</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用書記</td>
+<td class=xl29>03616</td>
+<td class=xl29>陳政德</td>
+<td class=xl29>公出</td>
+<td class=xl30 width=131 style='width:98pt'>115/01/1615:00~<br>115/01/1616:00</td>
+<td class=xl31>0日1時</td>
+<td class=xl31>劉人豪</td>
+<td class=xl30>衛生局領疫苗</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用書記</td>
+<td class=xl29>03616</td>
+<td class=xl29>陳政德</td>
+<td class=xl29>公出</td>
+<td class=xl30 width=131 style='width:98pt'>115/01/2009:00~<br>115/01/2010:00</td>
+<td class=xl31>0日1時</td>
+<td class=xl31>劉人豪</td>
+<td class=xl30>領疫苗</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;0日2時</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用書記</td>
+<td class=xl29>03616</td>
+<td class=xl29>陳政德</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/01/2808:00~<br>115/01/2817:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>劉人豪</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;1日</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用書記</td>
+<td class=xl29>03616</td>
+<td class=xl29>陳政德</td>
+<td class=xl29>公出</td>
+<td class=xl30 width=131 style='width:98pt'>115/01/2910:00~<br>115/01/2911:00</td>
+<td class=xl31>0日1時</td>
+<td class=xl31>劉人豪</td>
+<td class=xl30>領疫苗</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;0日1時</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用書記</td>
+<td class=xl29>03616</td>
+<td class=xl29>陳政德</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/02/0408:00~<br>115/02/0412:00</td>
+<td class=xl31>0日4時</td>
+<td class=xl31>劉人豪</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;0日4時</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用書記</td>
+<td class=xl29>03616</td>
+<td class=xl29>陳政德</td>
+<td class=xl29>公出</td>
+<td class=xl30 width=131 style='width:98pt'>115/02/0609:00~<br>115/02/0610:00</td>
+<td class=xl31>0日1時</td>
+<td class=xl31>葉麗娟</td>
+<td class=xl30>衛生局領疫苗</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;0日1時</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用書記</td>
+<td class=xl29>03616</td>
+<td class=xl29>陳政德</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/02/0616:00~<br>115/02/0617:00</td>
+<td class=xl31>0日1時</td>
+<td class=xl31>葉麗娟</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用書記</td>
+<td class=xl29>03616</td>
+<td class=xl29>陳政德</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/02/1316:00~<br>115/02/2017:00</td>
+<td class=xl31>0日1時</td>
+<td class=xl31>劉人豪</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;0日2時</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用書記</td>
+<td class=xl29>03616</td>
+<td class=xl29>陳政德</td>
+<td class=xl29>公出</td>
+<td class=xl30 width=131 style='width:98pt'>115/02/2409:30~<br>115/02/2410:30</td>
+<td class=xl31>0日1時</td>
+<td class=xl31>劉人豪</td>
+<td class=xl30>領管制藥</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用書記</td>
+<td class=xl29>03616</td>
+<td class=xl29>陳政德</td>
+<td class=xl29>公出</td>
+<td class=xl30 width=131 style='width:98pt'>115/03/0511:00~<br>115/03/0512:00</td>
+<td class=xl31>0日1時</td>
+<td class=xl31>徐昀耀</td>
+<td class=xl30>洽公</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用書記</td>
+<td class=xl29>03616</td>
+<td class=xl29>陳政德</td>
+<td class=xl29>公出</td>
+<td class=xl30 width=131 style='width:98pt'>115/03/0613:30~<br>115/03/0614:30</td>
+<td class=xl31>0日1時</td>
+<td class=xl31>劉人豪</td>
+<td class=xl30>領疫苗</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;0日3時</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用書記</td>
+<td class=xl29>03616</td>
+<td class=xl29>陳政德</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/03/1308:00~<br>115/03/1310:00</td>
+<td class=xl31>0日2時</td>
+<td class=xl31>劉人豪</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用書記</td>
+<td class=xl29>03616</td>
+<td class=xl29>陳政德</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/03/2513:00~<br>115/03/2514:00</td>
+<td class=xl31>0日1時</td>
+<td class=xl31>劉人豪</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;0日3時</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用書記</td>
+<td class=xl29>03616</td>
+<td class=xl29>陳政德</td>
+<td class=xl29>公出</td>
+<td class=xl30 width=131 style='width:98pt'>115/03/3113:30~<br>115/03/3114:30</td>
+<td class=xl31>0日1時</td>
+<td class=xl31>劉人豪</td>
+<td class=xl30>領疫苗</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;0日1時</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用書記</td>
+<td class=xl29>03616</td>
+<td class=xl29>陳政德</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/04/0215:00~<br>115/04/0217:00</td>
+<td class=xl31>0日2時</td>
+<td class=xl31>劉人豪</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;0日2時</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用書記</td>
+<td class=xl29>03616</td>
+<td class=xl29>陳政德</td>
+<td class=xl29>公出</td>
+<td class=xl30 width=131 style='width:98pt'>115/04/1009:30~<br>115/04/1010:30</td>
+<td class=xl31>0日1時</td>
+<td class=xl31>葉麗娟</td>
+<td class=xl30>衛生局領疫苗</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用書記</td>
+<td class=xl29>03616</td>
+<td class=xl29>陳政德</td>
+<td class=xl29>公出</td>
+<td class=xl30 width=131 style='width:98pt'>115/04/1314:00~<br>115/04/1315:00</td>
+<td class=xl31>0日1時</td>
+<td class=xl31>劉人豪</td>
+<td class=xl30>領管制藥</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;0日2時</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用書記</td>
+<td class=xl29>03616</td>
+<td class=xl29>陳政德</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/04/1508:00~<br>115/04/1510:00</td>
+<td class=xl31>0日2時</td>
+<td class=xl31>劉人豪</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用書記</td>
+<td class=xl29>03616</td>
+<td class=xl29>陳政德</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/04/3008:00~<br>115/04/3012:00</td>
+<td class=xl31>0日4時</td>
+<td class=xl31>劉人豪</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;0日6時</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用書記</td>
+<td class=xl29>03616</td>
+<td class=xl29>陳政德</td>
+<td class=xl29>公出</td>
+<td class=xl30 width=131 style='width:98pt'>115/05/0614:00~<br>115/05/0615:00</td>
+<td class=xl31>0日1時</td>
+<td class=xl31>劉人豪</td>
+<td class=xl30>領疫苗</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;0日1時</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用書記</td>
+<td class=xl29>03616</td>
+<td class=xl29>陳政德</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/05/1213:00~<br>115/05/1215:00</td>
+<td class=xl31>0日2時</td>
+<td class=xl31>劉人豪</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;0日2時</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用書記</td>
+<td class=xl29>03616</td>
+<td class=xl29>陳政德</td>
+<td class=xl29>公出</td>
+<td class=xl30 width=131 style='width:98pt'>115/05/1415:00~<br>115/05/1416:00</td>
+<td class=xl31>0日1時</td>
+<td class=xl31>徐昀耀</td>
+<td class=xl30>前往郵局辦理管制藥負責人變更登記匯票購買</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用書記</td>
+<td class=xl29>03616</td>
+<td class=xl29>陳政德</td>
+<td class=xl29>公出</td>
+<td class=xl30 width=131 style='width:98pt'>115/05/1514:00~<br>115/05/1515:00</td>
+<td class=xl31>0日1時</td>
+<td class=xl31>劉人豪</td>
+<td class=xl30>去衛生局</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;0日2時</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用書記</td>
+<td class=xl29>03616</td>
+<td class=xl29>陳政德</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/05/1908:00~<br>115/05/1917:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>劉人豪</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;1日</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用書記</td>
+<td class=xl29>03616</td>
+<td class=xl29>陳政德</td>
+<td class=xl29>公出</td>
+<td class=xl30 width=131 style='width:98pt'>115/05/2210:00~<br>115/05/2211:00</td>
+<td class=xl31>0日1時</td>
+<td class=xl31>劉人豪</td>
+<td class=xl30>衛生局領疫苗</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用書記</td>
+<td class=xl29>03616</td>
+<td class=xl29>陳政德</td>
+<td class=xl29>公出</td>
+<td class=xl30 width=131 style='width:98pt'>115/05/2915:30~<br>115/05/2916:30</td>
+<td class=xl31>0日1時</td>
+<td class=xl31>劉人豪</td>
+<td class=xl30>領疫苗</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用書記</td>
+<td class=xl29>03616</td>
+<td class=xl29>陳政德</td>
+<td class=xl29>公出</td>
+<td class=xl30 width=131 style='width:98pt'>115/06/1614:00~<br>115/06/1615:00</td>
+<td class=xl31>0日1時</td>
+<td class=xl31>劉人豪</td>
+<td class=xl30>去郵局領管制藥</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用書記</td>
+<td class=xl29>03616</td>
+<td class=xl29>陳政德</td>
+<td class=xl29>公出</td>
+<td class=xl30 width=131 style='width:98pt'>115/06/2214:00~<br>115/06/2215:00</td>
+<td class=xl31>0日1時</td>
+<td class=xl31>劉人豪</td>
+<td class=xl30>去衛生局</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用書記</td>
+<td class=xl29>03616</td>
+<td class=xl29>陳政德</td>
+<td class=xl29>公出</td>
+<td class=xl30 width=131 style='width:98pt'>115/06/2614:00~<br>115/06/2615:00</td>
+<td class=xl31>0日1時</td>
+<td class=xl31>劉人豪</td>
+<td class=xl30>衛生局領疫苗</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;0日5時</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用書記</td>
+<td class=xl29>03616</td>
+<td class=xl29>陳政德</td>
+<td class=xl29>公假</td>
+<td class=xl30 width=131 style='width:98pt'>115/07/0108:00~<br>115/07/0217:00</td>
+<td class=xl31>2日</td>
+<td class=xl31>劉人豪</td>
+<td class=xl30>教育召集</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;2日</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用書記</td>
+<td class=xl29>03616</td>
+<td class=xl29>陳政德</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/07/0308:00~<br>115/07/0317:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>葉麗娟</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;1日</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用書記</td>
+<td class=xl29>03616</td>
+<td class=xl29>陳政德</td>
+<td class=xl29>公出</td>
+<td class=xl30 width=131 style='width:98pt'>115/07/0913:00~<br>115/07/0914:00</td>
+<td class=xl31>0日1時</td>
+<td class=xl31>劉人豪</td>
+<td class=xl30>領疫苗</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用書記</td>
+<td class=xl29>03616</td>
+<td class=xl29>陳政德</td>
+<td class=xl29>公出</td>
+<td class=xl30 width=131 style='width:98pt'>115/07/1710:00~<br>115/07/1711:00</td>
+<td class=xl31>0日1時</td>
+<td class=xl31>劉人豪</td>
+<td class=xl30>衛生局領疫苗</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;0日2時</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用書記</td>
+<td class=xl29>03616</td>
+<td class=xl29>陳政德</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/07/2208:00~<br>115/07/2212:00</td>
+<td class=xl31>0日4時</td>
+<td class=xl31>劉人豪</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用書記</td>
+<td class=xl29>03616</td>
+<td class=xl29>陳政德</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/08/0508:00~<br>115/08/0510:00</td>
+<td class=xl31>0日2時</td>
+<td class=xl31>劉人豪</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;0日6時</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用書記</td>
+<td class=xl29>03616</td>
+<td class=xl29>陳政德</td>
+<td class=xl29>公出</td>
+<td class=xl30 width=131 style='width:98pt'>115/08/0708:30~<br>115/08/0709:30</td>
+<td class=xl31>0日1時</td>
+<td class=xl31>葉麗娟</td>
+<td class=xl30>衛生局領疫苗</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;0日1時</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用書記</td>
+<td class=xl29>03616</td>
+<td class=xl29>陳政德</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/08/2610:00~<br>115/08/2612:00</td>
+<td class=xl31>0日2時</td>
+<td class=xl31>徐昀耀</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;0日2時</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用書記</td>
+<td class=xl29>03616</td>
+<td class=xl29>陳政德</td>
+<td class=xl29>病假</td>
+<td class=xl30 width=131 style='width:98pt'>115/08/3108:00~<br>115/09/0117:00</td>
+<td class=xl31>2日</td>
+<td class=xl31>葉麗娟</td>
+<td class=xl30>因病</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;2日</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用書記</td>
+<td class=xl29>03616</td>
+<td class=xl29>陳政德</td>
+<td class=xl29>公出</td>
+<td class=xl30 width=131 style='width:98pt'>115/09/0309:00~<br>115/09/0310:00</td>
+<td class=xl31>0日1時</td>
+<td class=xl31>葉麗娟</td>
+<td class=xl30>衛生局領疫苗</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用書記</td>
+<td class=xl29>03616</td>
+<td class=xl29>陳政德</td>
+<td class=xl29>公出</td>
+<td class=xl30 width=131 style='width:98pt'>115/09/0816:00~<br>115/09/0817:00</td>
+<td class=xl31>0日1時</td>
+<td class=xl31>劉人豪</td>
+<td class=xl30>衛生局領疫苗</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用書記</td>
+<td class=xl29>03616</td>
+<td class=xl29>陳政德</td>
+<td class=xl29>公出</td>
+<td class=xl30 width=131 style='width:98pt'>115/09/1114:40~<br>115/09/1115:30</td>
+<td class=xl31>0日1時</td>
+<td class=xl31>葉麗娟</td>
+<td class=xl30>衛生局領疫苗</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用書記</td>
+<td class=xl29>03616</td>
+<td class=xl29>陳政德</td>
+<td class=xl29>公出</td>
+<td class=xl30 width=131 style='width:98pt'>115/09/2408:30~<br>115/09/2410:30</td>
+<td class=xl31>0日2時</td>
+<td class=xl31>徐昀耀</td>
+<td class=xl30>衛生局領疫苗</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;0日5時</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用書記</td>
+<td class=xl29>03616</td>
+<td class=xl29>陳政德</td>
+<td class=xl29>事假</td>
+<td class=xl30 width=131 style='width:98pt'>115/10/0108:00~<br>115/10/0117:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>劉人豪</td>
+<td class=xl30>員工旅遊</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;1日</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用書記</td>
+<td class=xl29>03616</td>
+<td class=xl29>陳政德</td>
+<td class=xl29>公出</td>
+<td class=xl30 width=131 style='width:98pt'>115/10/0810:00~<br>115/10/0811:00</td>
+<td class=xl31>0日1時</td>
+<td class=xl31>葉麗娟</td>
+<td class=xl30>衛生局領疫苗</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用書記</td>
+<td class=xl29>03616</td>
+<td class=xl29>陳政德</td>
+<td class=xl29>公出</td>
+<td class=xl30 width=131 style='width:98pt'>115/10/1310:00~<br>115/10/1311:00</td>
+<td class=xl31>0日1時</td>
+<td class=xl31>葉麗娟</td>
+<td class=xl30>嘉義榮民醫院調撥藥品</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用書記</td>
+<td class=xl29>03616</td>
+<td class=xl29>陳政德</td>
+<td class=xl29>公出</td>
+<td class=xl30 width=131 style='width:98pt'>115/10/1414:00~<br>115/10/1415:00</td>
+<td class=xl31>0日1時</td>
+<td class=xl31>葉麗娟</td>
+<td class=xl30>衛生局報廢管制藥品</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用書記</td>
+<td class=xl29>03616</td>
+<td class=xl29>陳政德</td>
+<td class=xl29>公出</td>
+<td class=xl30 width=131 style='width:98pt'>115/10/1613:30~<br>115/10/1614:30</td>
+<td class=xl31>0日1時</td>
+<td class=xl31>劉人豪</td>
+<td class=xl30>衛生局領疫苗</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;0日4時</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用書記</td>
+<td class=xl29>03616</td>
+<td class=xl29>陳政德</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/10/1615:00~<br>115/10/1617:00</td>
+<td class=xl31>0日2時</td>
+<td class=xl31>劉人豪</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;0日2時</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用書記</td>
+<td class=xl29>03616</td>
+<td class=xl29>陳政德</td>
+<td class=xl29>公出</td>
+<td class=xl30 width=131 style='width:98pt'>115/10/2713:40~<br>115/10/2714:30</td>
+<td class=xl31>0日1時</td>
+<td class=xl31>劉人豪</td>
+<td class=xl30>衛生局領疫苗</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;0日1時</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>約用書記</td>
+<td class=xl29>03616</td>
+<td class=xl29>陳政德</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/10/2813:00~<br>115/10/2815:00</td>
+<td class=xl31>0日2時</td>
+<td class=xl31>劉人豪</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;0日2時</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>M5066</td>
+<td class=xl29>陳泰宇</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/03/0908:30~<br>115/03/0917:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>葉麗娟</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>M5066</td>
+<td class=xl29>陳泰宇</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/03/1008:30~<br>115/03/1017:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>葉麗娟</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>M5066</td>
+<td class=xl29>陳泰宇</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/03/1113:00~<br>115/03/1117:00</td>
+<td class=xl31>0日4時</td>
+<td class=xl31>徐昀耀</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>M5066</td>
+<td class=xl29>陳泰宇</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/03/1208:30~<br>115/03/1217:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>葉麗娟</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>M5066</td>
+<td class=xl29>陳泰宇</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/03/1308:30~<br>115/03/1317:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>葉麗娟</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>M5066</td>
+<td class=xl29>陳泰宇</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/06/2413:00~<br>115/06/2417:00</td>
+<td class=xl31>0日4時</td>
+<td class=xl31>葉麗娟</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>M5066</td>
+<td class=xl29>陳泰宇</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/06/2908:30~<br>115/06/2912:30</td>
+<td class=xl31>0日4時</td>
+<td class=xl31>葉麗娟</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>M5066</td>
+<td class=xl29>陳泰宇</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/07/0208:30~<br>115/07/0217:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>葉麗娟</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>M5066</td>
+<td class=xl29>陳泰宇</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/07/0308:30~<br>115/07/0317:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>葉麗娟</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>M5066</td>
+<td class=xl29>陳泰宇</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/07/0808:30~<br>115/07/0817:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>葉麗娟</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>M5066</td>
+<td class=xl29>陳泰宇</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/07/2708:30~<br>115/07/2712:30</td>
+<td class=xl31>0日4時</td>
+<td class=xl31>王克仁</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>M5066</td>
+<td class=xl29>陳泰宇</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/08/1708:30~<br>115/08/1817:00</td>
+<td class=xl31>2日</td>
+<td class=xl31>葉麗娟</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>M5066</td>
+<td class=xl29>陳泰宇</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/08/1908:30~<br>115/08/1917:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>葉麗娟</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>M5066</td>
+<td class=xl29>陳泰宇</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/08/2008:30~<br>115/08/2017:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>葉麗娟</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>M5066</td>
+<td class=xl29>陳泰宇</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/08/2108:30~<br>115/08/2117:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>徐昀耀</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>M5066</td>
+<td class=xl29>陳泰宇</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/08/2408:30~<br>115/08/2412:30</td>
+<td class=xl31>0日4時</td>
+<td class=xl31>葉麗娟</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>M5066</td>
+<td class=xl29>陳泰宇</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/10/1208:30~<br>115/10/1217:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>葉麗娟</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>M5066</td>
+<td class=xl29>陳泰宇</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/10/1308:30~<br>115/10/1317:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>葉麗娟</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>M5066</td>
+<td class=xl29>陳泰宇</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/10/1408:00~<br>115/10/1417:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>葉麗娟</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>M5066</td>
+<td class=xl29>陳泰宇</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/10/1508:30~<br>115/10/1517:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>葉麗娟</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>M5066</td>
+<td class=xl29>陳泰宇</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/10/1608:30~<br>115/10/1617:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>葉麗娟</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>M5066</td>
+<td class=xl29>陳泰宇</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/10/3008:30~<br>115/10/3017:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>葉麗娟</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;20日4時</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>05158</td>
+<td class=xl29>黃欣宜</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/05/0408:00~<br>115/05/0417:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>李婷芳</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;1日</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>05158</td>
+<td class=xl29>黃欣宜</td>
+<td class=xl29>公出</td>
+<td class=xl30 width=131 style='width:98pt'>115/06/3009:40~<br>115/06/3012:00</td>
+<td class=xl31>0日3時</td>
+<td class=xl31>李婷芳</td>
+<td class=xl30>辦理長照登錄業務</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;0日3時</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>05158</td>
+<td class=xl29>黃欣宜</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/07/1308:00~<br>115/07/1317:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>李婷芳</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;1日</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>05158</td>
+<td class=xl29>黃欣宜</td>
+<td class=xl29>公假</td>
+<td class=xl30 width=131 style='width:98pt'>115/10/0208:00~<br>115/10/0217:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>李婷芳</td>
+<td class=xl30>參加115年第十四屆衛福部所屬醫院及桃竹苗地區實證醫學競賽</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;1日</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>05158</td>
+<td class=xl29>黃欣宜</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/10/1308:00~<br>115/10/1317:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>李婷芳</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>藥師</td>
+<td class=xl29>05158</td>
+<td class=xl29>黃欣宜</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/11/0513:00~<br>115/11/0515:00</td>
+<td class=xl31>0日2時</td>
+<td class=xl31>徐昀耀</td>
+<td class=xl30>休假</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;1日2時</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>主任</td>
+<td class=xl29>A3149</td>
+<td class=xl29>張其純</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/01/0208:00~<br>115/01/0517:00</td>
+<td class=xl31>2日</td>
+<td class=xl31>葉麗娟</td>
+<td class=xl30>特休</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;2日</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>主任</td>
+<td class=xl29>A3149</td>
+<td class=xl29>張其純</td>
+<td class=xl29>公假</td>
+<td class=xl30 width=131 style='width:98pt'>115/01/1408:00~<br>115/01/1417:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>葉麗娟</td>
+<td class=xl30>嘉義市醫院聯盟病安嘉年華</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;1日</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>主任</td>
+<td class=xl29>A3149</td>
+<td class=xl29>張其純</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/01/2213:00~<br>115/01/2214:00</td>
+<td class=xl31>0日1時</td>
+<td class=xl31>葉麗娟</td>
+<td class=xl30>特休</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>主任</td>
+<td class=xl29>A3149</td>
+<td class=xl29>張其純</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/01/2713:00~<br>115/01/2714:00</td>
+<td class=xl31>0日1時</td>
+<td class=xl31>葉麗娟</td>
+<td class=xl30>特休</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;0日2時</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>主任</td>
+<td class=xl29>A3149</td>
+<td class=xl29>張其純</td>
+<td class=xl29>公假</td>
+<td class=xl30 width=131 style='width:98pt'>115/02/0613:00~<br>115/02/0617:00</td>
+<td class=xl31>0日4時</td>
+<td class=xl31>葉麗娟</td>
+<td class=xl30>雲嘉臨床藥學雙月會</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>主任</td>
+<td class=xl29>A3149</td>
+<td class=xl29>張其純</td>
+<td class=xl29>公假</td>
+<td class=xl30 width=131 style='width:98pt'>115/03/1708:00~<br>115/03/1717:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>葉麗娟</td>
+<td class=xl30>衛福部所屬醫院藥事管理會議</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;1日4時</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>主任</td>
+<td class=xl29>A3149</td>
+<td class=xl29>張其純</td>
+<td class=xl29>加班假</td>
+<td class=xl30 width=131 style='width:98pt'>115/04/0913:00~<br>115/04/0917:00</td>
+<td class=xl31>0日4時</td>
+<td class=xl31>葉麗娟</td>
+<td class=xl30>補休</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;0日4時</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>主任</td>
+<td class=xl29>A3149</td>
+<td class=xl29>張其純</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/04/2413:00~<br>115/04/2414:00</td>
+<td class=xl31>0日1時</td>
+<td class=xl31>葉麗娟</td>
+<td class=xl30>特休</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;0日1時</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>主任</td>
+<td class=xl29>A3149</td>
+<td class=xl29>張其純</td>
+<td class=xl29>加班假</td>
+<td class=xl30 width=131 style='width:98pt'>115/04/3015:00~<br>115/04/3017:00</td>
+<td class=xl31>0日2時</td>
+<td class=xl31>葉麗娟</td>
+<td class=xl30>補休</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>主任</td>
+<td class=xl29>A3149</td>
+<td class=xl29>張其純</td>
+<td class=xl29>加班假</td>
+<td class=xl30 width=131 style='width:98pt'>115/05/0515:00~<br>115/05/0517:00</td>
+<td class=xl31>0日2時</td>
+<td class=xl31>葉麗娟</td>
+<td class=xl30>補休</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;0日4時</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>主任</td>
+<td class=xl29>A3149</td>
+<td class=xl29>張其純</td>
+<td class=xl29>公出</td>
+<td class=xl30 width=131 style='width:98pt'>115/05/2113:00~<br>115/05/2115:00</td>
+<td class=xl31>0日2時</td>
+<td class=xl31>葉麗娟</td>
+<td class=xl30>衛生局計劃案</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;0日2時</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>主任</td>
+<td class=xl29>A3149</td>
+<td class=xl29>張其純</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/05/2115:00~<br>115/05/2117:00</td>
+<td class=xl31>0日2時</td>
+<td class=xl31>葉麗娟</td>
+<td class=xl30>特休</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>主任</td>
+<td class=xl29>A3149</td>
+<td class=xl29>張其純</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/05/2913:00~<br>115/05/2917:00</td>
+<td class=xl31>0日4時</td>
+<td class=xl31>葉麗娟</td>
+<td class=xl30>特休</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>主任</td>
+<td class=xl29>A3149</td>
+<td class=xl29>張其純</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/06/0413:00~<br>115/06/0417:00</td>
+<td class=xl31>0日4時</td>
+<td class=xl31>葉麗娟</td>
+<td class=xl30>特休</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;1日2時</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>主任</td>
+<td class=xl29>A3149</td>
+<td class=xl29>張其純</td>
+<td class=xl29>公假</td>
+<td class=xl30 width=131 style='width:98pt'>115/06/2513:00~<br>115/06/2517:00</td>
+<td class=xl31>0日4時</td>
+<td class=xl31>葉麗娟</td>
+<td class=xl30>雲嘉臨床藥學雙月會</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>主任</td>
+<td class=xl29>A3149</td>
+<td class=xl29>張其純</td>
+<td class=xl29>公假</td>
+<td class=xl30 width=131 style='width:98pt'>115/07/1308:00~<br>115/07/1417:00</td>
+<td class=xl31>2日</td>
+<td class=xl31>葉麗娟</td>
+<td class=xl30>提升醫事主管專業知能研討會</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;2日4時</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>主任</td>
+<td class=xl29>A3149</td>
+<td class=xl29>張其純</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/07/1616:00~<br>115/07/1617:00</td>
+<td class=xl31>0日1時</td>
+<td class=xl31>葉麗娟</td>
+<td class=xl30>特休</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>主任</td>
+<td class=xl29>A3149</td>
+<td class=xl29>張其純</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/07/2113:00~<br>115/07/2117:00</td>
+<td class=xl31>0日4時</td>
+<td class=xl31>葉麗娟</td>
+<td class=xl30>特休</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>主任</td>
+<td class=xl29>A3149</td>
+<td class=xl29>張其純</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/07/2313:00~<br>115/07/2314:00</td>
+<td class=xl31>0日1時</td>
+<td class=xl31>葉麗娟</td>
+<td class=xl30>特休</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>主任</td>
+<td class=xl29>A3149</td>
+<td class=xl29>張其純</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/08/0613:00~<br>115/08/0614:00</td>
+<td class=xl31>0日1時</td>
+<td class=xl31>葉麗娟</td>
+<td class=xl30>特休</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>主任</td>
+<td class=xl29>A3149</td>
+<td class=xl29>張其純</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/08/1113:00~<br>115/08/1114:00</td>
+<td class=xl31>0日1時</td>
+<td class=xl31>葉麗娟</td>
+<td class=xl30>特休</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>主任</td>
+<td class=xl29>A3149</td>
+<td class=xl29>張其純</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/08/1313:00~<br>115/08/1314:00</td>
+<td class=xl31>0日1時</td>
+<td class=xl31>葉麗娟</td>
+<td class=xl30>特休</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;1日1時</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>主任</td>
+<td class=xl29>A3149</td>
+<td class=xl29>張其純</td>
+<td class=xl29>公假</td>
+<td class=xl30 width=131 style='width:98pt'>115/08/2808:00~<br>115/09/0417:00</td>
+<td class=xl31>6日</td>
+<td class=xl31>葉麗娟</td>
+<td class=xl30>參加FIP世界藥學會及發表</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;6日</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>主任</td>
+<td class=xl29>A3149</td>
+<td class=xl29>張其純</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/09/0508:00~<br>115/09/0717:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>葉麗娟</td>
+<td class=xl30>特休</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>主任</td>
+<td class=xl29>A3149</td>
+<td class=xl29>張其純</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/09/1013:00~<br>115/09/1014:00</td>
+<td class=xl31>0日1時</td>
+<td class=xl31>葉麗娟</td>
+<td class=xl30>特休</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>主任</td>
+<td class=xl29>A3149</td>
+<td class=xl29>張其純</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/09/1716:00~<br>115/09/1717:00</td>
+<td class=xl31>0日1時</td>
+<td class=xl31>徐昀耀</td>
+<td class=xl30>特休</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;1日2時</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>主任</td>
+<td class=xl29>A3149</td>
+<td class=xl29>張其純</td>
+<td class=xl29>公假</td>
+<td class=xl30 width=131 style='width:98pt'>115/09/1810:00~<br>115/09/1817:00</td>
+<td class=xl31>0日6時</td>
+<td class=xl31>徐昀耀</td>
+<td class=xl30>藥政動員暨災害物資調度會議</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;0日6時</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>主任</td>
+<td class=xl29>A3149</td>
+<td class=xl29>張其純</td>
+<td class=xl29>公出</td>
+<td class=xl30 width=131 style='width:98pt'>115/09/2313:00~<br>115/09/2314:00</td>
+<td class=xl31>0日1時</td>
+<td class=xl31>葉麗娟</td>
+<td class=xl30>衛生局促進多樣化藥事服務會議</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;0日1時</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>主任</td>
+<td class=xl29>A3149</td>
+<td class=xl29>張其純</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/09/2416:00~<br>115/09/2417:00</td>
+<td class=xl31>0日1時</td>
+<td class=xl31>葉麗娟</td>
+<td class=xl30>特休</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>主任</td>
+<td class=xl29>A3149</td>
+<td class=xl29>張其純</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/10/0616:00~<br>115/10/0617:00</td>
+<td class=xl31>0日1時</td>
+<td class=xl31>葉麗娟</td>
+<td class=xl30>特休</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;0日2時</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>主任</td>
+<td class=xl29>A3149</td>
+<td class=xl29>張其純</td>
+<td class=xl29>公假</td>
+<td class=xl30 width=131 style='width:98pt'>115/10/0708:00~<br>115/10/0717:00</td>
+<td class=xl31>1日</td>
+<td class=xl31>葉麗娟</td>
+<td class=xl30>管制藥品管理規範會議</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;1日</td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>主任</td>
+<td class=xl29>A3149</td>
+<td class=xl29>張其純</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/10/0813:00~<br>115/10/0814:00</td>
+<td class=xl31>0日1時</td>
+<td class=xl31>葉麗娟</td>
+<td class=xl30>特休</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>主任</td>
+<td class=xl29>A3149</td>
+<td class=xl29>張其純</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/10/1613:00~<br>115/10/1614:00</td>
+<td class=xl31>0日1時</td>
+<td class=xl31>葉麗娟</td>
+<td class=xl30>特休</td>
+<td class=xl29></td>
+</tr>
+<tr height=44 style='height:33.0pt'>
+<td height=44 class=xl28 style='height:33.0pt'>藥劑科</td>
+<td class=xl29>主任</td>
+<td class=xl29>A3149</td>
+<td class=xl29>張其純</td>
+<td class=xl29>休假</td>
+<td class=xl30 width=131 style='width:98pt'>115/11/0416:00~<br>115/11/0917:00</td>
+<td class=xl31>3日1時</td>
+<td class=xl31>葉麗娟</td>
+<td class=xl30>特休休假及參加亞洲藥學會年會</td>
+<td class=xl29></td>
+</tr>
+<tr height=22 style='height:16.5pt'>
+<td colspan=10 class=xl37>&#x5c0f;&#x8a08;&#xff1a;3日3時</td>
+</tr>
+ <![if supportMisalignedColumns]>
+ <tr height=0 style='display:none'>
+  <td width=138 style='width:104pt'></td>
+  <td width=95 style='width:71pt'></td>
+  <td width=95 style='width:71pt'></td>
+  <td width=95 style='width:71pt'></td>
+  <td width=76 style='width:57pt'></td>
+  <td width=131 style='width:98pt'></td>
+  <td width=0></td>
+  <td width=71 style='width:53pt'></td>
+  <td width=74 style='width:56pt'></td>
+  <td width=74 style='width:56pt'></td>
+  <td width=262 style='width:196'></td>
+  <td width=156 style='width:117pt'></td>
+ </tr>
+ <![endif]>
+</table>
+</body>
+</html>
